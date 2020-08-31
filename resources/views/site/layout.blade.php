@@ -63,7 +63,6 @@
                     </div>
 
                     <div class="col-md-5 col-sm-5 col-xs-9">
-                    <div class="nav-r">
                         <div class="navy">
                             <ul class="nav cf" id="ul1">
                                 <li><a href="{{url('/')}}" class="active">الرئيسية</a></li>
@@ -72,9 +71,7 @@
                                 <li><a href="{{url('favourites')}}">المفضلة</a></li>
                                 <li><a href="{{url('contact-us')}}">مكتبة الصور والفيديوهات</a></li>
                             </ul>
-                        </div>
-
-                    </div>
+                          </div>
                     </div>
 
                     <div class="col-md-4 col-sm-5 col-xs-12">
@@ -87,37 +84,49 @@
                             <ul class="nav-tools">
 
                         <!-- /////////////////////||||||||||| Start Searchbar |||||||||||||||||||| -->
-                        <!-- <section class="searchbar">
-                            <form action="" method="GET" class="subscribe">
-                                <input type="text" id="search-field" name="search"" placeholder=" ما الذى تبحث عنه؟">
-                                <button type="submit"><i class="fas fa-search"></i></button>
-                            </form>
-                        </section> -->
                                  <li>
-                                    <a href="{{url('cart')}}">
-                                        <p>
-                                            <span class="nav-icon"> <i class="fas fa-search"></i></span>
-                                        </p>
-
-                                    </a>
+                                    <form action="{{url('products')}}" method="GET" class="search-form" role="search">
+                                        <div class="form-group" id="search">
+                                        <input type="text" class="form-control" placeholder="بحث">
+                                        <button type="submit" class="form-control form-control-submit">بحث</button>
+                                        <span class="nav-icon"> <i class="fas fa-search"></i></span>
+                                        </div>
+                                    </form>
                                 </li> 
                         <!-- /////////////////////||||||||||| End Searchbar |||||||||||||||||||| -->
-                                <!-- <li>
+                        
+                        <!-- /////////////////////||||||||||| Start Nav Cart |||||||||||||||||||| -->
+                                <li>
                                     <a href="{{url('cart')}}">
-                                        <p>
                                             <span class="nav-icon"> <i class="fas fa-shopping-cart"></i></span>
-                                            <span class="cart-all hidden-xs">2000 ريال</span>
-                                        </p>
-
                                     </a>
-                                </li> -->
+                                </li>
+                        <!-- /////////////////////||||||||||| End Nav Cart |||||||||||||||||||| -->
+
+                        <!-- /////////////////////||||||||||| Start Nav Profile  |||||||||||||||||||| -->
+                        <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="nav-icon"><i class="fas fa-user"></i></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="{{url('my-profile')}}#!">
+                                                <h4>الحساب الشخصى</h4>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{url('/')}}#!">
+                                                <h4>تسجيل الخروج</h4>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                        <!-- /////////////////////||||||||||| End Nav Profile  |||||||||||||||||||| -->
+
+                        <!-- /////////////////////||||||||||| Start Nav Notifications  |||||||||||||||||||| -->
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                        <p>
                                             <span class="nav-icon"><i class="fas fa-bell"></i></span>
-                                            <b class="hidden-xs">الإشعارات</b>
-                                            <b class="caret"></b>
-                                        </p>
                                     </a>
                                     <ul class="dropdown-menu andNotifi">
                                         <li>
@@ -180,28 +189,8 @@
                                         <li><a href="{{url('notifications')}}" class="fixed-li">عرض كل الاشعارات</a></li>
                                     </ul>
                                 </li>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                        <p>
-                                            <span class="nav-icon"><i class="fas fa-user"></i></span>
-                                            <b class="hidden-xs">حسابى</b>
-                                            <b class="caret"></b>
-                                        </p>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="{{url('my-profile')}}#!">
-                                                <h4>الحساب الشخصى</h4>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{url('/')}}#!">
-                                                <h4>تسجيل الخروج</h4>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
+                        <!-- /////////////////////||||||||||| End Nav Notifications  |||||||||||||||||||| -->
+                                
                             </ul>
                         </div>
                     </div>
@@ -314,14 +303,34 @@
             $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
         });
     </script>
-
-
     <script>
         $(document).ready(function() {
             $('.sm-remove').click(function() {
                 $(this).closest('.one-cart').parent("li").remove();
             });
         });
+    </script>
+    <!---- search form -->
+    <script>
+        $(document).ready(function(){
+  $('#search').on("click",(function(e){
+  $(".search-form .form-group").addClass("sb-search-open");
+    e.stopPropagation()
+  }));
+   $(document).on("click", function(e) {
+    if ($(e.target).is("#search") === false && $(".search-form .form-control").val().length == 0) {
+      $(".search-form .form-group").removeClass("sb-search-open");
+    }
+  });
+    $(".form-control-submit").click(function(e){
+      $(".search-form .form-control").each(function(){
+        if($(".search-form .form-control").val().length == 0){
+          e.preventDefault();
+          $(this).css('border', '2px solid #ea6b60');
+        }
+    })
+  })
+})
     </script>
     @yield('scripts')
     <!-- /////////////////////||||||||||||||||||||||||||||| End Script |||||||||||||||||||||||||||| -->

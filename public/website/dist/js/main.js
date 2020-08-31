@@ -11,10 +11,10 @@ $(document).ready(function () {
         }),
         $("#nav-icon1").click(function () {
             $(this).toggleClass("open"), $(".navy").toggleClass("back-nav"),
-                $(".nav-r").toggleClass("fixed-r"), $(".body-overlay").toggleClass("back"),  $("body").toggleClass("body-mob")
+                $(".nav-y").toggleClass("fixed-r"), $(".body-overlay").toggleClass("back"),  $("body").toggleClass("body-mob")
         }), $(".body-overlay").click(function () {
             $(this).toggleClass("back"), $("#nav-icon1").toggleClass("open"), $(".navy").toggleClass("back-nav"),
-                $(".nav-r").toggleClass("fixed-r"), $("body").toggleClass("body-mob")
+                $(".nav-y").toggleClass("fixed-r"), $("body").toggleClass("body-mob")
         })  , o = $("#scroll-top"), $(window).scroll(function () {
             $(this).scrollTop() >= 500 ? o.show() : o.hide()
         }), $("#scroll-top").click(function () {
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
         }
     });
-    
+
     ///////////// Font awesome 5 on pseudo elements
     window.FontAwesomeConfig = {
     searchPseudoElements: true
