@@ -6,7 +6,45 @@
 @endsection
 @section('content')
 
-<!-- /////////////////////||||||||||| start sections |||||||||||||||||||| -->
+<!-- /////////////////////||||||||||| bread crumbs |||||||||||||||||||| -->
+<section class="all-sections single-work">
+    <div class="single-workdiv">
+        <h3 class="titlebread" > اتصل بنا </h3>
+        <p class="breadcrum"> <a href="#">الرئيسية</a> / اتصل بنا </p>
+    </div>
+
+</section>
+<!-- ///////||||||||||||||||||end breadCrumbs|||||||||||||||||||||||||||//// -->
+
+
+<section class="address">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="haveadrs">
+                    <img src="{{asset('website/dist/img/phone.png')}}" alt="">
+                    <div class="contntbb">
+                        <b>العنوان</b>
+                        <b class="regular">السعودية - القصيم - طريق الملك فهد </b>
+                    </div>
+                    <div class="contntbb">
+                        <b>رقم الهاتف</b>
+                        <a  href="tel:+999485489522">+999485489522</b>
+                    </div>
+                    <div class="contntbb">
+                        <b>الجوال </b>
+                        <a  href="tel:+999485489522">+999485489522</b>
+                    </div>
+                    <div class="contntbb">
+                        <b>البريد الالكتروني </b>
+                        <a  href="mailto:webmaster@example.com">hawafel@admin.com</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /////////////////////////////////////////////////////////////////// -->
 <section class="all-sections secall">
    <div class="container">
     <h3 class="hMessage">يمكنك ارسال رسالة</h3>

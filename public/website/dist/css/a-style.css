@@ -37,7 +37,49 @@ section.secpadding {
   .btn100{
       width: 100%
   }
+  .white {
+    color: #fff;
+}
+/* body{
+    line-height: .6
+} */
 /*==========end component==============*/
+/*=======================breadcrumbs==================*/
+
+.single-work {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-image: url(../img/pattern.png);
+    position: relative;
+    background-size: cover;
+}
+.single-work .single-workdiv {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h3.titlebread {
+    margin: 0;
+    color: #ffff;
+    font-size: 35px;
+
+}
+.breadcrum {
+    margin: 10px auto 0 auto;
+    color: #fff;
+    font-size: 18px;
+}
+.breadcrum a{
+    color: #fff
+}
+/*================= end bread cumbs =====================*/
 .secall{
     background-color: #f6f6f6
 }
@@ -54,6 +96,43 @@ p.smllheader span {
 }
 /*comment*/
 /*****************************contact us****************/
+/*new contact us */
+.haveadrs {
+    text-align: center;
+    background-color: #ffff;
+    box-shadow: 0px 0px 7px #b3b3b3;
+    border-radius: 25px 25px 5px 5px;
+    line-height: 33px;
+    padding: 20px;
+}
+.contntbb b {
+    display: block;
+    font-weight: 100
+}
+.contntbb b:first-child {
+    color: #f9a392;
+    font-weight: bold;
+    font-size: 19px;
+}
+.contntbb a {
+    color: #6c6c6c;
+    font-size: 17px;
+}
+.regular {
+    font-family: 'Almarai-Regular' !important;
+    font-weight: 100;
+    color: #6c6c6c;
+    font-size: 17px;
+}
+.contntbb {
+    padding: 10px 0;
+}
+.haveadrs img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+/*|||||||*/
 .divcontactP{
     width: 50%;
     margin: auto;
