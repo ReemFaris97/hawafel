@@ -160,7 +160,7 @@
 .btn-hvr.see-more {
   margin: 20px auto 0 auto;
   max-width: 220px;
-  background-color: #384991;
+  background-color: #1D463D;
 }
 
 .btn-hvr.see-more::after {
@@ -174,7 +174,7 @@
 /******* End My Rankings ****************/
 /****** Start My Offers *****/
 .my-offers {
-  background-color: #384991;
+  background-color: #1D463D;
 }
 
 .my-offers .head-title h2 {
@@ -227,11 +227,11 @@
 .emailing .form-control {
   height: 46px;
   line-height: 46px;
-  border: 1px solid #384991;
+  border: 1px solid #1D463D;
   background-color: transparent;
   border-radius: 30px;
   margin: 0 auto 10px auto;
-  color: #384991;
+  color: #1D463D;
   font-family: "Almarai-Bold";
 }
 
@@ -244,28 +244,28 @@
 }
 
 .emailing .form-control::-webkit-input-placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
 }
 
 .emailing .form-control:-ms-input-placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
 }
 
 .emailing .form-control::-ms-input-placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
 }
 
 .emailing .form-control::placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
@@ -277,13 +277,13 @@
 }
 
 .emailing .btn-hvr::after {
-  background: #384991;
+  background: #1D463D;
 }
 
 /**** offers left *****/
 .my-offers .btn-hvr.see-more {
   background-color: #fff;
-  color: #384991;
+  color: #1D463D;
   float: left;
   min-width: 200px;
 }
