@@ -172,7 +172,7 @@ footer,
                 }
             }
             h4 {
-                font-family: "Almarai-Bold";
+                font-family: "Almarai-ExtraBold";
             }
         }
         
@@ -180,7 +180,7 @@ footer,
             text-align: center;
             margin: 16px auto 0 auto;
             a {
-                font-family: "Almarai-SemiBold";
+                font-family: "Almarai-Bold";
                 display: block;
             }
             .social-buttons {
@@ -242,7 +242,7 @@ footer,
     }
     input,
     span {
-        font-family: "Almarai-SemiBold";
+        font-family: "Almarai-Bold";
         margin: 0;
         border: 0;
         text-align: center;
@@ -300,7 +300,7 @@ footer,
 .modal{
     .modal-title {
         font-size: 19px;
-        font-family: 'Almarai-SemiBold';
+        font-family: 'Almarai-Bold';
     }
     button.close {
         position: absolute;
@@ -346,7 +346,7 @@ $in-w: $n-char*($char-w + $gap);
 		$primary-color 0, $primary-color $char-w, 
 		transparent 0, transparent $char-w + $gap) 
 		0 100%/ #{$in-w - $gap} 2px no-repeat;
-        font-family: 'Almarai-Bold';
+        font-family: 'Almarai-ExtraBold';
         letter-spacing: $gap;
         font-size: 22px;
 	&:focus {

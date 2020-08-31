@@ -105,7 +105,7 @@
 }
 
 .head-title h2 {
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
   font-size: 33px;
 }
 
@@ -140,7 +140,7 @@
   bottom: 0;
   padding: 8px;
   color: #fff;
-  font-family: "Almarai-SemiBold";
+  font-family: "Almarai-Bold";
   background: -webkit-gradient(linear, left top, right top, from(#f3f3f3), to(#364b93));
   background: linear-gradient(90deg, #f3f3f3 0%, #364b93 100%);
 }
@@ -224,7 +224,7 @@
 
 .emailing h3 {
   margin: 0 auto;
-  font-family: "Almarai-SemiBold";
+  font-family: "Almarai-Bold";
 }
 
 .emailing h3:nth-child(2) {
@@ -239,7 +239,7 @@
   border-radius: 30px;
   margin: 0 auto 10px auto;
   color: #1D463D;
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
 }
 
 .emailing .form-control:focus {
@@ -254,28 +254,28 @@
   color: #1D463D !important;
   opacity: 1;
   /* Firefox */
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
 }
 
 .emailing .form-control:-ms-input-placeholder {
   color: #1D463D !important;
   opacity: 1;
   /* Firefox */
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
 }
 
 .emailing .form-control::-ms-input-placeholder {
   color: #1D463D !important;
   opacity: 1;
   /* Firefox */
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
 }
 
 .emailing .form-control::placeholder {
   color: #1D463D !important;
   opacity: 1;
   /* Firefox */
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
 }
 
 .emailing .btn-hvr {
@@ -371,7 +371,7 @@
 .offer1 .off-body .off-name {
   color: #fff;
   display: block;
-  font-family: "Almarai-SemiBold";
+  font-family: "Almarai-Bold";
   font-size: 17px;
   margin: 0 0 4px 0;
 }
@@ -555,7 +555,7 @@
 }
 
 .my_profile .nav-tabs > li > a {
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
   margin-right: 0;
   border: 0;
   border-radius: 0;
@@ -603,7 +603,7 @@
 .my_profile .tab-content .tab-pane .flex-left a {
   color: #7b7b7b;
   font-size: 16px;
-  font-family: "Almarai-SemiBold";
+  font-family: "Almarai-Bold";
 }
 
 .my_profile .tab-content .tab-pane .my_info {
@@ -635,7 +635,7 @@
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  font-family: "Almarai-SemiBold";
+  font-family: "Almarai-Bold";
   font-size: 16px;
 }
 
@@ -657,7 +657,7 @@
 }
 
 .my_profile .tab-content .tab-pane .my_info .user_info li h4 {
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
   margin: 0;
 }
 
@@ -721,7 +721,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .datatable th {
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
   font-size: 16px;
   text-align: right;
 }
@@ -771,14 +771,14 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .wallet h2 {
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
   font-size: 26px;
   margin: 0 auto 20px auto;
   color: #000000;
 }
 
 .wallet h3 {
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
   font-size: 23px;
   margin: 0 auto 20px auto;
   color: #1D463D;
@@ -788,7 +788,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
   font-size: 20px;
   margin: 0;
   color: #949494;
-  font-family: "Almarai-SemiBold";
+  font-family: "Almarai-Bold";
 }
 
 /******************End Profile.blade****************/
@@ -904,7 +904,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .edit-profile .head-title h2 {
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
   font-size: 33px;
 }
 
@@ -937,7 +937,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
   bottom: 0;
   padding: 8px;
   color: #fff;
-  font-family: "Almarai-SemiBold";
+  font-family: "Almarai-Bold";
   background: -webkit-gradient(linear, left top, right top, from(#f3f3f3), to(#364b93));
   background: linear-gradient(90deg, #f3f3f3 0%, #364b93 100%);
 }
@@ -1019,7 +1019,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 
 .edit-profile .emailing h3 {
   margin: 0 auto;
-  font-family: "Almarai-SemiBold";
+  font-family: "Almarai-Bold";
 }
 
 .edit-profile .emailing h3:nth-child(2) {
@@ -1034,7 +1034,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
   border-radius: 30px;
   margin: 0 auto 10px auto;
   color: #1D463D;
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
 }
 
 .edit-profile .emailing .form-control:focus {
@@ -1049,28 +1049,28 @@ table.dataTable > tbody > tr.child ul.dtr-details {
   color: #1D463D !important;
   opacity: 1;
   /* Firefox */
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
 }
 
 .edit-profile .emailing .form-control:-ms-input-placeholder {
   color: #1D463D !important;
   opacity: 1;
   /* Firefox */
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
 }
 
 .edit-profile .emailing .form-control::-ms-input-placeholder {
   color: #1D463D !important;
   opacity: 1;
   /* Firefox */
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
 }
 
 .edit-profile .emailing .form-control::placeholder {
   color: #1D463D !important;
   opacity: 1;
   /* Firefox */
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
 }
 
 .edit-profile .emailing .btn-hvr {
@@ -1165,7 +1165,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 .edit-profile .offer1 .off-body .off-name {
   color: #fff;
   display: block;
-  font-family: "Almarai-SemiBold";
+  font-family: "Almarai-Bold";
   font-size: 17px;
   margin: 0 0 4px 0;
 }
@@ -1655,7 +1655,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .edit-profile .login-page .form-box .box-right h4 {
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
 }
 
 .edit-profile .login-page .form-box .box-center {
@@ -1664,7 +1664,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .edit-profile .login-page .form-box .box-center a {
-  font-family: "Almarai-SemiBold";
+  font-family: "Almarai-Bold";
   display: block;
 }
 
@@ -1733,7 +1733,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 
 .edit-profile .logForm input,
 .edit-profile .logForm span {
-  font-family: "Almarai-SemiBold";
+  font-family: "Almarai-Bold";
   margin: 0;
   border: 0;
   text-align: center;
@@ -1804,7 +1804,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 
 .edit-profile .modal .modal-title {
   font-size: 19px;
-  font-family: 'Almarai-SemiBold';
+  font-family: 'Almarai-Bold';
 }
 
 .edit-profile .modal button.close {
@@ -1848,7 +1848,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
   padding: 0;
   width: 6ch;
   background: repeating-linear-gradient(90deg, #1D463D 0, #1D463D 1ch, transparent 0, transparent 1.5ch) 0 100%/5.5ch 2px no-repeat;
-  font-family: 'Almarai-Bold';
+  font-family: 'Almarai-ExtraBold';
   letter-spacing: 0.5ch;
   font-size: 22px;
 }
@@ -1900,7 +1900,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 
 .edit-profile .logForm .form-group span {
   color: #969696 !important;
-  font-family: "Almarai-SemiBold" !important;
+  font-family: "Almarai-Bold" !important;
   font-size: 19px !important;
 }
 
@@ -1922,7 +1922,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
   position: absolute;
   left: 20px;
   top: calc(50% - 20px);
-  font-family: "Almarai-SemiBold";
+  font-family: "Almarai-Bold";
   font-size: 25px;
   height: 40px;
 }
@@ -1938,7 +1938,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .voting h4 {
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
   margin: 0 0 4px 0;
 }
 
@@ -2031,7 +2031,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .notification .notifi1 p {
-  font-family: "Almarai-Bold";
+  font-family: "Almarai-ExtraBold";
   max-width: calc(100% - 50px);
   font-size: 16px;
   margin: 0 0 8px 0;

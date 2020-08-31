@@ -18,7 +18,7 @@
             margin-bottom: 0;
             padding: 10px;
             & > a {
-                font-family: "Almarai-Bold";
+                font-family: "Almarai-ExtraBold";
                 margin-right: 0;
                 border: 0;
                 border-radius: 0;
@@ -56,7 +56,7 @@
                 a {
                     color: #7b7b7b;
                     font-size: 16px;
-                    font-family: "Almarai-SemiBold";
+                    font-family: "Almarai-Bold";
                 }
             }
             .my_info {
@@ -81,7 +81,7 @@
                     -webkit-box-pack: space-evenly;
                         -ms-flex-pack: space-evenly;
                             justify-content: space-evenly;
-                    font-family: "Almarai-SemiBold";
+                    font-family: "Almarai-Bold";
                     font-size: 16px;
                     li {
                         max-width: 25%;
@@ -97,7 +97,7 @@
                             margin: 0 0 14px 0;
                         }
                         h4 {
-                            font-family: "Almarai-Bold";
+                            font-family: "Almarai-ExtraBold";
                             margin: 0;
                         }
                         &:not(:last-child) {
@@ -162,7 +162,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 .datatable {
     width: 100% !important;
     th {
-        font-family: "Almarai-Bold";
+        font-family: "Almarai-ExtraBold";
         font-size: 16px;
         text-align: right;
     }
@@ -209,13 +209,13 @@ table.dataTable > tbody > tr.child ul.dtr-details {
         text-align: center;
     }
     h2 {
-        font-family: "Almarai-Bold";
+        font-family: "Almarai-ExtraBold";
         font-size: 26px;
         margin: 0 auto 20px auto;
         color: #000000;
     }
     h3 {
-        font-family: "Almarai-Bold";
+        font-family: "Almarai-ExtraBold";
         font-size: 23px;
         margin: 0 auto 20px auto;
         color: $primary-color;
@@ -224,7 +224,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
         font-size: 20px;
         margin: 0;
         color: #949494;
-        font-family: "Almarai-SemiBold";
+        font-family: "Almarai-Bold";
     }
 }
 // end third tap pane
@@ -261,7 +261,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
             max-width: 460px;
             span {
                 color: #969696 !important;
-                font-family: "Almarai-SemiBold" !important;
+                font-family: "Almarai-Bold" !important;
                 font-size: 19px !important;
             }
             input,
@@ -281,7 +281,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
                 position: absolute;
                 left: 20px;
                 top: calc(50% - 20px);
-                font-family: "Almarai-SemiBold";
+                font-family: "Almarai-Bold";
                 font-size: 25px;
                 height: 40px;
             }
@@ -297,7 +297,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 .voting {
     padding-top: 20px;
     h4 {
-        font-family: "Almarai-Bold";
+        font-family: "Almarai-ExtraBold";
         margin: 0 0 4px 0;
     }
     .input-lg {
@@ -372,7 +372,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
             }
         }
         p {
-            font-family: "Almarai-Bold";
+            font-family: "Almarai-ExtraBold";
             max-width: calc(100% - 50px);
             font-size: 16px;
             margin: 0 0 8px 0;

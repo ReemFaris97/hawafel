@@ -7,16 +7,16 @@
     src: url(../fonts/Almarai-Regular.ttf)
 }
 @font-face {
+    font-family: 'Almarai-ExtraBold';
+    src: url(../fonts/Almarai-ExtraBold.ttf)
+}
+@font-face {
     font-family: 'Almarai-Bold';
     src: url(../fonts/Almarai-Bold.ttf)
 }
-@font-face {
-    font-family: 'Almarai-SemiBold';
-    src: url(../fonts/Almarai-SemiBold.ttf)
-}
 /**********/
 b {
-    font-family: 'Almarai-Bold';
+    font-family: 'Almarai-ExtraBold';
 }
 .body-over {
     overflow-y: hidden !important;
@@ -65,7 +65,7 @@ body {
     background-color: #fff;
 }
 button {
-    font-family: 'Almarai-Bold' !important;
+    font-family: 'Almarai-ExtraBold' !important;
 }
 a {
     color: #232323;
@@ -318,7 +318,7 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #444;
+    background-color: #ffffff;
     z-index: 999999999999;
     direction: ltr;
 }
@@ -337,19 +337,19 @@ input[type=number]::-webkit-outer-spin-button {
   .shape:nth-child(1) {
     cy: 50;
     cx: 50;
-    fill: #c20f00;
+    fill: #BA453A;
     animation: movein 3s ease infinite alternate;
   }
   .shape:nth-child(2) {
     cy: 50;
     cx: 150;
-    fill: #ffdd22;
+    fill: #F9A392;
     animation: movein 3s ease infinite alternate;
   }
   .shape:nth-child(3) {
     cy: 150;
     cx: 50;
-    fill: #2374c6;
+    fill: #1D463D;
     animation: movein 3s ease infinite alternate;
   }
   .shape:nth-child(4) {
@@ -357,6 +357,28 @@ input[type=number]::-webkit-outer-spin-button {
     cx: 150;
     fill: #000000;
     animation: movein 3s ease infinite alternate;
+  }
+  
+/*Spin the svg so all the dots spin*/
+@keyframes spin {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+  /* Move all the dots toward the center */
+  @keyframes movein {
+    to {
+      cy: 100;
+      cx: 100;
+    }
+  }
+  
+  /* Set a bouncy ball type movement for the dots */
+  @keyframes moveup {
+    to {
+      cy: 20;
+    }
   }
 /************************************************* END LOADER *****************************************/
 .back {
@@ -486,7 +508,7 @@ li.dropdown{
     text-align: center;
     padding: 0 !important;
     font-size: 16px;
-    font-family: 'Almarai-Bold';
+    font-family: 'Almarai-ExtraBold';
     line-height: 40px !important;
 }
 .dropdown-menu .fixed-li:hover . .dropdown-menu .fixed-li:focus{
@@ -497,7 +519,7 @@ li.dropdown{
     padding-bottom: 40px !important;
 } */
 .dropdown-menu li h4 {
-    font-family: 'Almarai-SemiBold';
+    font-family: 'Almarai-Bold';
     font-size: 15px;
     color: #1D463D;
     margin: 10px 0 5px 0;
@@ -863,7 +885,7 @@ div#nav-icon1:before {
 .navy ul.nav > li > button {
     font-size: 17px;
     text-transform: capitalize;
-    font-family: 'Almarai-Bold' !important;
+    font-family: 'Almarai-ExtraBold' !important;
     vertical-align: middle;
     display: block;
     padding: 8px 0;
@@ -951,7 +973,7 @@ footer:after{
     min-width: 120px;
 }
 .f-title{
-    font-family: 'Almarai-Bold';
+    font-family: 'Almarai-ExtraBold';
     margin: 0 0 16px 0;
     color: #1D463D;
 }
@@ -964,7 +986,7 @@ footer li{
 }
 footer li a , footer p{
     color: #5C5C5C;
-    font-family: 'Almarai-SemiBold';
+    font-family: 'Almarai-Bold';
 }
 footer .btn-hvr {
     max-width: 190px;
@@ -988,7 +1010,7 @@ footer .btn-hvr:hover::after {
     text-align: center;
     margin: 40px 0 0 0;
     color: #364B93;
-    font-family: 'Almarai-Bold';
+    font-family: 'Almarai-ExtraBold';
 }
 .copyright a{
     color: #364B93;
