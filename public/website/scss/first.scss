@@ -144,7 +144,7 @@ $third-color: #F9A392;
         height: 100px;
     }
     h2 {
-        font-family: "Almarai-Bold";
+        font-family: "Almarai-ExtraBold";
         font-size: 33px;
     }
     p {
@@ -181,7 +181,7 @@ $third-color: #F9A392;
         bottom: 0;
         padding: 8px;
         color: #fff;
-        font-family: "Almarai-SemiBold";
+        font-family: "Almarai-Bold";
         background: -o-linear-gradient(
             left,
             rgb(243, 243, 243) 0%,
@@ -265,7 +265,7 @@ $third-color: #F9A392;
     }
     h3 {
         margin: 0 auto;
-        font-family: "Almarai-SemiBold";
+        font-family: "Almarai-Bold";
         &:nth-child(2) {
             margin: 6px auto 26px auto;
         }
@@ -278,7 +278,7 @@ $third-color: #F9A392;
         border-radius: 30px;
         margin: 0 auto 10px auto;
         color: $primary-color;
-        font-family: "Almarai-Bold";
+        font-family: "Almarai-ExtraBold";
         &:focus {
             @include boxShadow(inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px $secondary-color);
             border-color: $secondary-color;
@@ -286,27 +286,27 @@ $third-color: #F9A392;
         &::-webkit-input-placeholder {
             color: $primary-color !important;
             opacity: 1; /* Firefox */
-            font-family: "Almarai-Bold";
+            font-family: "Almarai-ExtraBold";
         }
         &::-moz-placeholder {
             color: $primary-color !important;
             opacity: 1; /* Firefox */
-            font-family: "Almarai-Bold";
+            font-family: "Almarai-ExtraBold";
         }
         &:-ms-input-placeholder {
             color: $primary-color !important;
             opacity: 1; /* Firefox */
-            font-family: "Almarai-Bold";
+            font-family: "Almarai-ExtraBold";
         }
         &::-ms-input-placeholder {
             color: $primary-color !important;
             opacity: 1; /* Firefox */
-            font-family: "Almarai-Bold";
+            font-family: "Almarai-ExtraBold";
         }
         &::placeholder {
             color: $primary-color !important;
             opacity: 1; /* Firefox */
-            font-family: "Almarai-Bold";
+            font-family: "Almarai-ExtraBold";
         }
     }
     .btn-hvr {
@@ -388,7 +388,7 @@ $third-color: #F9A392;
             @extend %ellipsis;
             color: #fff;
             display: block;
-            font-family: "Almarai-SemiBold";
+            font-family: "Almarai-Bold";
             font-size: 17px;
             margin: 0 0 4px 0;
             &:hover,&:focus {

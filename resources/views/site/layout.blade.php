@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="{{asset('website/dist/img/favicon/apple-icon-144x144.png')}}">
     <link rel="apple-touch-icon" sizes="152x152" href="{{asset('website/dist/img/favicon/apple-icon-152x152.png')}}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset('website/dist/img/favicon/apple-icon-180x180.png')}}">
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{asset('website/dist/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{asset('website/dist/img/favicon/android-icon-192x192.png')}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('website/dist/img/favicon/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('website/dist/img/favicon/favicon-96x96.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('website/dist/img/favicon/favicon-16x16.png')}}">
@@ -48,47 +48,11 @@
         </svg>
     </div>
     <!-- End Loading-Page -->
-    <div class="container-navbar">
-        <!-- Start Top Nav -->
-        <section class="top-nav">
-            <div class="container-fluid">
-                <div class="flex-r">
-                    <!--- right -->
-                    <div class="top-r">
-                        <span class="top-i hidden-xs">
-                            <i class="fas fa-users-cog"></i>
-                        </span>
-                        <a href="{{url('sign-in')}}">تسجيل دخول</a> /
-                        <a href="{{url('sign-up')}}">تسجيل جديد</a>
-                    </div>
-                    <!--- left -->
-                    <div class="flex-r top-l">
-                        <ul class="top-call">
-                            <li><a href="#" target="_blank"><span class="hidden-xs">9474658865</span> <span class="top-i"><i class="fas fa-phone"></i></span> </a></li>
-                            <li><a href="#" target="_blank"><span class="hidden-xs">info@gas.com</span> <span class="top-i"><i class="fas fa-envelope"></i> </span></a></li>
-                        </ul>
-                        <div class="lang">
-                            <span class="active-lg hidden-xs">
-                                العربية -
-                            </span>
-                            <a href="#" class="another-lg">
-                                ENG
-                            </a>
-                            <span class="top-i hidden-xs">
-                                <i class="fas fa-globe"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Top Nav -->
+    
         <!-- /////////////////////|||||| Start Navbar |||||||||||||||||||||||||||| -->
-
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="navbar">
+        <div class="navbar">
+            <div class="container-fluid">
+                <div class="row">
 
                     <div class="col-md-3 col-sm-2 col-xs-3">
                         <div class="nav-right">
@@ -99,14 +63,18 @@
                     </div>
 
                     <div class="col-md-5 col-sm-5 col-xs-9">
-                        <!-- /////////////////////||||||||||| Start Searchbar |||||||||||||||||||| -->
-                        <section class="searchbar">
-                            <form action="" method="GET" class="subscribe">
-                                <input type="text" id="search-field" name="search"" placeholder=" ما الذى تبحث عنه؟">
-                                <button type="submit"><i class="fas fa-search"></i></button>
-                            </form>
-                        </section>
-                        <!-- /////////////////////||||||||||| End Searchbar |||||||||||||||||||| -->
+                    <div class="nav-r">
+                        <div class="navy">
+                            <ul class="nav cf" id="ul1">
+                                <li><a href="{{url('/')}}" class="active">الرئيسية</a></li>
+                                <li><a href="{{url('categories')}}">الأقسام</a></li>
+                                <li><a href="{{url('services')}}">الطلبات</a></li>
+                                <li><a href="{{url('favourites')}}">المفضلة</a></li>
+                                <li><a href="{{url('contact-us')}}">مكتبة الصور والفيديوهات</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
                     </div>
 
                     <div class="col-md-4 col-sm-5 col-xs-12">
@@ -118,6 +86,22 @@
                             </div>
                             <ul class="nav-tools">
 
+                        <!-- /////////////////////||||||||||| Start Searchbar |||||||||||||||||||| -->
+                        <!-- <section class="searchbar">
+                            <form action="" method="GET" class="subscribe">
+                                <input type="text" id="search-field" name="search"" placeholder=" ما الذى تبحث عنه؟">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </section> -->
+                                 <li>
+                                    <a href="{{url('cart')}}">
+                                        <p>
+                                            <span class="nav-icon"> <i class="fas fa-search"></i></span>
+                                        </p>
+
+                                    </a>
+                                </li> 
+                        <!-- /////////////////////||||||||||| End Searchbar |||||||||||||||||||| -->
                                 <!-- <li>
                                     <a href="{{url('cart')}}">
                                         <p>
@@ -225,27 +209,7 @@
 
 
 
-                <div class="col-sm-12 col-xs-0 no-padding">
-
-                    <div class="nav-r">
-                        <div class="navy">
-                            <ul class="nav cf" id="ul1">
-                                <li><a href="{{url('/')}}" class="active">الرئيسية</a></li>
-                                <li><a href="{{url('categories')}}">التصنيفات</a></li>
-                                <li><a href="{{url('services')}}">الخدمات</a></li>
-                                <li><a href="{{url('offers')}}">العروض</a></li>
-                                <li><a href="{{url('favourites')}}">المفضلة</a></li>
-                                <li><a href="{{url('contact-us')}}">اتصل بنا</a></li>
-                                <li><a href="{{url('about')}}">من نحن</a></li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
             </div>
-    </div>
   
 
 

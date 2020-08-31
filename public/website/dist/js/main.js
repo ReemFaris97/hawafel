@@ -22,6 +22,19 @@ $(document).ready(function () {
                 scrollTop: 0
             }, 600)
         });
+
+        /** Fixed Navbar **/
+    $(window).scroll(function () {
+        var st = $(window).scrollTop();
+        if (st > 60) {
+            $(".navbar").addClass('fixd-navbar');
+
+        } else {
+            $(".navbar").removeClass('fixd-navbar');
+
+        }
+    });
+    
     ///////////// Font awesome 5 on pseudo elements
     window.FontAwesomeConfig = {
     searchPseudoElements: true
