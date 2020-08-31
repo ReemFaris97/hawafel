@@ -1,48 +1,71 @@
-<!DOCTYPE html>
-<html>
+@extends('site.layout')
+@section('title' , 'حوافل || تسجيل الدخول')
+@section('styles')
+<link rel="stylesheet" href="{{asset('website/scss/login-pages.css')}}">
+@endsection
+@section('content')
 
-<head>
-    <!-- /////////////////////||||||||||||||||||||||||||||| Start Layout |||||||||||||||||||||||||||| -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title')</title>
-    <link rel="icon" href="{{asset('website/img/logo2.png')}}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{asset('website/css/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{asset('website/css/bootstrap-rtl.css')}}">
-    @yield('styles')
-    <link rel="stylesheet" href="{{asset('website/css/main.css')}}">
-    <!-- /////////////////////||||||||||||||||||||||||||||| End Layout |||||||||||||||||||||||||||| -->
-</head>
+<!-- /////////////////////||||||||||| start sections |||||||||||||||||||| -->
+<section class="login-page">
+   <!-- Start Flying Birds -->
+   <div class="bird-container bird-container--one">
+		<div class="bird bird--one"></div>
+	</div>
+	<div class="bird-container bird-container--two">
+		<div class="bird bird--two"></div>
+	</div>
+	<div class="bird-container bird-container--three">
+		<div class="bird bird--three"></div>
+	</div>
+	<div class="bird-container bird-container--four">
+		<div class="bird bird--four"></div>
+	</div>
+   <!-- End Flying Birds -->
+   <div class="container">
+      <div class="form-box">
+      <div class="box-right">
+      <a href="{{url('/')}}" class="login-logo"><img src="{{asset('website/dist/img/logo.png')}}" alt="حوافل">
+      </a>
+               <p>
+            ليس لديك حساب ؟
+            <a href="{{url('sign-up')}}" class="red">سجل الان</a>
+         </p>
+         <h4>تسجيل الدخول</h4>
+         <h4>عبر حسابك الشخصى</h4>
+      </div>
+      <form action="{{url('/')}}" class="logForm" autocomplete="off">
+         <div class="form-group">
+            <input id="inp1" type="number" readonly onfocus="this.removeAttribute('readonly');" required>
+            <label for="inp1"><span>رقم الهاتف</span></label>
+         </div>
+         <div class="form-group">
+            <input id="inp2" type="password" readonly onfocus="this.removeAttribute('readonly');" required>
+            <label for="inp2"><span>كلمة المرور</span></label>
+         </div>
+         <button type="submit" class="btn-hvr">تسجيل الدخول</button>
+      </form>
+         <div class="box-center">
+         <a href="{{url('confirmation-code')}}">نسيت كلمة المرور ؟</a>
+            <div class="social-buttons">
+            <!-- facebook  Button -->
+            <a href="http://www.facebook.com" target="blank" class="social-margin">
+            <div class="social-icon facebook">
+            <i class="fab fa-facebook-f"></i>
+            </div>
+            </a>
+            <!-- TwitterButton -->
+            <a href="http://gmail.com/" target="blank" class="social-margin">
+            <div class="social-icon gmail">
+                <i class="fab fa-google-plus-g" aria-hidden="true"></i>
+            </div>
+            </a>
+        </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- /////////////////////|||||||||||End sections |||||||||||||||||||| -->
+@endsection
+@section('scripts')
 
-<body>
-
-    <!-- /////////////////////||||||||||||||||||||||||||||| Start Navbar |||||||||||||||||||||||||||| -->
-
-    <!-- /////////////////////||||||||||||||||||||||||||||| Start Navbar |||||||||||||||||||||||||||| -->
-
-
-    <!-- /////////////////////||||||||||||||||||||||||||||| Start Content |||||||||||||||||||||||||||| -->
-    @yield('content')
-
-  
-
-    <!-- /////////////////////||||||||||||||||||||||||||||| End Content |||||||||||||||||||||||||||| -->
-
-
-    <!-- /////////////////////||||||||||||||||||||||||||||| Start Footer |||||||||||||||||||||||||||| -->
-
-    <!-- /////////////////////||||||||||||||||||||||||||||| End Footer |||||||||||||||||||||||||||| -->
-
-
-    <!-- /////////////////////||||||||||||||||||||||||||||| Start Script |||||||||||||||||||||||||||| -->
-
-    <script src="{{asset('website/js/jquery-1.11.2.min.js')}}"></script>
-    <script src="{{asset('website/js/bootstrap.min.js')}}"></script>
-    
-
-    @yield('scripts')
-    <!-- /////////////////////||||||||||||||||||||||||||||| End Script |||||||||||||||||||||||||||| -->
-</body>
-
-</html>
+@endsection

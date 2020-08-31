@@ -1,0 +1,366 @@
+// @import "first";
+@import "first";
+footer,
+.container-navbar,
+#scroll-top {
+    display: none !important;
+}
+// Start Flying Birds
+.bird {
+    background-image: url("../dist/img/bird-cells-new.svg");
+    background-size: auto 100%;
+    width: 88px;
+    height: 125px;
+    will-change: background-position;
+    animation-name: fly-cycle;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+    &--one {
+        animation-duration: 1s;
+        animation-delay: -0.5s;
+    }
+    &--two {
+        animation-duration: 0.9s;
+        animation-delay: -0.75s;
+    }
+    &--three {
+        animation-duration: 1.25s;
+        animation-delay: -0.25s;
+    }
+    &--four {
+        animation-duration: 1.1s;
+        animation-delay: -0.5s;
+    }
+}
+.bird-container {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    transform: scale(0) translateX(-10vw);
+    will-change: transform;
+    animation-name: fly-right-one;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    &--one {
+        animation-duration: 15s;
+        animation-delay: 0;
+    }
+    &--two {
+        animation-duration: 16s;
+        animation-delay: 1s;
+    }
+    &--three {
+        animation-duration: 14.6s;
+        animation-delay: 9.5s;
+    }
+    &--four {
+        animation-duration: 16s;
+        animation-delay: 10.25s;
+    }
+}
+@keyframes fly-cycle {
+    100% {
+        background-position: -900px 0;
+    }
+}
+@keyframes fly-right-one {
+    0% {
+        transform: scale(0.3) translateX(-10vw);
+    }
+    10% {
+        transform: translateY(2vh) translateX(10vw) scale(0.4);
+    }
+    20% {
+        transform: translateY(0vh) translateX(30vw) scale(0.5);
+    }
+    30% {
+        transform: translateY(4vh) translateX(50vw) scale(0.6);
+    }
+    40% {
+        transform: translateY(2vh) translateX(70vw) scale(0.6);
+    }
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.6);
+    }
+    60% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+    }
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+    }
+}
+@keyframes fly-right-two {
+    0% {
+        transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+    }
+    10% {
+        transform: translateY(0vh) translateX(10vw) scale(0.4);
+    }
+    20% {
+        transform: translateY(-4vh) translateX(30vw) scale(0.6);
+    }
+    30% {
+        transform: translateY(1vh) translateX(50vw) scale(0.45);
+    }
+    40% {
+        transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+    }
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.45);
+    }
+    51% {
+        transform: translateY(0vh) translateX(110vw) scale(0.45);
+    }
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.45);
+    }
+}
+// End Flying Birds
+.login-page {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../dist/img/login.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .form-box {
+        background-image: url("../dist/img/Asset\(6\).png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom left;
+        @include boxShadowOne(0px 0px 12px 1px white);
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 30px 50px;
+        overflow-y: auto;
+        max-height: 95vh;
+        .box-right {
+            & > * {
+                margin: 0 0 8px 0;
+            }
+            .login-logo {
+                display: block;
+                max-width: 100px;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: contain;
+                }
+            }
+            p {
+                .red {
+                    color: $secondary-color;
+                    &:hover,
+                    &:focus {
+                        color: $primary-color;
+                    }
+                }
+            }
+            h4 {
+                font-family: "Almarai-Bold";
+            }
+        }
+        
+        .box-center {
+            text-align: center;
+            margin: 16px auto 0 auto;
+            a {
+                font-family: "Almarai-SemiBold";
+                display: block;
+            }
+            .social-buttons {
+                padding: 0;
+                margin: 20px auto 0 auto;
+            }
+        }
+    }
+}
+// form login
+.logForm {
+    position: relative;
+    z-index: 9;
+    .form-group {
+        position: relative;
+        margin: 1.3em auto;
+        max-width: 300px;
+    }
+    label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            border: 0.2em solid #b9b9b9;
+        }
+        &::before {
+            left: 0;
+            right: 50%;
+            border-right: 0;
+            border-radius: 20px 0 0 20px;
+        }
+        &::after {
+            left: 50%;
+            right: 0;
+            border-left: 0;
+            border-radius: 0 20px 20px 0;
+        }
+    }
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+    }
+    span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: #b9b9b9;
+    }
+    input,
+    span {
+        font-family: "Almarai-SemiBold";
+        margin: 0;
+        border: 0;
+        text-align: center;
+        color: $primary-color;
+        background: none;
+        padding: 1em 0.5em;
+    }
+    span,
+    label::before,
+    label::after {
+        transition: transform 0.2s ease-out;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+        -webkit-transition-delay: 9999s;
+    }
+    input:focus,
+    input:valid,
+    input:invalid {
+        & + label span {
+            transform: translateY(2em) scale(0.8);
+            color: $primary-color;
+        }
+        & + label::before {
+            transform: translateX(-1em);
+            border-color: $primary-color;
+        }
+        & + label::after {
+            transform: translateX(1em);
+            border-color: $primary-color;
+        }
+    }
+    input:invalid {
+        & + label span {
+            color: $secondary-color !important;
+        }
+    }
+    .btn-hvr {
+        width: 100%;
+        max-width: 300px;
+        &:hover {
+            color: #ffffff;
+            &::after {
+                height: 230%;
+                opacity: 1;
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+// Confirmation Code Modal
+.modal{
+    .modal-title {
+        font-size: 19px;
+        font-family: 'Almarai-SemiBold';
+    }
+    button.close {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        opacity: .8;
+        color: #ffffff;
+        background-color: $secondary-color;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        line-height: 35px;
+        font-size: 18px;
+        &:hover, &:focus{
+            opacity: 1;
+        }
+    }
+    .logForm .btn-hvr {
+        margin-top: 40px;
+        width: 100%;
+        max-width: 300px;
+        &:hover {
+            color: #ffffff;
+            &::after {
+                height: 230%;
+                opacity: 1;
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+$char-w: 1ch;
+$gap: .5*$char-w;
+$n-char: 4;
+$in-w: $n-char*($char-w + $gap);
+.spinInput{
+    display: block;
+	margin: 2em auto;
+	border: none;
+	padding: 0;
+	width: $in-w;
+	background: repeating-linear-gradient(90deg, 
+		$primary-color 0, $primary-color $char-w, 
+		transparent 0, transparent $char-w + $gap) 
+		0 100%/ #{$in-w - $gap} 2px no-repeat;
+        font-family: 'Almarai-Bold';
+        letter-spacing: $gap;
+        font-size: 22px;
+	&:focus {
+		outline: none;
+		color: $secondary-color;
+	}
+}
+/************* Responsive ***********/
+@media (max-width: 767px) {
+    .login-page .form-box {
+        min-width: 100%;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 20px;
+        height: 100vh;
+        max-height: unset;
+    }
+}

@@ -1,0 +1,521 @@
+%img_contain {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+@import "first";
+/********** Start Profile.blade ********/
+.my_profile {
+    @extend %bg-grey;
+    @extend %all-section-padd;
+    .nav-tabs {
+        border: 0;
+        display: table-cell;
+        padding: 0 30px;
+        & > li {
+            float: none;
+            margin-bottom: 0;
+            padding: 10px;
+            & > a {
+                font-family: "Almarai-Bold";
+                margin-right: 0;
+                border: 0;
+                border-radius: 0;
+                font-size: 16px;
+                color: #384991;
+                display: block;
+            }
+            &.active {
+                background-color: $primary-color;
+                border-radius: 10px 10px 0 0;
+                & > a,
+                > a:hover,
+                a > :focus {
+                    color: #fff;
+                    cursor: default;
+                    background-color: transparent;
+                    border: 0;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    .tab-content {
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        @include boxShadowOne(0px 10px 23px 0px rgba(205, 205, 205, 0.6));
+        position: relative;
+        .tab-pane {
+            /****** start first tab pane ****/
+            .flex-left {
+                position: absolute;
+                left: 10px;
+                top: -30px;
+                a {
+                    color: #7b7b7b;
+                    font-size: 16px;
+                    font-family: "Almarai-SemiBold";
+                }
+            }
+            .my_info {
+                @include dis-flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                .user_img {
+                    width: 130px;
+                    height: 130px;
+                    @include boxShadowOne(0px 6px 12px 0px rgb(195, 195, 195));
+                    overflow: hidden;
+                    border-radius: 50%;
+                    display: block;
+                    img {
+                        @extend %img_contain;
+                    }
+                }
+                .user_info {
+                    width: calc(100% - 130px);
+                    @include dis-flex;
+                    -webkit-box-pack: space-evenly;
+                        -ms-flex-pack: space-evenly;
+                            justify-content: space-evenly;
+                    font-family: "Almarai-SemiBold";
+                    font-size: 16px;
+                    li {
+                        max-width: 25%;
+                        word-break: break-word;
+                        span {
+                            color: #ec6a60;
+                            margin: 0 0 14px 0;
+                            font-size: 20px;
+                            display: block;
+                        }
+                        p {
+                            color: #7b7b7b;
+                            margin: 0 0 14px 0;
+                        }
+                        h4 {
+                            font-family: "Almarai-Bold";
+                            margin: 0;
+                        }
+                        &:not(:last-child) {
+                            border-left: 1px solid rgba(170, 170, 170, 0.5);
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// start second tap pane
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+    display: none !important;
+}
+table.dataTable.order-column tbody tr > .sorting_1,
+table.dataTable.order-column tbody tr > .sorting_2,
+table.dataTable.order-column tbody tr > .sorting_3,
+table.dataTable.display tbody tr > .sorting_1,
+table.dataTable.display tbody tr > .sorting_2,
+table.dataTable.display tbody tr > .sorting_3 {
+    background-color: #ea6b60 !important;
+    color: #fff;
+}
+table.dataTable.stripe tbody tr.odd,
+table.dataTable.display tbody tr.odd {
+    background-color: rgba(60, 76, 146, 0.1);
+}
+table.dataTable thead th,
+table.dataTable thead td {
+    border-bottom: 1px solid rgba(188, 190, 198, 1);
+}
+table.dataTable.no-footer {
+    border: 1px solid rgba(188, 190, 198, 1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+table.dataTable.dtr-inline.collapsed
+    > tbody
+    > tr[role="row"]
+    > td:first-child:before,
+table.dataTable.dtr-inline.collapsed
+    > tbody
+    > tr[role="row"]
+    > th:first-child:before {
+    background-color: $primary-color;
+}
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child,
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child {
+    padding-left: 0;
+    padding-right: 30px;
+}
+table.dataTable > tbody > tr.child ul.dtr-details {
+    display: -ms-grid;
+    display: grid;
+}
+.datatable {
+    width: 100% !important;
+    th {
+        font-family: "Almarai-Bold";
+        font-size: 16px;
+        text-align: right;
+    }
+    td {
+        color: #000000;
+        font-size: 15px;
+        .flex-r {
+            .btn-hvr {
+                height: unset;
+                line-height: unset;
+                width: unset;
+                min-width: unset;
+                font-family: "Almarai-Regular";
+                font-size: 14px;
+                padding: 4px 10px;
+                font-weight: 100;
+                &:hover::after {
+                    height: 130%;
+                }
+            }
+            .andShow {
+                background-color: $primary-color;
+                &::after {
+                    background-color: $secondary-color;
+                }
+                &:hover,
+                &:focus {
+                    color: $primary-color;
+                }
+            }
+            .andVote {
+                background-color: #d9b20b;
+            }
+            .andCancel {
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+// end second tap pane
+// start third tap pane
+.wallet {
+    & > * {
+        text-align: center;
+    }
+    h2 {
+        font-family: "Almarai-Bold";
+        font-size: 26px;
+        margin: 0 auto 20px auto;
+        color: #000000;
+    }
+    h3 {
+        font-family: "Almarai-Bold";
+        font-size: 23px;
+        margin: 0 auto 20px auto;
+        color: $primary-color;
+    }
+    p {
+        font-size: 20px;
+        margin: 0;
+        color: #949494;
+        font-family: "Almarai-SemiBold";
+    }
+}
+// end third tap pane
+/******************End Profile.blade****************/
+
+/******************Start Edit Profile.blade****************/
+.edit-profile {
+    @import "login-pages";
+    ///////////////// start upload img
+    .filepond--drop-label {
+        color: #4c4e53;
+    }
+    .filepond--drop-label.filepond--drop-label label {
+        position: static !important;
+        &::before,
+        &::after {
+            display: none !important;
+        }
+    }
+    .filepond--label-action {
+        -webkit-text-decoration-color: #babdc0;
+                text-decoration-color: #babdc0;
+    }
+    .filepond--panel-root {
+        background-color: #edf0f4;
+    }
+    .filepond--root {
+        width: 170px;
+        margin: 0 auto;
+    }
+    ///////////////// end upload img
+    .logForm {
+        .form-group {
+            max-width: 460px;
+            span {
+                color: #969696 !important;
+                font-family: "Almarai-SemiBold" !important;
+                font-size: 19px !important;
+            }
+            input,
+            span {
+                padding: 1em 0.5em 2em;
+            }
+            label {
+                &::before {
+                    border-radius: 40px 0 0 40px;
+                }
+                &::after {
+                    border-radius: 0 40px 40px 0;
+                }
+            }
+            .new-icon {
+                color: #d4d4d4;
+                position: absolute;
+                left: 20px;
+                top: calc(50% - 20px);
+                font-family: "Almarai-SemiBold";
+                font-size: 25px;
+                height: 40px;
+            }
+            input:invalid ~ .new-icon {
+                color: #ed6a60 !important;
+            }
+        }
+    }
+}
+/******************End Edit Profile.blade****************/
+
+/******************Start Voting.blade****************/
+.voting {
+    padding-top: 20px;
+    h4 {
+        font-family: "Almarai-Bold";
+        margin: 0 0 4px 0;
+    }
+    .input-lg {
+        margin: 14px 4px;
+        resize: none;
+        &:focus {
+            @include boxShadowOne(0 0 6px 5px rgba(237, 106, 96, 0.4));
+            border-color: $secondary-color;
+        }
+    }
+    .btn-hvr {
+        min-width: 170px;
+    }
+}
+.star-rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    font-size: 2em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 0.2em;
+    text-align: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    input {
+        display: none;
+    }
+    label {
+        color: #ccc;
+        cursor: pointer;
+        &:hover,
+        &:hover ~ label {
+            color: #fc0;
+        }
+    }
+    & :checked ~ label {
+        color: #f90;
+    }
+}
+/******************End Voting.blade****************/
+/******************Start Notification.blade****************/
+.notification {
+    margin: 30px 0 0 0;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: right;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    border-radius: 6px;
+    .notifi1 {
+        border-bottom: 1px solid #eaeaea;
+        position: relative;
+        padding: 12px 10px;
+        border-radius: 4px;
+        &:last-child {
+            border: 0;
+        }
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #000000;
+            &:hover > p, &:focus > p{
+                color: $primary-color;
+            }
+        }
+        p {
+            font-family: "Almarai-Bold";
+            max-width: calc(100% - 50px);
+            font-size: 16px;
+            margin: 0 0 8px 0;
+        }
+        .time {
+            color: $secondary-color;
+            margin: 5px 10px 0 0;
+            display: block;
+        }
+        .controls1 {
+            position: absolute;
+            top: 12px;
+            left: 10px;
+        }
+        .read-now {
+            float: right;
+            color: #bcbcbe;
+            cursor: pointer;
+            margin: 0 10px;
+            background-color: transparent;
+            font-size: 14px;
+            &:hover,
+            &:focus {
+                color: #000000;
+            }
+        }
+        .close{
+            color: #bcbcbe;
+            opacity: 1;
+            font-size: 18px;
+            &:hover,&:focus {
+            color: red !important;
+            opacity: 1;
+        }
+        }
+    }
+    .not-read {
+        background-color: #f1f1f3;
+        .read-now {
+            &:hover,
+            &:focus {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+/******************End Notification.blade****************/
+
+/************* Responsive ***********/
+@media (max-width: 991px) {
+    .my_profile {
+        .tab-content {
+            padding: 30px 10px;
+            .tab-pane {
+                .my_info {
+                    .user_img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    .user_info {
+                        width: calc(100% - 100px);
+                        font-size: 14px;
+                        li:not(:last-child) {
+                            padding-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .my_profile {
+        .nav-tabs {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 0 10px;
+            text-align: center;
+            li {
+                -webkit-box-flex: 1;
+                    -ms-flex: 1;
+                        flex: 1;
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+        .tab-content {
+            padding: 20px 10px;
+            .tab-pane {
+                .flex-left {
+                    top: 10px;
+                }
+                .my_info {
+                    display: block;
+                    .user_img {
+                        display: block;
+                        margin: 20px auto;
+                    }
+                    .user_info {
+                        width: auto;
+                        -ms-flex-wrap: wrap;
+                            flex-wrap: wrap;
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            right: 0;
+                            left: 25px;
+                            margin: 0 auto;
+                            top: 0;
+                            height: 100%;
+                            border-left: 1px solid rgba(170, 170, 170, 0.5);
+                            width: 1px;
+                        }
+                        & > :not(:nth-last-child(-n + 2)) {
+                            /***all (li) except last two***/
+                            margin-bottom: 30px;
+                        }
+                        li {
+                            width: 50%;
+                            max-width: 50%;
+                            &:not(:last-child) {
+                                padding: 0;
+                                border: 0;
+                            }
+                            span {
+                                margin: 0 0 5px 0;
+                                font-size: 18px;
+                            }
+                            p {
+                                font-size: 14px;
+                                margin: 0 0 5px 0;
+                            }
+                            h4 {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
