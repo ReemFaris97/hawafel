@@ -104,6 +104,7 @@ p.smllheader span {
     border-radius: 25px 25px 5px 5px;
     line-height: 33px;
     padding: 20px;
+    margin-top: -190px;
 }
 .contntbb b {
     display: block;
@@ -131,6 +132,17 @@ p.smllheader span {
     width: 60px;
     height: 60px;
     margin-bottom: 15px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    -webkit-box-shadow: 0px 0px 6px #ddd;
+    border: 0;
+}
+section.address {
+    padding-bottom: 50px;
+    background-color: #fcfcfc;
 }
 /*|||||||*/
 .divcontactP{
@@ -201,8 +213,8 @@ p.smllheader span {
         margin-top: 20px
     }
     .formContact input.form-control {
-        height: 66px;
-        border-radius: 45px;
+        height: 45px;
+        border-radius: 4px;
         background-color: #ffffff;
         border: 0;
         border: 1px solid #ddd;
@@ -218,7 +230,7 @@ p.smllheader span {
         padding: 6px 12px;
     }
     textarea.form-control {
-        border-radius: 40px;
+        border-radius: 4px;
         height: 160px;
         overflow-y: initial;
         resize: none;
@@ -1286,14 +1298,14 @@ button.btn-hvr.see-more{
     margin: 0;
     margin-right: 10px;
 }
-#map {
+/* #map {
     width: 100%;
     height: 340px;
     margin: 40px auto 0 auto;
     -webkit-box-shadow: 0px 0px 6px #ddd;
             box-shadow: 0px 0px 6px #ddd;
     border-radius: 20px;
-}
+} */
 .titleserv{
     font-size: 22px;
     color: #000;
