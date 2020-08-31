@@ -14,7 +14,7 @@
     z-index: 9
 }
 .relativeZ .btn-hvr:hover, .relativeZ .btn-hvr:focus {
-    color: #384991;
+    color: #1D463D;
 }
 .relativeZ .btn-hvr::after {
     background: #ec6a60;
@@ -149,7 +149,7 @@ p.smllheader span {
         font-size: 17px;
     }
     input.form-control.inputspn:focus {
-        border-color: #384991;
+        border-color: #1D463D;
     }
     .formContact input.form-control::-webkit-input-placeholder {
         color: #757575;
@@ -180,7 +180,7 @@ p.smllheader span {
         /* border-color: #B7202B !important; */
         -webkit-box-shadow: unset !important;
                 box-shadow: unset !important;
-        border: 1px solid #384991;
+        border: 1px solid #1D463D;
     }
     .input {
         position: relative;
@@ -478,7 +478,7 @@ a.customizer-toggle {
     color: #ea6b60;
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-    border: 1px solid #384991;
+    border: 1px solid #1D463D;
     background: #ea6b60 !important;
     font-weight: normal;    color: #ffffff !important;
 }
@@ -860,7 +860,7 @@ font-size: 12px
 /*==========end cateogries.htm===========*/
 /*==================offers html******************/
 .absDate{
-    background-color: #384991;
+    background-color: #1D463D;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -932,7 +932,7 @@ font-size: 12px
 color: #fff
 } */
 .item:hover .gallery_item_info.editbook span {
-    color: #384991;
+    color: #1D463D;
 }
 .item:hover .gallery_item_info.editbook .priceflex span:nth-child(2) {
     font-size: 12px;
@@ -1179,7 +1179,7 @@ button.btn-hvr.see-more{
     color: #aab8c2;
 }
 .evalute {
-    color: #384991;
+    color: #1D463D;
 }
 .flexnamebook .flexstar {
     display: -webkit-box;
@@ -1517,7 +1517,7 @@ margin: auto
 
 }
 .formhagz .form-control:focus {
-    border-color: #384991;
+    border-color: #1D463D;
 }
 .formhagz .form-control {
     display: block;
@@ -1737,7 +1737,7 @@ div#div1 {
     font-weight: bold;
 }
 p.takeeddetail span {
-    color: #384991;
+    color: #1D463D;
 }
 p.takeeddetail , .takeedsecond {
     color: #7b7b7a;
@@ -1758,7 +1758,7 @@ p.takeeddetail , .takeedsecond {
     color: #c0cbf8
 }
 .starrate{
-    color:#384991
+    color:#1D463D
 }
 /*====================end booking-confirmation.html=======================*/
 
@@ -1848,7 +1848,7 @@ div.customescroll{
 
 .flexfiltter{
     color: #fff;
-    background-color: #384991;
+    background-color: #1D463D;
     padding: 6px
 }
 div#accordion{

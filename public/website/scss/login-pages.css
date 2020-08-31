@@ -160,7 +160,7 @@
 .btn-hvr.see-more {
   margin: 20px auto 0 auto;
   max-width: 220px;
-  background-color: #384991;
+  background-color: #1D463D;
 }
 
 .btn-hvr.see-more::after {
@@ -174,7 +174,7 @@
 /******* End My Rankings ****************/
 /****** Start My Offers *****/
 .my-offers {
-  background-color: #384991;
+  background-color: #1D463D;
 }
 
 .my-offers .head-title h2 {
@@ -227,11 +227,11 @@
 .emailing .form-control {
   height: 46px;
   line-height: 46px;
-  border: 1px solid #384991;
+  border: 1px solid #1D463D;
   background-color: transparent;
   border-radius: 30px;
   margin: 0 auto 10px auto;
-  color: #384991;
+  color: #1D463D;
   font-family: "Almarai-Bold";
 }
 
@@ -244,28 +244,28 @@
 }
 
 .emailing .form-control::-webkit-input-placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
 }
 
 .emailing .form-control:-ms-input-placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
 }
 
 .emailing .form-control::-ms-input-placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
 }
 
 .emailing .form-control::placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
@@ -277,13 +277,13 @@
 }
 
 .emailing .btn-hvr::after {
-  background: #384991;
+  background: #1D463D;
 }
 
 /**** offers left *****/
 .my-offers .btn-hvr.see-more {
   background-color: #fff;
-  color: #384991;
+  color: #1D463D;
   float: left;
   min-width: 200px;
 }
@@ -850,7 +850,7 @@ footer,
 }
 
 .login-page .form-box .box-right p .red:hover, .login-page .form-box .box-right p .red:focus {
-  color: #384991;
+  color: #1D463D;
 }
 
 .login-page .form-box .box-right h4 {
@@ -936,7 +936,7 @@ footer,
   margin: 0;
   border: 0;
   text-align: center;
-  color: #384991;
+  color: #1D463D;
   background: none;
   padding: 1em 0.5em;
 }
@@ -963,7 +963,7 @@ footer,
 .logForm input:invalid + label span {
   -webkit-transform: translateY(2em) scale(0.8);
           transform: translateY(2em) scale(0.8);
-  color: #384991;
+  color: #1D463D;
 }
 
 .logForm input:focus + label::before,
@@ -971,7 +971,7 @@ footer,
 .logForm input:invalid + label::before {
   -webkit-transform: translateX(-1em);
           transform: translateX(-1em);
-  border-color: #384991;
+  border-color: #1D463D;
 }
 
 .logForm input:focus + label::after,
@@ -979,7 +979,7 @@ footer,
 .logForm input:invalid + label::after {
   -webkit-transform: translateX(1em);
           transform: translateX(1em);
-  border-color: #384991;
+  border-color: #1D463D;
 }
 
 .logForm input:invalid + label span {
@@ -1046,7 +1046,7 @@ footer,
   border: none;
   padding: 0;
   width: 6ch;
-  background: repeating-linear-gradient(90deg, #384991 0, #384991 1ch, transparent 0, transparent 1.5ch) 0 100%/5.5ch 2px no-repeat;
+  background: repeating-linear-gradient(90deg, #1D463D 0, #1D463D 1ch, transparent 0, transparent 1.5ch) 0 100%/5.5ch 2px no-repeat;
   font-family: 'Almarai-Bold';
   letter-spacing: 0.5ch;
   font-size: 22px;

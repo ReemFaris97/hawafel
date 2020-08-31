@@ -167,7 +167,7 @@
 .btn-hvr.see-more {
   margin: 20px auto 0 auto;
   max-width: 220px;
-  background-color: #384991;
+  background-color: #1D463D;
 }
 
 .btn-hvr.see-more::after {
@@ -181,7 +181,7 @@
 /******* End My Rankings ****************/
 /****** Start My Offers *****/
 .my-offers {
-  background-color: #384991;
+  background-color: #1D463D;
 }
 
 .my-offers .head-title h2 {
@@ -234,11 +234,11 @@
 .emailing .form-control {
   height: 46px;
   line-height: 46px;
-  border: 1px solid #384991;
+  border: 1px solid #1D463D;
   background-color: transparent;
   border-radius: 30px;
   margin: 0 auto 10px auto;
-  color: #384991;
+  color: #1D463D;
   font-family: "Almarai-Bold";
 }
 
@@ -251,28 +251,28 @@
 }
 
 .emailing .form-control::-webkit-input-placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
 }
 
 .emailing .form-control:-ms-input-placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
 }
 
 .emailing .form-control::-ms-input-placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
 }
 
 .emailing .form-control::placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
@@ -284,13 +284,13 @@
 }
 
 .emailing .btn-hvr::after {
-  background: #384991;
+  background: #1D463D;
 }
 
 /**** offers left *****/
 .my-offers .btn-hvr.see-more {
   background-color: #fff;
-  color: #384991;
+  color: #1D463D;
   float: left;
   min-width: 200px;
 }
@@ -560,12 +560,12 @@
   border: 0;
   border-radius: 0;
   font-size: 16px;
-  color: #384991;
+  color: #1D463D;
   display: block;
 }
 
 .my_profile .nav-tabs > li.active {
-  background-color: #384991;
+  background-color: #1D463D;
   border-radius: 10px 10px 0 0;
 }
 
@@ -702,7 +702,7 @@ table.dataTable.no-footer {
 
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before,
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
-  background-color: #384991;
+  background-color: #1D463D;
 }
 
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child,
@@ -747,7 +747,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .datatable td .flex-r .andShow {
-  background-color: #384991;
+  background-color: #1D463D;
 }
 
 .datatable td .flex-r .andShow::after {
@@ -755,7 +755,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .datatable td .flex-r .andShow:hover, .datatable td .flex-r .andShow:focus {
-  color: #384991;
+  color: #1D463D;
 }
 
 .datatable td .flex-r .andVote {
@@ -781,7 +781,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
   font-family: "Almarai-Bold";
   font-size: 23px;
   margin: 0 auto 20px auto;
-  color: #384991;
+  color: #1D463D;
 }
 
 .wallet p {
@@ -964,7 +964,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 .edit-profile .btn-hvr.see-more {
   margin: 20px auto 0 auto;
   max-width: 220px;
-  background-color: #384991;
+  background-color: #1D463D;
 }
 
 .edit-profile .btn-hvr.see-more::after {
@@ -976,7 +976,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .edit-profile .my-offers {
-  background-color: #384991;
+  background-color: #1D463D;
 }
 
 .edit-profile .my-offers .head-title h2 {
@@ -1029,11 +1029,11 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 .edit-profile .emailing .form-control {
   height: 46px;
   line-height: 46px;
-  border: 1px solid #384991;
+  border: 1px solid #1D463D;
   background-color: transparent;
   border-radius: 30px;
   margin: 0 auto 10px auto;
-  color: #384991;
+  color: #1D463D;
   font-family: "Almarai-Bold";
 }
 
@@ -1046,28 +1046,28 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .edit-profile .emailing .form-control::-webkit-input-placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
 }
 
 .edit-profile .emailing .form-control:-ms-input-placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
 }
 
 .edit-profile .emailing .form-control::-ms-input-placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
 }
 
 .edit-profile .emailing .form-control::placeholder {
-  color: #384991 !important;
+  color: #1D463D !important;
   opacity: 1;
   /* Firefox */
   font-family: "Almarai-Bold";
@@ -1079,12 +1079,12 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .edit-profile .emailing .btn-hvr::after {
-  background: #384991;
+  background: #1D463D;
 }
 
 .edit-profile .my-offers .btn-hvr.see-more {
   background-color: #fff;
-  color: #384991;
+  color: #1D463D;
   float: left;
   min-width: 200px;
 }
@@ -1651,7 +1651,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .edit-profile .login-page .form-box .box-right p .red:hover, .edit-profile .login-page .form-box .box-right p .red:focus {
-  color: #384991;
+  color: #1D463D;
 }
 
 .edit-profile .login-page .form-box .box-right h4 {
@@ -1737,7 +1737,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
   margin: 0;
   border: 0;
   text-align: center;
-  color: #384991;
+  color: #1D463D;
   background: none;
   padding: 1em 0.5em;
 }
@@ -1764,7 +1764,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 .edit-profile .logForm input:invalid + label span {
   -webkit-transform: translateY(2em) scale(0.8);
           transform: translateY(2em) scale(0.8);
-  color: #384991;
+  color: #1D463D;
 }
 
 .edit-profile .logForm input:focus + label::before,
@@ -1772,7 +1772,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 .edit-profile .logForm input:invalid + label::before {
   -webkit-transform: translateX(-1em);
           transform: translateX(-1em);
-  border-color: #384991;
+  border-color: #1D463D;
 }
 
 .edit-profile .logForm input:focus + label::after,
@@ -1780,7 +1780,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 .edit-profile .logForm input:invalid + label::after {
   -webkit-transform: translateX(1em);
           transform: translateX(1em);
-  border-color: #384991;
+  border-color: #1D463D;
 }
 
 .edit-profile .logForm input:invalid + label span {
@@ -1847,7 +1847,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
   border: none;
   padding: 0;
   width: 6ch;
-  background: repeating-linear-gradient(90deg, #384991 0, #384991 1ch, transparent 0, transparent 1.5ch) 0 100%/5.5ch 2px no-repeat;
+  background: repeating-linear-gradient(90deg, #1D463D 0, #1D463D 1ch, transparent 0, transparent 1.5ch) 0 100%/5.5ch 2px no-repeat;
   font-family: 'Almarai-Bold';
   letter-spacing: 0.5ch;
   font-size: 22px;
@@ -2027,7 +2027,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 .notification .notifi1 a:hover > p, .notification .notifi1 a:focus > p {
-  color: #384991;
+  color: #1D463D;
 }
 
 .notification .notifi1 p {

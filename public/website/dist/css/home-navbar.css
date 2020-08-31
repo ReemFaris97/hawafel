@@ -27,7 +27,7 @@ background: transparent;
     color: #ec6a60 !important;
 }
 .navy ul.nav > li > a.active {
-    color: #384991;
+    color: #1D463D;
 }
 .nav-r {
     border-top: 2px solid rgba(230, 230, 230, .3);
@@ -54,7 +54,7 @@ background: transparent;
         background-color: #fff;
     }
     #nav-icon1 span {
-        background: #384991;
+        background: #1D463D;
     }
     #nav-icon1.open span {
         background: #fff;

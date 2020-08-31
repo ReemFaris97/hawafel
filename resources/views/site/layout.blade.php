@@ -40,13 +40,12 @@
     <div class="body-overlay"></div>
     <!-- Start Loading-Page -->
     <div class="loader">
-        <div id='load-box'>
-            <div class='triangle'></div>
-            <div class='triangle'></div>
-            <div class='triangle'></div>
-            <div class='triangle'></div>
-            <div class='triangle'></div>
-        </div>
+        <svg width="200" height="200" id="svg">
+            <circle id="dot1" class="shape" />
+            <circle id="dot2" class="shape" />
+            <circle id="dot3" class="shape" />
+            <circle id="dot4" class="shape" />
+        </svg>
     </div>
     <!-- End Loading-Page -->
     <div class="container-navbar">

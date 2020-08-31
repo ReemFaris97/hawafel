@@ -56,7 +56,7 @@ body {
     font-size: 14px;
 /*    letter-spacing: 0.2px;*/
     line-height: 1.6;
-    color: #384991;
+    color: #000000;
     overflow-x: hidden !important;
     overflow-y: hidden;
     direction: rtl !important;
@@ -322,209 +322,42 @@ input[type=number]::-webkit-outer-spin-button {
     z-index: 999999999999;
     direction: ltr;
 }
-#load-box {
-  width: 600px;
-  margin: 360px auto 0 auto;
-}
-.triangle {
-  width: 0px;
-  height: 0px;
-  opacity: 0.75;
-  margin: auto;
-  position: relative;
-  -webkit-animation: enlarge_1 2s infinite;
-          animation: enlarge_1 2s infinite;
-}
-
-.triangle:nth-child(2) {
-  -webkit-animation: enlarge_2 2s infinite;
-          animation: enlarge_2 2s infinite;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.triangle:nth-child(3) {
-  -webkit-animation: enlarge_3 2s infinite;
-          animation: enlarge_3 2s infinite;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.triangle:nth-child(4) {
-  -webkit-animation: enlarge_4 2s infinite;
-          animation: enlarge_4 2s infinite;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.triangle:nth-child(5) {
-  -webkit-animation: enlarge_5 2s infinite;
-          animation: enlarge_5 2s infinite;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-@-webkit-keyframes enlarge_1 {
-  from {
-    opcatiy: 1;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 4px solid #384991;
-    margin-top: 0px;
+.loader svg {
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 3s ease infinite alternate;
   }
-  to {
-    opacity: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 300px solid #384991;
-    margin-top: -300px;
+  
+  /*Give each dot a radius of 20*/
+  .shape {
+    r: 20;
   }
-}
-
-@keyframes enlarge_1 {
-  from {
-    opcatiy: 1;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 4px solid #384991;
-    margin-top: 0px;
+  
+  /*Give each dot its positioning and set the default animation and color for each */
+  .shape:nth-child(1) {
+    cy: 50;
+    cx: 50;
+    fill: #c20f00;
+    animation: movein 3s ease infinite alternate;
   }
-  to {
-    opacity: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 300px solid #384991;
-    margin-top: -300px;
+  .shape:nth-child(2) {
+    cy: 50;
+    cx: 150;
+    fill: #ffdd22;
+    animation: movein 3s ease infinite alternate;
   }
-}
-@-webkit-keyframes enlarge_2 {
-  from {
-    opcatiy: 1;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 4px solid #d390f2;
-    margin-top: -4px;
+  .shape:nth-child(3) {
+    cy: 150;
+    cx: 50;
+    fill: #2374c6;
+    animation: movein 3s ease infinite alternate;
   }
-  to {
-    opacity: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 300px solid #d390f2;
-    margin-top: -300px;
+  .shape:nth-child(4) {
+    cy: 150;
+    cx: 150;
+    fill: #000000;
+    animation: movein 3s ease infinite alternate;
   }
-}
-@keyframes enlarge_2 {
-  from {
-    opcatiy: 1;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 4px solid #d390f2;
-    margin-top: -4px;
-  }
-  to {
-    opacity: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 300px solid #d390f2;
-    margin-top: -300px;
-  }
-}
-@-webkit-keyframes enlarge_3 {
-  from {
-    opcatiy: 1;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 4px solid #ec6a60;
-    margin-top: -4px;
-  }
-  to {
-    opacity: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 300px solid #ec6a60;
-    margin-top: -300px;
-  }
-}
-@keyframes enlarge_3 {
-  from {
-    opcatiy: 1;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 4px solid #ec6a60;
-    margin-top: -4px;
-  }
-  to {
-    opacity: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 300px solid #ec6a60;
-    margin-top: -300px;
-  }
-}
-@-webkit-keyframes enlarge_4 {
-  from {
-    opcatiy: 1;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 4px solid #2a3976ba;
-    margin-top: -4px;
-  }
-  to {
-    opacity: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 300px solid #2a3976ba;
-    margin-top: -300px;
-  }
-}
-@keyframes enlarge_4 {
-  from {
-    opcatiy: 1;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 4px solid #2a3976ba;
-    margin-top: -4px;
-  }
-  to {
-    opacity: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 300px solid #2a3976ba;
-    margin-top: -300px;
-  }
-}
-@-webkit-keyframes enlarge_5 {
-  from {
-    opcatiy: 1;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 4px solid #f5e983;
-    margin-top: -4px;
-  }
-  to {
-    opacity: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 300px solid #b1443c;
-    margin-top: -300px;
-  }
-}
-@keyframes enlarge_5 {
-  from {
-    opcatiy: 1;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 4px solid #b1443c;
-    margin-top: -4px;
-  }
-  to {
-    opacity: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 300px solid #b1443c;
-    margin-top: -300px;
-  }
-}
 /************************************************* END LOADER *****************************************/
 .back {
     opacity: 1;
@@ -566,7 +399,7 @@ input[type=number]::-webkit-outer-spin-button {
             box-shadow: 0px 1px 2px 0px rgba(230,230,230,1);
     padding: 10px 0;
     margin-bottom: 2px;
-    background: #384991;
+    background: #1D463D;
 }
 .top-i{
     font-size: 16px;
@@ -658,7 +491,7 @@ li.dropdown{
 }
 .dropdown-menu .fixed-li:hover . .dropdown-menu .fixed-li:focus{
     color: #fff !important;
-    background-color: #384991 !important;
+    background-color: #1D463D !important;
 }
 /* .andNotifi{
     padding-bottom: 40px !important;
@@ -666,7 +499,7 @@ li.dropdown{
 .dropdown-menu li h4 {
     font-family: 'Almarai-SemiBold';
     font-size: 15px;
-    color: #384991;
+    color: #1D463D;
     margin: 10px 0 5px 0;
     white-space: nowrap;
     overflow: hidden;
@@ -856,13 +689,13 @@ b.caret {
     border-radius: 0;
 }
 .nav-icon{
-    color: #384991;
+    color: #1D463D;
 }
 .cart-all{
     color: #ec6a60;
 }
 .nav-tools > li.dropdown > a .caret{
-    color: #384991
+    color: #1D463D
 }
 .nav-tools ul.dropdown-menu {
     left: 0;
@@ -880,7 +713,7 @@ b.caret {
     padding-right: 16px;
 }
 span.bell {
-    color: #384991;
+    color: #1D463D;
     font-size: 19px;
 }
 .notify {
@@ -915,7 +748,7 @@ span.bell {
     z-index: 999;
     right: 0;
     display: none;
-    background-color: #384991;
+    background-color: #1D463D;
 }
 div#nav-icon1:before {
     background: -o-radial-gradient(circle, rgb(156, 5, 16) 44%, rgb(207, 30, 67) 100%);
@@ -1034,7 +867,7 @@ div#nav-icon1:before {
     vertical-align: middle;
     display: block;
     padding: 8px 0;
-    color: #384991;
+    color: #1D463D;
     background-color: transparent;
     position: relative;
     margin: 0 18px;
@@ -1120,7 +953,7 @@ footer:after{
 .f-title{
     font-family: 'Almarai-Bold';
     margin: 0 0 16px 0;
-    color: #384991;
+    color: #1D463D;
 }
 .flex-r.foot1 p {
     margin: 0 0 16px 0;
@@ -1145,7 +978,7 @@ footer .btn-hvr:hover::after {
     height: 100%;
 }
 /* footer .btn-hvr:hover, footer .btn-hvr:focus {
-    color: #384991;
+    color: #1D463D;
 } */
 /******************* End Footer **************************/
 /*******************Start copyright  **************************/
@@ -1179,7 +1012,7 @@ footer li a:hover , footer li a:focus , .copyright a:hover, .copyright a:focus{
     line-height: 50px;
     z-index: 9;
     cursor: pointer;
-    background: #384991;
+    background: #1D463D;
     font-size: 24px;
     color: #fff;
     text-align: center;
@@ -1312,7 +1145,7 @@ padding: 6px 0px;
     opacity: 1;
     margin: 0;
     padding: 0 !important;
-    background-color: #384991;
+    background-color: #1D463D;
     top: 0;
     bottom: 0;
     left: auto;
