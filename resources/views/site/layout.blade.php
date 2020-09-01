@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="{{asset('website/dist/img/favicon/apple-icon-144x144.png')}}">
     <link rel="apple-touch-icon" sizes="152x152" href="{{asset('website/dist/img/favicon/apple-icon-152x152.png')}}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset('website/dist/img/favicon/apple-icon-180x180.png')}}">
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{asset('website/dist/img/favicon/android-icon-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{asset('website/dist/img/favicon/android-icon-192x192.png')}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('website/dist/img/favicon/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('website/dist/img/favicon/favicon-96x96.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('website/dist/img/favicon/favicon-16x16.png')}}">
@@ -49,161 +49,303 @@
     </div>
     <!-- End Loading-Page -->
 
-        <!-- /////////////////////|||||| Start Navbar |||||||||||||||||||||||||||| -->
-        <div class="navbar">
-            <div class="container-fluid">
-                <div class="row">
+    <!-- /////////////////////|||||| Start Navbar |||||||||||||||||||||||||||| -->
+    <div class="navbar">
+        <div class="container-fluid">
+            <div class="row">
 
-                    <div class="col-md-3 col-sm-2 col-xs-3">
-                        <div class="nav-right">
-                            <a href="{{url('/')}}" class="logo-nav">
-                                <img src="{{asset('website/dist/img/logo.png')}}">
-                            </a>
+                <div class="col-md-2 col-sm-2 col-xs-7">
+                    <div class="nav-right">
+                        <div id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
-                    </div>
-
-                    <div class="col-md-5 col-sm-5 col-xs-9">
-                        <div class="navy">
-                            <ul class="nav cf" id="ul1">
-                                <li><a href="{{url('/')}}" class="active">الرئيسية</a></li>
-                                <li><a href="{{url('categories')}}">الأقسام</a></li>
-                                <li><a href="{{url('services')}}">الطلبات</a></li>
-                                <li><a href="{{url('favourites')}}">المفضلة</a></li>
-                                <li><a href="{{url('contact-us')}}">مكتبة الصور والفيديوهات</a></li>
-                            </ul>
-                          </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-5 col-xs-12">
-                        <div class="xs-flex-r">
-                            <div id="nav-icon1">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <ul class="nav-tools">
-
-                        <!-- /////////////////////||||||||||| Start Searchbar |||||||||||||||||||| -->
-                                 <li>
-                                    <form action="{{url('products')}}" method="GET" class="search-form" role="search">
-                                        <div class="form-group" id="search">
-                                        <input type="text" class="form-control" placeholder="بحث">
-                                        <button type="submit" class="form-control form-control-submit">بحث</button>
-                                        <span class="nav-icon"> <i class="fas fa-search"></i></span>
-                                        </div>
-                                    </form>
-                                </li>
-                        <!-- /////////////////////||||||||||| End Searchbar |||||||||||||||||||| -->
-
-                        <!-- /////////////////////||||||||||| Start Nav Cart |||||||||||||||||||| -->
-                                <li>
-                                    <a href="{{url('cart')}}">
-                                            <span class="nav-icon"> <i class="fas fa-shopping-cart"></i></span>
-                                    </a>
-                                </li>
-                        <!-- /////////////////////||||||||||| End Nav Cart |||||||||||||||||||| -->
-
-                        <!-- /////////////////////||||||||||| Start Nav Profile  |||||||||||||||||||| -->
-                        <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <span class="nav-icon"><i class="fas fa-user"></i></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="{{url('my-profile')}}#!">
-                                                <h4>الحساب الشخصى</h4>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{url('/')}}#!">
-                                                <h4>تسجيل الخروج</h4>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                        <!-- /////////////////////||||||||||| End Nav Profile  |||||||||||||||||||| -->
-
-                        <!-- /////////////////////||||||||||| Start Nav Notifications  |||||||||||||||||||| -->
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                            <span class="nav-icon"><i class="fas fa-bell"></i></span>
-                                    </a>
-                                    <ul class="dropdown-menu andNotifi">
-                                        <li>
-                                            <a href="{{url('my-profile')}}#!" class="flexx">
-                                                <span class="bell"><i class="fas fa-bell"></i></span>
-                                                <div class="notify">
-                                                    <h4>إشعار جديد</h4>
-                                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{url('my-profile')}}#!" class="flexx">
-                                                <span class="bell"><i class="fas fa-bell"></i></span>
-                                                <div class="notify">
-                                                    <h4>إشعار جديد</h4>
-                                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{url('my-profile')}}#!" class="flexx">
-                                                <span class="bell"><i class="fas fa-bell"></i></span>
-                                                <div class="notify">
-                                                    <h4>إشعار جديد</h4>
-                                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="{{url('my-profile')}}#!" class="flexx">
-                                                <span class="bell"><i class="fas fa-bell"></i></span>
-                                                <div class="notify">
-                                                    <h4>إشعار جديد</h4>
-                                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="{{url('my-profile')}}#!" class="flexx">
-                                                <span class="bell"><i class="fas fa-bell"></i></span>
-                                                <div class="notify">
-                                                    <h4>إشعار جديد</h4>
-                                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                                </div>
-                                            </a>
-
-                                        </li>
-                                        <li>
-                                            <a href="{{url('my-profile')}}" class="flexx">
-                                                <span class="bell"><i class="fas fa-bell"></i></span>
-                                                <div class="notify">
-                                                    <h4>إشعار جديد</h4>
-                                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li><a href="{{url('notifications')}}" class="fixed-li">عرض كل الاشعارات</a></li>
-                                    </ul>
-                                </li>
-                        <!-- /////////////////////||||||||||| End Nav Notifications  |||||||||||||||||||| -->
-
-                            </ul>
-                        </div>
+                        <a href="{{url('/')}}" class="logo-nav">
+                            <img src="{{asset('website/dist/img/logo.png')}}">
+                        </a>
                     </div>
                 </div>
 
+                <div class="col-md-7 col-sm-6 col-xs-0">
+                    <div class="navy">
+                        <ul class="nav cf" id="ul1">
+                            <li><a href="{{url('/')}}" class="active">الرئيسية</a></li>
+                            <li><a href="{{url('categories')}}">الأقسام</a></li>
+                            <li><a href="{{url('services')}}">الطلبات</a></li>
+                            <li><a href="{{url('favourites')}}">المفضلة</a></li>
+                            <li><a href="{{url('contact-us')}}">مكتبة الصور والفيديوهات</a></li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="col-md-3 col-sm-4 col-xs-5">
 
+                    <ul class="nav-tools">
+
+                        <!-- /////////////////////||||||||||| Start Searchbar |||||||||||||||||||| -->
+                        <li>
+                            <form action="{{url('products')}}" method="GET" class="search-form" role="search">
+                                <div class="form-group" id="search">
+                                    <input type="text" class="form-control" placeholder="بحث">
+                                    <button type="submit" class="form-control form-control-submit">بحث</button>
+                                    <span class="nav-icon"> <i class="fas fa-search"></i></span>
+                                </div>
+                            </form>
+                        </li>
+                        <!-- /////////////////////||||||||||| End Searchbar |||||||||||||||||||| -->
+
+                        <!-- /////////////////////||||||||||| Start Nav Cart |||||||||||||||||||| -->
+                        <li>
+                            <a href="#" class="menu-toggle">
+                                <span class="nav-icon"> <i class="fas fa-shopping-cart"></i></span>
+                            </a>
+                            <div class="side-menu">
+                                <button type="button" class="nav-icon close-menu"><i class="fas fa-times"></i></button>
+                                <ul>
+                                    <li>
+                                        <div class="flexx cart_item">
+                                            <button class="nav-icon remove_item"> <i class="fas fa-trash"></i> </button>
+                                            <span class="bell">
+                                                <img src="{{asset('website/dist/img/asset8.png')}}">
+                                            </span>
+                                            <div class="notify">
+                                                <h4>مجموعة الصابون الطبيعى</h4>
+                                                <p>140 ريال سعودى</p>
+                                                <p> الكمية : <span class="quantity_in">3</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flexx cart_item">
+                                            <button class="nav-icon remove_item"> <i class="fas fa-trash"></i> </button>
+                                            <span class="bell">
+                                                <img src="{{asset('website/dist/img/asset6.png')}}">
+                                            </span>
+                                            <div class="notify">
+                                                <h4>زيت الأرغان الأصلى</h4>
+                                                <p>140 ريال سعودى</p>
+                                                <p> الكمية : <span class="quantity_in">7</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flexx cart_item">
+                                            <button class="nav-icon remove_item"> <i class="fas fa-trash"></i> </button>
+                                            <span class="bell">
+                                                <img src="{{asset('website/dist/img/asset8.png')}}">
+                                            </span>
+                                            <div class="notify">
+                                                <h4>مجموعة الصابون الطبيعى</h4>
+                                                <p>140 ريال سعودى</p>
+                                                <p> الكمية : <span class="quantity_in">3</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flexx cart_item">
+                                            <button class="nav-icon remove_item"> <i class="fas fa-trash"></i> </button>
+                                            <span class="bell">
+                                                <img src="{{asset('website/dist/img/asset6.png')}}">
+                                            </span>
+                                            <div class="notify">
+                                                <h4>زيت الأرغان الأصلى</h4>
+                                                <p>140 ريال سعودى</p>
+                                                <p> الكمية : <span class="quantity_in">7</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="lock">
+                                        <img src="{{asset('website/dist/img/lock.png')}}">
+                                        <p>
+                                            من فضلك قم بتسجيل الدخول لكى يتم عملية الشراء والدفع وأكثر
+                                        </p>
+                                        <a href="{{url('sign-up')}}" class="btn-hvr">تسجيل جديد</a>
+                                    </div>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- /////////////////////||||||||||| End Nav Cart |||||||||||||||||||| -->
+
+                        <!-- /////////////////////||||||||||| Start Nav Profile  |||||||||||||||||||| -->
+                        <li>
+                            <a href="#" class="menu-toggle">
+                                <span class="nav-icon"><i class="far fa-user"></i></span>
+                            </a>
+                            <div class="side-menu flexx pro-menu">
+                                <div>
+                                    <button type="button" class="nav-icon close-menu"><i class="fas fa-times"></i></button>
+                                    <img src="{{asset('website/dist/img/user.png')}}">
+                                    <h4>ريم فارس</h4>
+                                    <p>reem.faris@gmail.com</p>
+                                    <ul>
+                                        <li>
+                                            <a href="{{url('my-profile')}}">
+                                                الحساب الشخصى
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{url('my_orders')}}">
+                                                طلباتى
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{url('my_addresses')}}">
+                                                عنوانى
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{url('my_wallet')}}">
+                                                المحفظة
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{url('/')}}">
+                                                تسجيل الخروج
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- /////////////////////||||||||||| End Nav Profile  |||||||||||||||||||| -->
+
+                        <!-- /////////////////////||||||||||| Start Nav Notifications  |||||||||||||||||||| -->
+                        <li>
+                            <a href="#" class="menu-toggle">
+                                <span class="nav-icon"><i class="far fa-bell"></i></span>
+                            </a>
+                            <div class="side-menu notifi-menu">
+                                <button type="button" class="nav-icon close-menu"><i class="fas fa-times"></i></button>
+                                <a href="{{url('notifications')}}" class="fixed-li">كل الإشعارات</a>
+                                <ul>
+                                    <li>
+                                        <a href="{{url('my-profile')}}" class="flexx">
+                                            <span class="bell"><i class="fas fa-bell"></i></span>
+                                            <div class="notify">
+                                                <h4>إشعار جديد</h4>
+                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url('my-profile')}}" class="flexx">
+                                            <span class="bell"><i class="fas fa-bell"></i></span>
+                                            <div class="notify">
+                                                <h4>إشعار جديد</h4>
+                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url('my-profile')}}" class="flexx">
+                                            <span class="bell"><i class="fas fa-bell"></i></span>
+                                            <div class="notify">
+                                                <h4>إشعار جديد إشعار جديد إشعار جديد إشعار جديد إشعار جديدإشعار جديدإشعار جديد</h4>
+                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="{{url('my-profile')}}" class="flexx">
+                                            <span class="bell"><i class="fas fa-bell"></i></span>
+                                            <div class="notify">
+                                                <h4>إشعار جديد</h4>
+                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="{{url('my-profile')}}" class="flexx">
+                                            <span class="bell"><i class="fas fa-bell"></i></span>
+                                            <div class="notify">
+                                                <h4>إشعار جديد</h4>
+                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="{{url('my-profile')}}" class="flexx">
+                                            <span class="bell"><i class="fas fa-bell"></i></span>
+                                            <div class="notify">
+                                                <h4>إشعار جديد</h4>
+                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="{{url('my-profile')}}" class="flexx">
+                                            <span class="bell"><i class="fas fa-bell"></i></span>
+                                            <div class="notify">
+                                                <h4>إشعار جديد</h4>
+                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url('my-profile')}}" class="flexx">
+                                            <span class="bell"><i class="fas fa-bell"></i></span>
+                                            <div class="notify">
+                                                <h4>إشعار جديد</h4>
+                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url('my-profile')}}" class="flexx">
+                                            <span class="bell"><i class="fas fa-bell"></i></span>
+                                            <div class="notify">
+                                                <h4>إشعار جديد</h4>
+                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{url('my-profile')}}" class="flexx">
+                                            <span class="bell"><i class="fas fa-bell"></i></span>
+                                            <div class="notify">
+                                                <h4>إشعار جديد</h4>
+                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="{{url('my-profile')}}" class="flexx">
+                                            <span class="bell"><i class="fas fa-bell"></i></span>
+                                            <div class="notify">
+                                                <h4>إشعار جديد</h4>
+                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="{{url('my-profile')}}" class="flexx">
+                                            <span class="bell"><i class="fas fa-bell"></i></span>
+                                            <div class="notify">
+                                                <h4>إشعار جديد</h4>
+                                                <p>هذا النص هو مثال لنص يمكن أن يستبدل فى المساحة هذا النص هذا النص</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a href="{{url('notifications')}}" class="fixed-li">عرض كل الاشعارات</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- /////////////////////||||||||||| End Nav Notifications  |||||||||||||||||||| -->
+
+                    </ul>
+                </div>
             </div>
+        </div>
+    </div>
 
-
-</div>
-
-        <!-- /////////////////////|||||| End Navbar |||||||||||||||||||||||||||| -->
+    <!-- /////////////////////|||||| End Navbar |||||||||||||||||||||||||||| -->
     <!---////////////  //////////////////------------>
 
 
@@ -215,68 +357,62 @@
         <div class="foot-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
-                        <div class="flex-r foot1">
+                    <div class="col-lg-3 col-sm-12 col-xs-12">
+                        <div class="foot1">
                             <a href="{{url('/')}}" class="foot-logo">
                                 <img src="{{asset('website/dist/img/logo.png')}}">
                             </a>
-                            <div>
-                                <h3 class="f-title">حوافل</h3>
-                                <p>
-                                    هذا النص هو مثال لنص يمكن ان يستبدل من مولد النص العربى
-                                </p>
-                                <a href="{{url('contact-us')}}" class="btn-hvr">تواصل معنا</a>
-                            </div>
+                            <p>
+                                هذا النص هو مثال لنص يمكن ان يستبدل من مولد النص العربى
+                                هذا النص هو مثال لنص يمكن ان يستبدل من مولد النص العربى
+                                هذا النص هو مثال لنص يمكن ان يستبدل من مولد النص العربى
+                            </p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <div class="col-lg-3 col-sm-4 col-xs-6">
                         <div class="foot1">
-                            <h3 class="f-title">روابط مهمة</h3>
+                            <h3 class="f-title">الصفحات الرئيسية</h3>
                             <ul>
                                 <li><a href="{{url('about')}}">من نحن</a></li>
+                                <li><a href="{{url('multimedia')}}">مكتبة المالتيميديا</a></li>
+                                <li><a href="{{url('use_policy')}}">سياسة الاستخدام</a></li>
+                                <li><a href="{{url('privacy')}}">الشروط والأحكام</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-6">
+                        <div class="foot1">
+                            <h3 class="f-title">خدمة العملاء</h3>
+                            <ul>
                                 <li><a href="{{url('contact-us')}}">اتصل بنا</a></li>
-                                <li><a href="{{url('terms-of-use')}}">سياسة الاستخدام</a></li>
-                                <li><a href="{{url('/')}}">الرئيسية</a></li>
+                                <li><a href="{{url('return_policy')}}">سياسة الاسترجاع</a></li>
+                                <li><a href="{{url('site_map')}}">خريطة الموقع</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <div class="col-lg-3 col-sm-4 col-xs-12">
                         <div class="foot1">
-                            <h3 class="f-title">القائمة</h3>
+                            <h3 class="f-title">روابط سريعة</h3>
                             <ul>
-                                <li><a href="{{url('categories')}}">التصنيفات</a></li>
-                                <li><a href="{{url('services')}}">الخدمات</a></li>
-                                <li><a href="{{url('offers')}}">العروض</a></li>
-                                <li><a href="{{url('/sub-sections')}}">الفئات</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-3 col-sm-8 col-xs-12">
-                        <div class="foot1">
-                            <h3 class="f-title">تواصل معنا</h3>
-                            <ul>
+                                <li><a href="{{url('my-profile')}}">الحساب</a></li>
+                                <li><a href="{{url('favourites')}}">المفضلة</a></li>
                                 <li>
-                                    <a href="tel0504890011" class="display-inline">0504890011</a>
-                                </li>
-                                <li>
-                                    <a href="tel0504890011" class="display-inline">0504890011</a>
-                                </li>
-                                <li>
-                                    <a href="mailto:bookings@gmail.com">bookings@gmail.com</a></li>
-                                <li>
-                                    <p class="m-b-10">
-                                        المملكة السعودية - القصيم - طريق الملك فهد
-                                    </p>
+                                    <ul class="social">
+                                        <li><a href="www.facebook.com" target="_blank" class="icon-f"><i class="fab fa-facebook"></i></a></li>
+                                        <li><a href="www.google.com" target="_blank" class="icon-g"><i class="fab fa-google-plus-g"></i></a></li>
+                                        <li><a href="www.twitter.com" target="_blank" class="icon-tw"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="www.instagram.com" target="_blank" class="icon-ig"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                &copy;
-                جميع الحقوق محفوظة لدى شركة<a href="http://panorama-q.com/">بانوراما القصيم</a> <span id="currentYear"></span>
-            </div>
+        </div>
+        <div class="copyright">
+            &copy;
+            جميع الحقوق محفوظة لدى شركة<a href="http://panorama-q.com/">بانوراما القصيم</a> <span id="currentYear"></span>
         </div>
     </footer>
     <!--Scroll Button-->
@@ -312,26 +448,68 @@
     </script>
     <!---- search form -->
     <script>
-        $(document).ready(function(){
-  $('#search').on("click",(function(e){
-  $(".search-form .form-group").addClass("sb-search-open");
-    e.stopPropagation()
-  }));
-   $(document).on("click", function(e) {
-    if ($(e.target).is("#search") === false && $(".search-form .form-control").val().length == 0) {
-      $(".search-form .form-group").removeClass("sb-search-open");
-    }
-  });
-    $(".form-control-submit").click(function(e){
-      $(".search-form .form-control").each(function(){
-        if($(".search-form .form-control").val().length == 0){
-          e.preventDefault();
-          $(this).css('border', '2px solid #ea6b60');
-        }
-    })
-  })
-})
+        $(document).ready(function() {
+            $('#search').on("click", (function(e) {
+                $(".search-form .form-group").addClass("sb-search-open");
+                e.stopPropagation()
+            }));
+            $(document).on("click", function(e) {
+                if ($(e.target).is("#search") === false && $(".search-form .form-control").val().length == 0) {
+                    $(".search-form .form-group").removeClass("sb-search-open");
+                }
+            });
+            $(".form-control-submit").click(function(e) {
+                $(".search-form .form-control").each(function() {
+                    if ($(".search-form .form-control").val().length == 0) {
+                        e.preventDefault();
+                        $(this).css('border', '2px solid #ea6b60');
+                    }
+                })
+            })
+        })
     </script>
+    <!---- side menu --->
+    <script>
+        $(".menu-toggle").click(function() {
+            $(this).next(".side-menu").toggleClass("show-menu");
+        });
+        $(".close-menu").click(function() {
+            $(this).parents(".side-menu").toggleClass("show-menu");
+        });
+    </script>
+    <!---- remove cart item --->
+    <script>
+        $(".remove_item").click(function() {
+            $(this).parent(".cart_item").fadeOut(300);
+        });
+    </script>
+    <!---- plus and minus cart inputs --->
+    <!-- <script>
+        /*click minus */
+
+        $(document).on('click', '.minus', function () {
+                var $input = $(this).parent().find('input');
+                var count = parseFloat($input.val()) - 1;
+                
+                if(count >= 1){
+                    count = count;
+                    $input.val(count);
+                  $input.change();
+                
+                }else{
+                     count = 1;
+                     return false;
+                }
+            });
+            /*click plus */
+            $(document).on('click', '.plus', function () {
+                var $input = $(this).parent().find('input');
+                var count = parseFloat($input.val()) + 1;
+                $input.val(count);
+                $input.change();
+                return false;
+            });
+    </script> -->
     @yield('scripts')
     <!-- /////////////////////||||||||||||||||||||||||||||| End Script |||||||||||||||||||||||||||| -->
 </body>
