@@ -1,6 +1,7 @@
 @extends('site.layout')
 @section('title' , 'حوافل || مكتبة الصور والفيديوهات')
 @section('styles')
+<link rel="stylesheet" href="{{asset('website/dist/css/jquery.fancybox.min.css')}}">
 
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 @endsection
@@ -16,15 +17,17 @@
 </section>
 <!-- /////// ||||||||||||||||||||end breadcrumbs|||||||||||||||||||| ///////// -->
 <!-- /////// |||||||||||||||||||| breadcrumbs|||||||||||||||||||| ///////// -->
-<section>
+<section class="all-sections">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-6">
                 <div>
-                <img src="{{asset('website/dist/img/asset20.png')}}" alt="">
+                <a data-fancybox="gallery" href="{{asset('website/dist/css/img/Asset4.jpg')}}">
+                    <img class="imgcontent" src="{{asset('website/dist/img/asset20.png')}}" alt="">
+                </a>
                 </div>
-                 <a href="#"> <p class="imgname">اسم الصورة</p></a>
-                <p class="productp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</p>
+                 <a href="#" class="imgname"> <p class="imgname">اسم الصورة</p></a>
+                <p class="productp"> هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</p>
             </div>
         </div>
     </div>
@@ -55,5 +58,6 @@
 @endsection
 @section('scripts')
 
+<script src="{{asset('website/dist/js/jquery.fancybox.min.js')}}"></script>
 
 @endsection
