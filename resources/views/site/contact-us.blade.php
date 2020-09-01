@@ -46,12 +46,13 @@
     </div>
 </section>
 <!-- /////////////////////////////////////////////////////////////////// -->
-<section class="all-sections secall">
+<section class="all-sections contactsec secall">
    <div class="container">
-    <h3 class="hMessage">يمكنك ارسال رسالة</h3>
-    <p class="smllheader">او التواصل معنا عبر برامج
-        <span>التواصل الاجتماعي</span>
-    </p>
+       <img  src="{{asset('website/dist/img/favicon_pink.png')}}" alt="">
+        <div class="aligne-center">
+            <h3 class="hMessage"> تواصل معنا</h3>
+            <p class="smllheader">نحن متجرك المفضل لمنتجات العناية بالبشرة والشعر والطبيعة</p>
+        </div>
     <div class="formContact ">
             <form class="">
                 <div class="row">

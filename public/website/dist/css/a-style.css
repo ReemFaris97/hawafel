@@ -80,21 +80,7 @@ h3.titlebread {
     color: #fff
 }
 /*================= end bread cumbs =====================*/
-.secall{
-    background-color: #f6f6f6
-}
-h3.hMessage {
-    font-size: 25px;
-    font-weight: bold;
-}
-.smllheader{
-font-size: 22px;
-margin-bottom: 15px
-}
-p.smllheader span {
-    color: #ea6b60;
-}
-/*comment*/
+
 /*****************************contact us****************/
 /*new contact us */
 .haveadrs {
@@ -143,6 +129,11 @@ p.smllheader span {
 section.address {
     padding-bottom: 50px;
     background-color: #fcfcfc;
+}
+
+
+.contactsec {
+    border-top: 1px solid #fcd1c8;
 }
 /*|||||||*/
 .divcontactP{
