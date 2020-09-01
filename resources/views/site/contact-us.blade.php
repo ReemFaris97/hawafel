@@ -10,7 +10,7 @@
 <section class="all-sections single-work">
     <div class="single-workdiv">
         <h3 class="titlebread" > اتصل بنا </h3>
-        <p class="breadcrum"> <a href="#">الرئيسية</a> / اتصل بنا </p>
+        <p class="breadcrum"> <a href="#">الرئيسية</a> /  <a href="{{url('contact-us')}}">اتصل بنا</a> </p>
     </div>
 
 </section>
@@ -21,8 +21,50 @@
 <section class="address">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="haveadrs animate__animated wow animate__slideInUp">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="haveadrs animate__slideInUp  animate__animated wow">
+                    <img src="{{asset('website/dist/img/phone.png')}}" alt="">
+                    <div class="contntbb">
+                        <b>العنوان</b>
+                        <b class="regular">السعودية - القصيم - طريق الملك فهد </b>
+                    </div>
+                    <div class="contntbb">
+                        <b>رقم الهاتف</b>
+                        <a  href="tel:+999485489522">+999485489522</b></a>
+                    </div>
+                    <div class="contntbb">
+                        <b>الجوال </b>
+                        <a  href="tel:+999485489522">+999485489522</b></a>
+                    </div>
+                    <div class="contntbb">
+                        <b>البريد الالكتروني </b>
+                        <a  href="mailto:webmaster@example.com">hawafel@admin.com</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="haveadrs animate__slideInUp  animate__animated wow">
+                    <img src="{{asset('website/dist/img/phone.png')}}" alt="">
+                    <div class="contntbb">
+                        <b>العنوان</b>
+                        <b class="regular">السعودية - القصيم - طريق الملك فهد </b>
+                    </div>
+                    <div class="contntbb">
+                        <b>رقم الهاتف</b>
+                        <a  href="tel:+999485489522">+999485489522</b></a>
+                    </div>
+                    <div class="contntbb">
+                        <b>الجوال </b>
+                        <a  href="tel:+999485489522">+999485489522</b></a>
+                    </div>
+                    <div class="contntbb">
+                        <b>البريد الالكتروني </b>
+                        <a  href="mailto:webmaster@example.com">hawafel@admin.com</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="haveadrs animate__slideInUp  animate__animated wow">
                     <img src="{{asset('website/dist/img/phone.png')}}" alt="">
                     <div class="contntbb">
                         <b>العنوان</b>
@@ -47,9 +89,12 @@
 </section>
 <!-- /////////////////////////////////////////////////////////////////// -->
 <section class="all-sections contactsec secall">
+    <div class="contentimg">
+        <img src="{{asset('website/dist/img/Layer_1.png')}}" alt="">
+    </div>
    <div class="container">
-       <img  src="{{asset('website/dist/img/favicon_pink.png')}}" alt="">
-        <div class="aligne-center">
+       <img class="imgfav animate__zoomIn  animate__animated wow" src="{{asset('website/dist/img/favicon_pink.png')}}" alt="">
+        <div class="aligne-center relative9">
             <h3 class="hMessage"> تواصل معنا</h3>
             <p class="smllheader">نحن متجرك المفضل لمنتجات العناية بالبشرة والشعر والطبيعة</p>
         </div>
@@ -86,25 +131,7 @@
 
             </form>
 
-        <div class="social-buttons">
-            <!-- facebook  Button -->
-            <a href="http://www.facebook.com" target="blank" class="social-margin">
-            <div class="social-icon facebook">
-            <i class="fab fa-facebook-f"></i>
-            </div>
-            </a>
-            <!-- TwitterButton -->
-            <a href="http://twitter.com/" target="blank" class="social-margin">
-            <div class="social-icon twitter">
-                <i class="fab fa-twitter" aria-hidden="true"></i>
-            </div>
-            </a>
-            <a href="http://twitter.com/" target="blank" class="social-margin">
-            <div class="social-icon instagram">
-                <i class="fab fa-instagram"></i>
-            </div>
-            </a>
-        </div>
+
 
 
    </div>
