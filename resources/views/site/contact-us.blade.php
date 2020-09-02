@@ -107,7 +107,7 @@
 <!-- /////////////////////////////////////////////////////////////////// -->
 <section class="all-sections contactsec secall">
     <div class="contentimg">
-        <img src="{{asset('website/dist/img/Layer_1.png')}}" alt="">
+        <img src="{{asset('website/dist/img/favicon_white.png')}}" alt="">
     </div>
    <div class="container">
        <img class="imgfav animate__zoomIn  animate__animated wow" src="{{asset('website/dist/img/favicon_pink.png')}}" alt="">
