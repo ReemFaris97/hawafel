@@ -1,0 +1,72 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+.navbar{
+    position: absolute;
+    top: 0;
+    z-index: 999999999;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: transparent;
+}
+/****** start header ***/
+.my-header {
+    height: auto;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.my-header img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.head-txt{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%,-50%);
+    z-index: 9;
+    font-family: 'Almarai-Bold';
+    line-height: 3;
+}
+.head-txt .btn-hvr{
+    width: 162px;
+}
+.hawafell h2{
+    font-size: 36px;
+    display: inline-block;
+    font-family: 'Almarai-ExtraBold';
+}
+.hawafell h3{
+    font-family: 'Almarai-ExtraBold';
+}
+.head-txt .shadow-txt{
+    color: #EA6B60;
+    text-shadow: 0px -1px rgba(255, 255, 255, .6);
+}
+.head-txt p{
+    font-family: 'Almarai-Bold';
+    font-size: 20px;
+}
+/****** end header ***/
+
+
+/******************* End Home.blade ************/
+
+
+/********************** media query ************************/
+@media (max-width: 991px) {    
+    .head-txt {
+        top: 55%;
+    }
+}
+@media (max-width: 767px) {
+    .head-txt {
+        width: max-content;
+        text-align: center;
+    }
+    .hawafell h2 {
+        font-size: 27px;
+    }
+}

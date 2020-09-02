@@ -3,24 +3,27 @@
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/jquery.fancybox.min.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
-<link rel="stylesheet" href="{{asset('website/dist/css/r-style.css')}}">
-<link rel="stylesheet" href="{{asset('website/dist/css/home-navbar.css')}}">
+<link rel="stylesheet" href="{{asset('website/dist/css/banner_home_navbar.css')}}">
 <link rel="stylesheet" href="{{asset('website/scss/first.css')}}">
 
 @endsection
 @section('content')
 <!---//////////// Start Header //////////////////------------>
 <header class="my-header">
-    <div class="container">
-        <div class="head-txt">
-            <div class="eyire wow animate__ animate__fadeIn animated">
-                <h2 class="white">حوافل</h2>
-                <h2 class="shadow-txt">للحجوزات</h2>
+    <img src="{{asset('website/dist/img/asset1.png')}}">
+        <div class="container head-txt">
+            <div class="hawafell wow animate__ animate__fadeIn animated">
+                <p>حوافل للعناية بالبشرة</p>
+                <h2>منتجات</h2>
+                <h2> صنعت من</h2>
+                <h3>مكونات طبيعية للعناية ببشرتك</h3>
             </div>
-            <p>هذا النص هو مثال لنص يمكن ان يستبدل</p>
-            <a href="{{url('categories')}}" class="btn-hvr">احجز الان</a>
+            <a href="{{url('categories')}}" class="btn-hvr"> 
+                <img src="{{asset('website/dist/img/favicon_white.png')}}">
+                 تسوق الان
+                <span class="btn-icon"><i class="fas fa-long-arrow-alt-left"></i></span>
+            </a>
         </div>
-    </div>
 </header>
 <!---//////////// End header //////////////////------------>
 
