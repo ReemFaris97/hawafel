@@ -1,13 +1,17 @@
+$primary-color: #000000;
+$secondary-color: #1d463d;
+$third-color: #f9a392;
+$grey-color: #7c7e7c;
 @mixin rTransition($tr) {
     -webkit-transition: $tr;
     -o-transition: $tr;
     transition: $tr;
 }
-@mixin boxShadow($sh1,$sh2) {
-    -webkit-box-shadow: $sh1,$sh2;
-    -o-box-shadow: $sh1,$sh2;
-    -ms-box-shadow: $sh1,$sh2;
-    box-shadow: $sh1,$sh2;
+@mixin boxShadow($sh1, $sh2) {
+    -webkit-box-shadow: $sh1, $sh2;
+    -o-box-shadow: $sh1, $sh2;
+    -ms-box-shadow: $sh1, $sh2;
+    box-shadow: $sh1, $sh2;
 }
 @mixin boxShadowOne($sh) {
     -webkit-box-shadow: $sh;
@@ -19,10 +23,6 @@
     -o-object-fit: $fit;
     object-fit: $fit;
 }
-$primary-color: #000000;
-$secondary-color: #1D463D;
-$third-color: #F9A392;
-$grey-color:  #7c7e7c;
 @mixin width-max-content {
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -30,18 +30,6 @@ $grey-color:  #7c7e7c;
 }
 %all-section-padd {
     padding: 50px 0;
-}
-%bg-shape {
-    background-repeat: no-repeat;
-    background-size: 500px;
-}
-%bg-left {
-    background-image: url("../dist/img/shape-left.png");
-    background-position: top left;
-}
-%bg-right {
-    background-image: url("../dist/img/shape-right.png");
-    background-position: top right;
 }
 %absolute {
     position: absolute;
@@ -64,17 +52,10 @@ $grey-color:  #7c7e7c;
         z-index: 9;
     }
 }
-%sec-hasBtn {
-    position: relative;
-    z-index: 9;
-}
-%background-contain {
+%background-cover {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-}
-%bg-grey,.bg-grey {
-    background-color: #f6f6f6;
 }
 @mixin dis-flex {
     display: -webkit-box;
@@ -92,14 +73,14 @@ $grey-color:  #7c7e7c;
     -ms-flex-align: center;
     align-items: center;
 }
-@mixin flex-center{
+@mixin flex-center {
     @include dis-flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     @include flex-col-center;
 }
-.above-overlay {
+%above-overlay {
     position: relative;
     z-index: 9;
 }
@@ -111,25 +92,67 @@ $grey-color:  #7c7e7c;
     text-overflow: ellipsis;
 }
 /************************/
-.search-box {
-    @extend %bg-grey;
-    padding-bottom: 30px;
+.btn-flex {
+    display: flex;
+    justify-content: space-around;
+    height: 56px;
+    line-height: unset;
+    align-items: center;
+    font-size: 18px;
 }
-/****Start My Services*******/
-.my-services {
-    @extend %all-section-padd;
-    @extend %bg-shape;
-    @extend %bg-left;
-    @extend %bg-overlay;
-    @extend %bg-grey;
-    .grid1 {
-        padding: 0;
-        .gallery_item_info>div {
-            max-width: 50%;
-            @extend %ellipsis;
+.btn-icon {
+    font-size: 20px;
+    background-color: #fff;
+    color: #1d463d;
+    width: 40px;
+    height: calc(100% - 6px);
+    line-height: 47px;
+    position: relative;
+    z-index: 1;
+}
+.btn-hvr:hover .btn-icon,
+.btn-hvr:focus .btn-icon {
+    color: #f9a392;
+}
+/****** start header ***/
+.my-header {
+    height: auto;
+    display: block;
+    width: 100%;
+    position: relative;
+    & > img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+    .head-txt {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        p {
+            font-family: "Almarai-Bold";
+            font-size: 16px;
+            margin: 0;
+        }
+        h2 {
+            font-size: 36px;
+            font-family: "Almarai-ExtraBold";
+        }
+        h3 {
+            font-family: "Almarai-ExtraBold";
+        }
+        .btn-hvr {
+            max-width: 300px;
+            margin: 30px 0 0 0;
+            img {
+                width: 32px;
+            }
         }
     }
 }
+/****** end header ***/
+/***********Start head titles*************/
 .head-title {
     position: relative;
     text-align: center;
@@ -138,7 +161,7 @@ $grey-color:  #7c7e7c;
         content: "";
         @extend %absolute;
         background-image: url(../dist/img/logo.png);
-        @extend %background-contain;
+        @extend %background-cover;
         opacity: 0.3;
         top: calc(50% - 50px);
         width: 100px;
@@ -154,397 +177,147 @@ $grey-color:  #7c7e7c;
         font-size: 16px;
     }
 }
-/******* End My Services *************/
-
-/******* Start My Rankings ****************/
-.my-rankings {
-    @extend %all-section-padd;
-    @extend %bg-shape;
-    @extend %bg-right;
-    @extend %bg-overlay;
-    &:after {
-        background-color: rgba(255, 255, 255, 0.8);
-    }
-}
-.ranking {
-    position: relative;
-    figure {
-        height: 220px;
-        border-radius: 12px;
-        a {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-    }
-    .gallery_item_info {
-        @extend %absolute;
-        bottom: 0;
-        padding: 8px;
-        color: #fff;
-        font-family: "Almarai-Bold";
-        background: -o-linear-gradient(
-            left,
-            rgb(243, 243, 243) 0%,
-            rgba(54, 75, 147, 1) 100%
-        );
-        background: -webkit-gradient(
-            linear,
-            left top, right top,
-            from(rgb(243, 243, 243)),
-            to(rgba(54, 75, 147, 1))
-        );
-        background: linear-gradient(
-            90deg,
-            rgb(243, 243, 243) 0%,
-            rgba(54, 75, 147, 1) 100%
-        );
-        &::after {
-            left: auto;
-            height: 100%;
-            width: 0;
-            top: 0;
-        }
-        h2 {
-            margin: 0;
-            font-size: 24px;
-            position: relative;
-            z-index: 9;
-            @extend %ellipsis;
-        }
-    }
-    &:hover {
-        .gallery_item_info:after {
-            left: 0;
-            width: 100%;
-        }
-    }
-}
-.btn-hvr.see-more {
-    margin: 20px auto 0 auto;
-    max-width: 220px;
-    background-color: $primary-color;
-    &::after {
-        background: $secondary-color;
-    }
-    &:hover {
-        color: #fff;
-    }
-}
-/******* End My Rankings ****************/
-
-/****** Start My Offers *****/
-.my-offers {
-    @extend %sec-hasBtn;
-    @extend %all-section-padd;
-    background-color: $primary-color;
-    .head-title {
-        h2 {
-            color: #fff;
-        }
-        &::before {
-            background-image: url(../dist/img/logo-white.png);
-        }
-    }
-}
-.emailing {
-    @extend %background-contain;
-    @extend %bg-overlay;
-    @include flex-center;
-    @include flex-dir-column;
-    border-radius: 0 15px 0 15px;
-    padding: 60px 10px;
-    overflow: hidden;
-    text-align: center;
-    background-size: cover;
-    background-image: url("../dist/img/subscribe-bg.jpg");
-    &::after {
-        border-radius: 0 15px 0 15px;
-    }
-    .above-overlay {
-        width: 100%;
-    }
-    h3 {
-        margin: 0 auto;
-        font-family: "Almarai-Bold";
-        &:nth-child(2) {
-            margin: 6px auto 26px auto;
-        }
-    }
-    .form-control {
-        height: 46px;
-        line-height: 46px;
-        border: 1px solid $primary-color;
-        background-color: transparent;
-        border-radius: 30px;
-        margin: 0 auto 10px auto;
-        color: $primary-color;
-        font-family: "Almarai-ExtraBold";
-        &:focus {
-            @include boxShadow(inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px $secondary-color);
-            border-color: $secondary-color;
-        }
-        &::-webkit-input-placeholder {
-            color: $primary-color !important;
-            opacity: 1; /* Firefox */
-            font-family: "Almarai-ExtraBold";
-        }
-        &::-moz-placeholder {
-            color: $primary-color !important;
-            opacity: 1; /* Firefox */
-            font-family: "Almarai-ExtraBold";
-        }
-        &:-ms-input-placeholder {
-            color: $primary-color !important;
-            opacity: 1; /* Firefox */
-            font-family: "Almarai-ExtraBold";
-        }
-        &::-ms-input-placeholder {
-            color: $primary-color !important;
-            opacity: 1; /* Firefox */
-            font-family: "Almarai-ExtraBold";
-        }
-        &::placeholder {
-            color: $primary-color !important;
-            opacity: 1; /* Firefox */
-            font-family: "Almarai-ExtraBold";
-        }
-    }
-    .btn-hvr {
-        margin: 26px auto 0 auto;
-        width: 100%;
-        &::after {
-            background: $primary-color;
-        }
-    }
-}
-/**** offers left *****/
-.my-offers {
-    .btn-hvr.see-more {
-        background-color: #fff;
-        color: $primary-color;
-        float: left;
-        min-width: 200px;
-        &::after {
-            background-color: $secondary-color;
-        }
-        &:hover,
-        &:focus {
-            color: #fff;
-        }
-    }
-}
-.flex-offers {
-    position: relative;
-    @include dis-flex;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    &::before {
-        content: "";
-        @extend %absolute;
-        height: 100%;
-        width: 1px;
-        background-color: rgba(203, 196, 196, 0.5);
-    }
-    li {
-        -webkit-box-flex: 1;
-        -ms-flex: 1 0 50%;
-        flex: 1 0 50%;
-        padding: 0 10px;
-        margin: 0 0 20px 0;
-    }
-}
-.offer1 {
-    @include dis-flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    @unclude flex-col-center;
-    @include rTransition(background-color 0.3s ease);
-    &:hover {
-        background-color: rgba(211, 211, 211, 0.2);
-    }
-    .off-img {
-        width: 116px;
-        height: 120px;
-        border-radius: 6px;
-        overflow: hidden;
-        float: right;
+/***********End head titles*************/
+/****Start About Section*******/
+.about-us {
+    padding: 100px 0;
+    @extend %background-cover;
+    background-image: url("../dist/img/side-menu.png");
+    .shapes {
+        position: relative;
+        margin: 0 0 0 60px;
         img {
-            width: 100%;
-            height: 100%;
-            @include objectFit(cover);
+            &:nth-child(1) {
+                width: 100%;
+                @include objectFit(cover);
+                height: 500px;
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+                width: 190px;
+                height: 190px;
+                position: absolute;
+                @include objectFit(cover);
+            }
+            &:nth-child(2) {
+                top: -95px;
+                right: 36px;
+            }
+            &:nth-child(3) {
+                bottom: -95px;
+                left: -36px;
+            }
         }
     }
-    .off-body {
-        float: left;
-        width: calc(100% - 116px);
-        padding: 0 12px 0 0;
-        .off-name {
-            @extend %ellipsis;
-            color: #fff;
-            display: block;
-            font-family: "Almarai-Bold";
-            font-size: 17px;
-            margin: 0 0 4px 0;
-            &:hover,&:focus {
-                color: #ec6b61;
+    /**** about left ***/
+    .about-left {
+        h3 {
+            img {
+                @include objectFit(contain);
+                margin:0 8px 0 0;
+            }
+            &:first-of-type {
+                font-family: 'Almarai-ExtraBold';
+            }
+            &:last-of-type {
+                font-family: 'Almarai-Bold';
             }
         }
-        .off-time {
-            color: $secondary-color;
-            margin: 0;
-        }
-        .flex-r {
-            .location {
-                color: #fff;
+        p {
+            &:first-of-type {
+                border-right:5px solid $third-color;
+                margin:20px 0;
+                padding: 20px;
             }
-            .off-price {
-                text-align: center;
-                p {
-                    margin: 0 0 10px 0;
-                    background-color: $secondary-color;
-                    border-radius: 20px;
-                    padding: 2px 5px;
-                    color: #fff;
+            &:last-of-type {
+            }
+        }
+    }
+}
+.buttons_cont {
+    @include flex-center;
+    justify-content: space-around;
+    .btn-flex {
+        min-width: 170px;
+        color:$primary-color;
+        border-color: #ffffff;
+        &::after{
+            background-color: #fff;
+        }
+        .btn-icon{
+            background-color: $third-color;
+            color: #ffffff;
+        }
+        &:hover , &:focus{
+            color:#ffffff;
+            border-color: $third-color;
+            .btn-icon{
+                background-color: #ffffff;
+                color: $third-color;
+            }
+        }
+        &:last-of-type{
+            .btn-icon{
+                background-color: transparent;
+                color: $primary-color;
+                width: unset;
+                height: unset;
+                line-height: unset;
+                margin:0 0 0 6px;
+            }
+            &:hover ,&:focus{
+                .btn-icon{
+                    color: #ffffff;
                 }
-                sub {
-                    color: #fff;
-                    display: block;
-                }
             }
         }
     }
 }
-
-.inline-stars {
-    span {
-        font-size: 15px;
-        color: #808080;
-        &:nth-child(-n + 3) {
-            color: #fff;
-        }
-    }
-}
-.gallery_item_info .inline-stars span:nth-child(-n + 3) {
-    color: #f6b729 !important;
-}
-/****** End My Offers *****/
-
+/******* End About Section *************/
 /*********** Responsive ****************/
 @media (max-width: 991px) {
-    .flex-offers {
-        &::before {
-            display: none;
+    .btn-flex {
+        height: 48px;
+        font-size: 16px;
+        .btn-icon {
+            line-height: 41px;
+            font-size: 18px;
         }
-        li {
-            -webkit-box-flex: 1;
-            -ms-flex: 1 0 100%;
-            flex: 1 0 100%;
-            padding: 0;
+    }
+    /**** banner ***********/
+    .head-txt {
+        top: 55%;
+        p {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+        .btn-hvr {
+            margin: 20px 0 0 0;
         }
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    .my-offers {
-        .row {
-            @include flex-center;
-        }
-    }
 }
 @media (max-width: 767px) {
-    .search-box {
-        padding-bottom: 10px;
-    }
     %all-section-padd {
         padding: 20px 0;
     }
-    .head-title {
-        margin: 0 auto 16px auto;
-        &:before {
-            top: calc(50% - 30px);
-            width: 60px;
-            height: 60px;
+    /******** banner ***/
+    .my-header {
+        & > img {
+            min-height: 400px;
+            object-fit: cover;
         }
-        h2 {
-            font-size: 24px;
-        }
-        p {
-            font-size: 14px;
-        }
-    }
-    %bg-shape {
-        background-size: contain;
-    }
-
-    .row.grid.grid1 .col-sm-4.col-xs-6 {
-        padding: 0 4px;
-        .item {
-            margin: 0 auto 12px auto;
-            figure {
-                height: 120px;
-            }
-            .gallery_item_info {
-                padding: 10px 3px;
-                div {
-                    font-size: 14px !important;
-                }
-            }
-        }
-    }
-    .ranking {
-        position: relative;
-        figure {
-            height: 160px !important;
-        }
-        .gallery_item_info {
-            h2 {
-                font-size: 16px;
-            }
-        }
-    }
-    .btn-hvr.see-more {
-        font-size: 16px;
-        margin: 10px auto 0 auto;
-        max-width: 170px;
-        height: 40px;
-        line-height: 40px;
-    }
-    /*******offers ****/
-    .emailing {
-        min-height: unset !important;
-        max-width: 400px;
-        margin: 0 auto 30px auto;
-        padding: 30px 10px;
-        h3 {
-            font-size: 16px;
-        }
-    }
-    .offer1 .off-body .flex-r {
-        div {
-            width: 50%;
-        }
-        .off-price {
+        .head-txt {
+            width: max-content;
             text-align: center;
-            @include dis-flex;
-            @include flex-dir-column;
-            -webkit-box-align: end;
-            -ms-flex-align: end;
-            align-items: flex-end;
-            p {
-                margin: 0 0 7px 0;
-                padding: 0;
-                font-size: 13px;
-                @include width-max-content;
-            }
         }
-    }
-    .my-offers .btn-hvr.see-more {
-        float: none;
     }
 }
