@@ -12,7 +12,24 @@
         <h3 class="titlebread" > اتصل بنا </h3>
         <p class="breadcrum"> <a href="#">الرئيسية</a> /  <a href="{{url('contact-us')}}">اتصل بنا</a> </p>
     </div>
-
+    <img class="absimgbread" alt="" src="{{asset('website/dist/img/grass.png')}}">
+    <div id="leaves">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
 </section>
 <!-- ///////||||||||||||||||||end breadCrumbs|||||||||||||||||||||||||||//// -->
 
