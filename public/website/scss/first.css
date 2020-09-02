@@ -255,6 +255,28 @@
   .head-txt .btn-hvr {
     margin: 20px 0 0 0;
   }
+  /**** About Section*******/
+  .about-us {
+    padding: 50px 0;
+  }
+  .about-us .shapes {
+    margin: 0 0 0 20px;
+  }
+  .about-us .shapes img:nth-child(1) {
+    height: 400px;
+  }
+  .about-us .shapes img:nth-child(2), .about-us .shapes img:nth-child(3) {
+    width: 90px;
+    height: 90px;
+  }
+  .about-us .shapes img:nth-child(2) {
+    top: -45px;
+    right: 20px;
+  }
+  .about-us .shapes img:nth-child(3) {
+    bottom: -45px;
+    left: -20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -269,6 +291,23 @@
     width: -moz-max-content;
     width: max-content;
     text-align: center;
+  }
+  /**** About Section*******/
+  .about-us {
+    padding: 50px 0 20px 0;
+  }
+  .about-us .shapes {
+    margin: 0 20px 50px 20px;
+  }
+  .about-us .shapes img:nth-child(1) {
+    height: 300px;
+  }
+  .about-us .about-left p:first-of-type {
+    margin: 10px 0;
+    padding: 10px;
+  }
+  .buttons_cont .btn-flex {
+    min-width: 130px;
   }
 }
 /*# sourceMappingURL=first.css.map */
