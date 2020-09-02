@@ -5,7 +5,6 @@
 <!-- for timepiker -->
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="{{asset('website/dist/css/jquery.fancybox.min.css')}}" />
-<link rel="stylesheet" href="{{asset('website/dist/css/r-style.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 <link rel="stylesheet" href="{{asset('website/scss/a-sass.css')}}">
 <!-- end sppecial for this page -->

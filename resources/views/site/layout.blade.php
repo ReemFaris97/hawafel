@@ -97,11 +97,12 @@
 
                         <!-- /////////////////////||||||||||| Start Nav Cart |||||||||||||||||||| -->
                         <li>
-                            <a href="#" class="menu-toggle">
+                            <a href="javascript:void(0)" class="menu-toggle">
                                 <span class="nav-icon"> <i class="fas fa-shopping-cart"></i></span>
                             </a>
-                            <div class="side-menu">
+                            <div class="side-menu notifi-menu">
                                 <button type="button" class="nav-icon close-menu"><i class="fas fa-times"></i></button>
+                                <a href="{{url('cart')}}" class="fixed-li">عرض السلة</a>
                                 <ul>
                                     <li>
                                         <div class="flexx cart_item">
@@ -169,7 +170,7 @@
 
                         <!-- /////////////////////||||||||||| Start Nav Profile  |||||||||||||||||||| -->
                         <li>
-                            <a href="#" class="menu-toggle">
+                            <a href="javascript:void(0)" class="menu-toggle">
                                 <span class="nav-icon"><i class="far fa-user"></i></span>
                             </a>
                             <div class="side-menu flexx pro-menu">
@@ -212,7 +213,7 @@
 
                         <!-- /////////////////////||||||||||| Start Nav Notifications  |||||||||||||||||||| -->
                         <li>
-                            <a href="#" class="menu-toggle">
+                            <a href="javascript:void(0)" class="menu-toggle">
                                 <span class="nav-icon"><i class="far fa-bell"></i></span>
                             </a>
                             <div class="side-menu notifi-menu">
