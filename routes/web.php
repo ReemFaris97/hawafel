@@ -26,11 +26,14 @@ Route::get('/about', function () {
 Route::get('/use_policy', function () {
     return view('site.use_policy');
 });
+Route::get('/return_policy', function () {
+    return view('site.return_policy');
+});
 Route::get('/privacy', function () {
     return view('site.privacy');
 });
-Route::get('/return_policy', function () {
-    return view('site.return_policy');
+Route::get('/site_map', function () {
+    return view('site.site_map');
 });
 Route::get('/multimedia', function () {
     return view('site.multimedia');

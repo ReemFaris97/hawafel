@@ -1,55 +1,54 @@
 /********************** start my button **************/
 .btn-hvr{
-    font-family: 'Almarai-ExtraBold';
-    min-width: 100px;
-    height: 50px;
-    line-height: 50px;
-    display: block;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    border: 1px solid transparent;
-    color: #fff;
-    overflow: hidden;
-    border-radius: 30px;
-    background-color: #EA6B60;
-    /* width: 162px; */
-    text-align: center;
-    margin: 0 auto;
-    z-index: 0;
+  font-family: 'Almarai-Bold';
+  min-width: 100px;
+  height: 40px;
+  line-height: 38px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  border: 2px solid #1D463D;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+}
+.btn-hvr::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F9A392;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+  z-index: -5;
 }
 .btn-hvr::after{
-    content: '';
-    position: absolute;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    width: 100%;
-    height: 0;
-    top: 50%;
-    left: 50%;
-    background: transparent;
-    opacity: 0;
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1D463D;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+  z-index: -1;
 }
-.btn-hvr:hover::after{
-    height: 230%;
-    opacity: 1;
-    background-color: #3a4b92;
-    z-index: -1;
+.btn-hvr:hover::before,
+.btn-hvr:focus::before{
+  transform: scaleY(0);
+}
+.btn-hvr:hover::after,
+.btn-hvr:focus::after{
+  transform: scaleX(0);
 }
 .btn-hvr:hover , .btn-hvr:focus{
-    color: #EA6B60 ;
-    background-color: transparent !important;
-    border-color: #fff;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    border-color: #F9A392;
 }
 
 /********************** end my button **************/
@@ -96,7 +95,8 @@
 ul.social  li a:hover , ul.social  li a:focus{
     color: #fff !important;
 }
-ul.social  li a:hover:before {
+ul.social  li a:hover:before ,
+ul.social  li a:focus:before {
     -webkit-transform: scale(.9);
         -ms-transform: scale(.9);
             transform: scale(.9);
