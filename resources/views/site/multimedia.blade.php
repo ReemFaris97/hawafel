@@ -104,7 +104,7 @@
 <section class="all-sections Subscribe">
     <div class="container">
     <div class="contentimgsub">
-        <img src="{{asset('website/dist/img/Layer_1.png')}}" alt="">
+        <a href="../"><img src="{{asset('website/dist/img/favicon_white.png')}}" alt=""></a>
     </div>
     <div class="aligne-center">
         <h3 class="subscribeh3">اشترك معنا ليصلك عروضنا</h3>
