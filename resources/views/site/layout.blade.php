@@ -161,7 +161,7 @@
                                         <p>
                                             من فضلك قم بتسجيل الدخول لكى يتم عملية الشراء والدفع وأكثر
                                         </p>
-                                        <a href="{{url('sign-up')}}" class="btn-hvr">تسجيل جديد</a>
+                                        <a href="{{url('sign-up')}}" class="btn-hvr"><span class="z-span">تسجيل جديد </span></a>
                                     </div>
                                 </ul>
                             </div>
@@ -425,12 +425,14 @@
 
 
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Script |||||||||||||||||||||||||||| -->
-    <script src="{{asset('website/dist/js/jquery-1.11.2.min.js')}}"></script>
+    <script src="{{asset('website/dist/js/jquery-2.1.4.min.js')}}"></script>
     <script src="{{asset('website/dist/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('website/dist/js/fontawesome.min.js')}}"></script>
     <script src="{{asset('website/dist/js/wow.min.js')}}"></script>
     <script>
-        new WOW().init();
+$(function(){
+  new WOW().init(); 
+});
     </script>
     <script src="{{asset('website/dist/js/main.js')}}"></script>
     <script>
@@ -484,33 +486,6 @@
             $(this).parent(".cart_item").fadeOut(300);
         });
     </script>
-    <!---- plus and minus cart inputs --->
-    <!-- <script>
-        /*click minus */
-
-        $(document).on('click', '.minus', function () {
-                var $input = $(this).parent().find('input');
-                var count = parseFloat($input.val()) - 1;
-                
-                if(count >= 1){
-                    count = count;
-                    $input.val(count);
-                  $input.change();
-                
-                }else{
-                     count = 1;
-                     return false;
-                }
-            });
-            /*click plus */
-            $(document).on('click', '.plus', function () {
-                var $input = $(this).parent().find('input');
-                var count = parseFloat($input.val()) + 1;
-                $input.val(count);
-                $input.change();
-                return false;
-            });
-    </script> -->
     @yield('scripts')
     <!-- /////////////////////||||||||||||||||||||||||||||| End Script |||||||||||||||||||||||||||| -->
 </body>

@@ -35,7 +35,6 @@
   background-color: #1D463D;
   transition: all 0.5s ease-in-out;
   transform: scaleX(1);
-  z-index: -1;
 }
 .btn-hvr:hover::before,
 .btn-hvr:focus::before{
@@ -49,8 +48,12 @@
     color: #ffffff;
     transition: all 0.5s ease-in-out;
     border-color: #F9A392;
+    background-color: #F9A392;
 }
-
+.z-span{
+  z-index: 1;
+  position: relative;
+}
 /********************** end my button **************/
 /************************/
 .social li {
