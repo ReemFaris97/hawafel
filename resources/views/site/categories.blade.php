@@ -8,7 +8,7 @@
 @section('content')
 
 <!-- /////////////////////||||||||||| bread crumbs |||||||||||||||||||| -->
-<section class="all-sections single-work">
+<section class="all-sections sec-about single-work">
     <div class="single-workdiv">
         <h3 class="titlebread" > الاقسام</h3>
         <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="">الاقسام</a> </p>
@@ -37,6 +37,71 @@
 <section class="all-sections seccateg">
     <div class="container">
         <div class="row">
+            <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
+                <div class="department">
+                    <div class="bigdivcont">
+                        <div class="smlldivcont">
+                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                        </div>
+                    </div>
+                   <div class="divcontp">
+                        <a class="categoryhref" href="">العناية بالبشرة</a>
+                        <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
+                <div class="department">
+                    <div class="bigdivcont">
+                        <div class="smlldivcont">
+                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                        </div>
+                    </div>
+                   <div class="divcontp">
+                        <a class="categoryhref" href="">العناية بالبشرة</a>
+                        <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
+                <div class="department">
+                    <div class="bigdivcont">
+                        <div class="smlldivcont">
+                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                        </div>
+                    </div>
+                   <div class="divcontp">
+                        <a class="categoryhref" href="">العناية بالبشرة</a>
+                        <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
+                <div class="department">
+                    <div class="bigdivcont">
+                        <div class="smlldivcont">
+                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                        </div>
+                    </div>
+                   <div class="divcontp">
+                        <a class="categoryhref" href="">العناية بالبشرة</a>
+                        <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
+                <div class="department">
+                    <div class="bigdivcont">
+                        <div class="smlldivcont">
+                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                        </div>
+                    </div>
+                   <div class="divcontp">
+                        <a class="categoryhref" href="">العناية بالبشرة</a>
+                        <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+                   </div>
+                </div>
+            </div>
             <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">

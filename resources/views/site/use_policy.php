@@ -1,31 +1,51 @@
 @extends('site.layout')
-@section('title' , 'حوافل || سياسة الاستخدام')
+@section('title' , 'حوافل || الاقسام')
 @section('styles')
+<link rel="stylesheet" href="{{asset('website/dist/css/jquery.fancybox.min.css')}}">
 
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 @endsection
 @section('content')
 
-<!-- /////////////////////||||||||||| start sections |||||||||||||||||||| -->
-<section class="all-sections secall">
-   <div class="container">
-       <div class="aligne-center aboutsec">
-
-    <img  class="about-logo" src="{{asset('website/dist/img/logo.png')}}" alt="">
-    <p>هذا النص هو مثال لنص يمكن  ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن  ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن  ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن  ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن  ان يستبدل في هذة المساحة
-    هذا النص هو مثال لنص يمكن  ان يستبدل في هذة المساحة
-    هذا النص هو مثال لنص يمكن  ان يستبدل في هذة المساحة
-    </p>
-
-       </div>
-
-
-
-
-   </div>
+<!-- /////////////////////||||||||||| bread crumbs |||||||||||||||||||| -->
+<section class="all-sections single-work">
+    <div class="single-workdiv">
+        <h3 class="titlebread" > من نحن </h3>
+        <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="">من نحن</a> </p>
+    </div>
+    <img class="absimgbread" alt="" src="{{asset('website/dist/img/grass.png')}}">
+    <div id="leaves">
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
+</div>
 </section>
+<!-- /////// ||||||||||||||||||||end breadcrumbs|||||||||||||||||||| ///////// -->
+<!-- /////// |||||||||||||||||||| breadcrumbs|||||||||||||||||||| ///////// -->
+<section class="all-sections seccateg about">
+    <div class="container">
+        <p>هذا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحةا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة </p>
+        <p>هذا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحةا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة ا النص هو مثال لنص هو مثال يمكن ان يستبدل في هذا المساحة </p>
+    </div>
+</section>
+
+
 <!-- /////////////////////|||||||||||End sections |||||||||||||||||||| -->
 @endsection
 @section('scripts')
+
+<script src="{{asset('website/dist/js/jquery.fancybox.min.js')}}"></script>
 
 @endsection

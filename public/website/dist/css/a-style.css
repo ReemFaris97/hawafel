@@ -840,6 +840,7 @@ p.productp {
     padding: 10px 5px;
     border-radius: 23px;
     margin-top: 15px;
+    border-top: 4px solid #fff;
 }
 .department:hover {
     transform: translateY(-10px);
@@ -917,9 +918,22 @@ a.categoryhref:hover{
     bottom: -18px;
     margin: auto;
 }
+
 /*============ end categooris  html  ===================*/
+/*============ about  html  ===================*/
+.sec-about #leaves{
+    overflow:visible;
+}
 
-
+.about p {
+    font-size: 18px;
+    color: #464646;
+}
+.divwidthbtn button {
+    width: 50%;
+    margin: auto;
+}
+/*================== end about html =========================*/
 /*================== responsive =========================*/
 
 
@@ -1048,7 +1062,39 @@ a.categoryhref:hover{
 		font-size: 14px;
 		margin: 17px 0;
 	}
-	/*======= end multimedia =========*/
+    /*======= end multimedia =========*/
+
+    /*======= categooris  html  =======*/
+    .bigdivcont {
+        height: 131px;
+        width: 50%;
+    }
+
+.smlldivcont {
+    width: 75px;
+    height: 75px;
+}
+.divcontp {
+    margin-top: 30px;
+}
+a.categoryhref {
+    font-size: 16px;
+
+}
+.divcontp p {
+    margin-top: 7px;
+    font-size: 12px;
+    height: 55px;
+
+}
+.overhidden.editcategory:nth-of-type(odd) {
+    margin-top: 0;
+}
+/*about*/
+.about p {
+    font-size: 12px;
+    color: #464646;
+}
 }
 
 @media (max-width: 700px) {}

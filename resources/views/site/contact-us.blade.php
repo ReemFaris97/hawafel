@@ -142,8 +142,10 @@
                <!--  <button href="#" class="btn-hvr cartmargtop a-btn btnauto " type="submit">
                     ارسال
                 </button> -->
-                <div class="relativeZ">
-                    <button class="btn-hvr editwidthbtn"> ارسال</button>
+                <div class="aligne-center divwidthbtn">
+                <button href="{{url('categories')}}" class="btn-hvr btn-flex">
+                    <span class="z-span">ارسال</span>
+                </button>
                 </div>
 
             </form>
