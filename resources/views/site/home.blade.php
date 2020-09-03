@@ -71,6 +71,112 @@
 </section>
 <!---//////////// End About Section //////////////////------------>
 
+<!---//////////// Start Categories Section //////////////////------------>
+<section class="categories-r">
+    <div class="container">
+        <div class="head-title">
+            <div class="head-in">
+                <h2>الأقسام</h2>
+            </div>
+            <p>نحن متجرك المفضل لمنتجات العناية بالبشرة والشعر الطبيعية</p>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
+                <div class="department">
+                    <div class="bigdivcont">
+                        <div class="smlldivcont">
+                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                        </div>
+                    </div>
+                   <div class="divcontp">
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+                        <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
+                <div class="department">
+                    <div class="bigdivcont">
+                        <div class="smlldivcont">
+                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                        </div>
+                    </div>
+                   <div class="divcontp">
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+                        <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
+                <div class="department">
+                    <div class="bigdivcont">
+                        <div class="smlldivcont">
+                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                        </div>
+                    </div>
+                   <div class="divcontp">
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+                        <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
+                <div class="department">
+                    <div class="bigdivcont">
+                        <div class="smlldivcont">
+                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                        </div>
+                    </div>
+                   <div class="divcontp">
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+                        <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
+                <div class="department">
+                    <div class="bigdivcont">
+                        <div class="smlldivcont">
+                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                        </div>
+                    </div>
+                   <div class="divcontp">
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+                        <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
+                <div class="department">
+                    <div class="bigdivcont">
+                        <div class="smlldivcont">
+                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                        </div>
+                    </div>
+                   <div class="divcontp">
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+                        <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
+                <div class="department">
+                    <div class="bigdivcont">
+                        <div class="smlldivcont">
+                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                        </div>
+                    </div>
+                   <div class="divcontp">
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+                        <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---//////////// End Categories Section //////////////////------------>
 
 
 @endsection
