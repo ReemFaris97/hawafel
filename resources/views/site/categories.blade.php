@@ -36,8 +36,8 @@
 <!-- /////// |||||||||||||||||||| breadcrumbs|||||||||||||||||||| ///////// -->
 <section class="all-sections seccateg">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
+    <div class="row">
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
@@ -45,12 +45,12 @@
                         </div>
                     </div>
                    <div class="divcontp">
-                        <a class="categoryhref" href="">العناية بالبشرة</a>
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
@@ -58,12 +58,12 @@
                         </div>
                     </div>
                    <div class="divcontp">
-                        <a class="categoryhref" href="">العناية بالبشرة</a>
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
@@ -71,12 +71,12 @@
                         </div>
                     </div>
                    <div class="divcontp">
-                        <a class="categoryhref" href="">العناية بالبشرة</a>
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
@@ -84,12 +84,12 @@
                         </div>
                     </div>
                    <div class="divcontp">
-                        <a class="categoryhref" href="">العناية بالبشرة</a>
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
@@ -97,12 +97,12 @@
                         </div>
                     </div>
                    <div class="divcontp">
-                        <a class="categoryhref" href="">العناية بالبشرة</a>
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
@@ -110,12 +110,12 @@
                         </div>
                     </div>
                    <div class="divcontp">
-                        <a class="categoryhref" href="">العناية بالبشرة</a>
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-3 overhidden editmargingallery editcategory">
+            <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
@@ -123,17 +123,11 @@
                         </div>
                     </div>
                    <div class="divcontp">
-                        <a class="categoryhref" href="">العناية بالبشرة</a>
+                        <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
                    </div>
                 </div>
             </div>
-
-
-
-
-
-
         </div>
     </div>
 </section>

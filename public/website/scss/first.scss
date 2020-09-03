@@ -154,34 +154,37 @@ $grey-color: #7c7e7c;
 /****** end header ***/
 /***********Start head titles*************/
 .head-title {
-    position: relative;
     text-align: center;
     margin: 0 auto 30px auto;
-    &:before {
-        content: "";
-        @extend %absolute;
-        background-image: url(../dist/img/logo.png);
+    .head-in{
+        background-image: url(../dist/img/favicon_pink2.png);
         @extend %background-cover;
-        opacity: 0.3;
-        top: calc(50% - 50px);
-        width: 100px;
-        height: 100px;
+        background-size: contain;
+        width: max-content;
+        margin: 0 auto;
+        min-width: 200px;
+        min-height: 84px;
+        @include flex-center;
     }
     h2 {
-        font-family: "Almarai-ExtraBold";
-        font-size: 33px;
+        font-family: "Hf";
+        font-size: 36px;
+        font-weight: bold;
+        margin:0 auto;
     }
     p {
-        color: #ec6a60;
-        margin: 0;
-        font-size: 16px;
+        font-size: 17px;
+        max-width: 300px;
+        margin: 0 auto;
     }
 }
 /***********End head titles*************/
 /****Start About Section*******/
 .about-us {
     padding: 100px 0;
-    @extend %background-cover;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
     background-image: url("../dist/img/side-menu.png");
     .shapes {
         position: relative;
@@ -274,6 +277,19 @@ $grey-color: #7c7e7c;
     }
 }
 /******* End About Section *************/
+
+
+/******* Start categories Section *************/
+.categories-r{
+    @extend %all-section-padd;
+    background-color: #FFF9F9;
+}
+a.categoryhref{
+    @extend %ellipsis;
+}
+/******* End categories Section *************/
+
+
 /*********** Responsive ****************/
 @media (max-width: 991px) {
     .btn-flex {
@@ -363,5 +379,10 @@ $grey-color: #7c7e7c;
     }
     .buttons_cont .btn-flex {
         min-width: 130px;
+    }
+    /****** categories section *****/
+    .bigdivcont {
+        width: 100%;
+        height: 110px;
     }
 }
