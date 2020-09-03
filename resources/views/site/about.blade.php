@@ -11,7 +11,7 @@
 <section class="all-sections sec-about single-work">
     <div class="single-workdiv">
         <h3 class="titlebread" > من نحن </h3>
-        <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="">من نحن</a> </p>
+        <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="{{url('about')}}">من نحن</a> </p>
     </div>
     <img class="absimgbread" alt="" src="{{asset('website/dist/img/grass.png')}}">
     <div id="leaves">
