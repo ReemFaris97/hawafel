@@ -26,6 +26,9 @@ Route::get('/about', function () {
 Route::get('/use_policy', function () {
     return view('site.use_policy');
 });
+Route::get('/polices_rules', function () {
+    return view('site.polices_rules');
+});
 Route::get('/return_policy', function () {
     return view('site.return_policy');
 });
@@ -93,7 +96,7 @@ Route::get('/my_wallet', function () {
 Route::get('/recharge_wallet', function () {
     return view('site.recharge_wallet');
 });
-/**** cart***/ 
+/**** cart***/
 Route::get('/cart', function () {
     return view('site.cart');
 });

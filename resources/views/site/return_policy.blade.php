@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'حوافل || من نحن')
+@section('title' , 'حوافل || سياسة الاسترجاع')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/jquery.fancybox.min.css')}}">
 
@@ -8,10 +8,10 @@
 @section('content')
 
 <!-- /////////////////////||||||||||| bread crumbs |||||||||||||||||||| -->
-<section class="all-sections sec-about single-work">
+<section class="all-sections single-work">
     <div class="single-workdiv">
-        <h3 class="titlebread" > من نحن </h3>
-        <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="">من نحن</a> </p>
+        <h3 class="titlebread" > سياسة الاسترجاع  </h3>
+        <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="{{url('return_policy')}}">سياسة الاسترجاع </a> </p>
     </div>
     <img class="absimgbread" alt="" src="{{asset('website/dist/img/grass.png')}}">
     <div id="leaves">
