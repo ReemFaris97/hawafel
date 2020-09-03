@@ -808,10 +808,12 @@ p.imgname {
 	font-size: 28px;
 	color: #1d463d
 }
-
-p.productp {
-	font-size: 16px;
+.imgcontent {
+	height: 200px;
 }
+/* p.productp {
+	font-size: 16px;
+} */
 
 .editmargingallery {
 	margin: 15px 0;
@@ -1090,10 +1092,17 @@ a.categoryhref {
 .overhidden.editcategory:nth-of-type(odd) {
     margin-top: 0;
 }
+.editmargingallery {
+    margin: 8px 0;
+}
 /*about*/
 .about p {
     font-size: 12px;
     color: #464646;
+}
+
+.department {
+    margin-top: 11px;
 }
 }
 
