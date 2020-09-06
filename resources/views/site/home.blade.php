@@ -4,10 +4,10 @@
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 <link rel="stylesheet" href="{{asset('website/scss/first.css')}}">
 <style>
-    .navbar{
-    position: fixed;
-    background-color: transparent;
-}
+    .navbar {
+        position: fixed;
+        background-color: transparent;
+    }
 </style>
 @endsection
 @section('content')
@@ -15,10 +15,10 @@
 <header class="my-header">
     <img src="{{asset('website/dist/img/asset1.png')}}">
     <div class="container head-txt">
-            <p class="wow animate__animated animate__fadeInDownBig">حوافل للعناية بالبشرة</p>
-            <h2>منتجات</h2>
-            <h2> صنعت من</h2>
-            <h3 class="wow animate__animated animate__fadeInRightBig">مكونات طبيعية للعناية ببشرتك</h3>
+        <p class="wow animate__animated animate__fadeInDownBig">حوافل للعناية بالبشرة</p>
+        <h2>منتجات</h2>
+        <h2> صنعت من</h2>
+        <h3 class="wow animate__animated animate__fadeInRightBig">مكونات طبيعية للعناية ببشرتك</h3>
         <a href="{{url('categories')}}" class="btn-hvr btn-flex">
             <img src="{{asset('website/dist/img/favicon_white.png')}}">
             <span class="z-span"> تسوق الان </span>
@@ -56,11 +56,11 @@
                     </p>
                     <div class="buttons_cont">
                         <a href="{{url('categories')}}" class="btn-hvr btn-flex">
-                        <span class="z-span">تسوق الان </span>
+                            <span class="z-span">تسوق الان </span>
                             <span class="btn-icon"><i class="fas fa-long-arrow-alt-left"></i></span>
                         </a>
                         <a href="{{url('contact-us')}}" class="btn-hvr btn-flex">
-                             <span class="btn-icon"><i class="fas fa-phone-volume"></i></span>
+                            <span class="btn-icon"><i class="fas fa-phone-volume"></i></span>
                             <span class="z-span">تواصل معنا</span>
                         </a>
                     </div>
@@ -86,91 +86,91 @@
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
-                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                            <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
                         </div>
                     </div>
-                   <div class="divcontp">
+                    <div class="divcontp">
                         <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
-                   </div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
-                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                            <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
                         </div>
                     </div>
-                   <div class="divcontp">
+                    <div class="divcontp">
                         <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
-                   </div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
-                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                            <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
                         </div>
                     </div>
-                   <div class="divcontp">
+                    <div class="divcontp">
                         <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
-                   </div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
-                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                            <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
                         </div>
                     </div>
-                   <div class="divcontp">
+                    <div class="divcontp">
                         <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
-                   </div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
-                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                            <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
                         </div>
                     </div>
-                   <div class="divcontp">
+                    <div class="divcontp">
                         <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
-                   </div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
-                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                            <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
                         </div>
                     </div>
-                   <div class="divcontp">
+                    <div class="divcontp">
                         <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
-                   </div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-6 col-md-3 overhidden editmargingallery editcategory">
                 <div class="department">
                     <div class="bigdivcont">
                         <div class="smlldivcont">
-                            <img  src="{{asset('website/dist/img/asset10.png')}}" alt="">
+                            <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
                         </div>
                     </div>
-                   <div class="divcontp">
+                    <div class="divcontp">
                         <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
                         <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
-                   </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -189,92 +189,129 @@
         </div>
 
         <div class="row">
-         <div class="col-md-3 col-sm-4 col-xs-6">
-            <div class="fleximgfav">
-               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
-               <div class="descrpp">
-                  <p class="nameprodfav">زيت الارغان الاصلي</p>
-                  <b><span>100</span>  ريال سعودي </b>
-                  <div class="flex flexadd">
-                    <div class="likerr"><i class="far fa-heart"></i></div>
-                    <div class="addcard">اضافة للسلة  <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="fleximgfav">
+                    <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+                    <div class="descrpp">
+                        <p class="nameprodfav">زيت الارغان الاصلي</p>
+                        <b><span>100</span> ريال سعودي </b>
+                        <div class="flex flexadd">
+                            <div class="likerr"><i class="far fa-heart"></i></div>
+                            <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="col-md-3 col-sm-4 col-xs-6">
-            <div class="fleximgfav">
-               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
-               <div class="descrpp">
-                  <p class="nameprodfav">زيت الارغان الاصلي</p>
-                  <b><span>100</span>  ريال سعودي </b>
-                  <div class="flex flexadd">
-                    <div class="likerr"><i class="far fa-heart"></i></div>
-                    <div class="addcard">اضافة للسلة  <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="fleximgfav">
+                    <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+                    <div class="descrpp">
+                        <p class="nameprodfav">زيت الارغان الاصلي</p>
+                        <b><span>100</span> ريال سعودي </b>
+                        <div class="flex flexadd">
+                            <div class="likerr"><i class="far fa-heart"></i></div>
+                            <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="col-md-3 col-sm-4 col-xs-6">
-            <div class="fleximgfav">
-               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
-               <div class="descrpp">
-                  <p class="nameprodfav">زيت الارغان الاصلي</p>
-                  <b><span>100</span>  ريال سعودي </b>
-                  <div class="flex flexadd">
-                    <div class="likerr"><i class="far fa-heart"></i></div>
-                    <div class="addcard">اضافة للسلة  <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="fleximgfav">
+                    <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+                    <div class="descrpp">
+                        <p class="nameprodfav">زيت الارغان الاصلي</p>
+                        <b><span>100</span> ريال سعودي </b>
+                        <div class="flex flexadd">
+                            <div class="likerr"><i class="far fa-heart"></i></div>
+                            <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="col-md-3 col-sm-4 col-xs-6">
-            <div class="fleximgfav">
-               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
-               <div class="descrpp">
-                  <p class="nameprodfav">زيت الارغان الاصلي</p>
-                  <b><span>100</span>  ريال سعودي </b>
-                  <div class="flex flexadd">
-                    <div class="likerr"><i class="far fa-heart"></i></div>
-                    <div class="addcard">اضافة للسلة  <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="fleximgfav">
+                    <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+                    <div class="descrpp">
+                        <p class="nameprodfav">زيت الارغان الاصلي</p>
+                        <b><span>100</span> ريال سعودي </b>
+                        <div class="flex flexadd">
+                            <div class="likerr"><i class="far fa-heart"></i></div>
+                            <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="col-md-3 col-sm-4 col-xs-6">
-            <div class="fleximgfav">
-               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
-               <div class="descrpp">
-                  <p class="nameprodfav">زيت الارغان الاصلي</p>
-                  <b><span>100</span>  ريال سعودي </b>
-                  <div class="flex flexadd">
-                    <div class="likerr"><i class="far fa-heart"></i></div>
-                    <div class="addcard">اضافة للسلة  <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="fleximgfav">
+                    <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+                    <div class="descrpp">
+                        <p class="nameprodfav">زيت الارغان الاصلي</p>
+                        <b><span>100</span> ريال سعودي </b>
+                        <div class="flex flexadd">
+                            <div class="likerr"><i class="far fa-heart"></i></div>
+                            <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
+        </div>
     </div>
 </section>
 <!---//////////// End recent products Section //////////////////------------>
 
+<!---//////////// Start offers and sale Section //////////////////------------>
+<section class="my_offers">
+    <div class="container">
+        <div class="head-title">
+            <div class="head-in">
+                <h2>العروض والخصومات</h2>
+            </div>
+            <p>نحن متجرك المفضل لمنتجات العناية بالبشرة والشعر الطبيعية</p>
+        </div>
+
+
+        <div class="columns container">
+            <div class="wow animate__animated animate__backInRight box-wrapper">
+                <div class="three box">
+                    <h3>3</h3>
+                </div>
+            </div>
+            <div class="wow animate__animated animate__backInUp box-wrapper">
+                <div class="two box">
+                    <h3>2</h3>
+                </div>
+            </div>
+            <div class="wow animate__animated animate__backInDown box-wrapper">
+                <div class="two box">
+                    <h3 class="darker">2</h3>
+                </div>
+            </div>
+            <div class="wow animate__animated animate__backInLeft box-wrapper">
+                <div class="three box">
+                    <h3>3</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---//////////// End offers and sale Section //////////////////------------>
+
 <!-- ////////////////////////Start subscribe////////////////////////////////// -->
 <section class="all-sections Subscribe">
     <div class="container">
-    <div class="contentimgsub">
-        <a href="../"><img src="{{asset('website/dist/img/favicon_white.png')}}" alt=""></a>
-    </div>
-    <div class="aligne-center">
-        <h3 class="subscribeh3">اشترك معنا ليصلك عروضنا</h3>
-        <P>نحن متجرك المفضل لمنتجات العناية بالبشرة والشعر</P>
-        <form action="">
-            <div class="subdiv">
+        <div class="contentimgsub">
+            <a href="../"><img src="{{asset('website/dist/img/favicon_white.png')}}" alt=""></a>
+        </div>
+        <div class="aligne-center">
+            <h3 class="subscribeh3">اشترك معنا ليصلك عروضنا</h3>
+            <P>نحن متجرك المفضل لمنتجات العناية بالبشرة والشعر</P>
+            <form action="../">
+                <div class="subdiv">
                     <input class="form-control inputsubscribe" type="email" placeholder="البريد الالكتروني">
-                    <button><i class="fas fa-arrow-left"></i></button>
-            </div>
-        </form>
-    </div>
+                    <button type="submit"><i class="fas fa-arrow-left"></i></button>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 <!-- ///////||||||||||||||||||End subscribe|||||||||||||||||||||||||||//// -->
@@ -284,7 +321,7 @@
 <!---- like new product --->
 <script>
     $(".likerr").click(function() {
-            $(this).toggleClass("i_liked");
-        });
+        $(this).toggleClass("i_liked");
+    });
 </script>
 @endsection

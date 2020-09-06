@@ -1,4 +1,4 @@
-.categories-r, .recents {
+.categories-r, .recents, .my_offers {
   padding: 50px 0;
 }
 
@@ -184,11 +184,11 @@ a.categoryhref {
 }
 
 .about-us .about-left h3:first-of-type {
-  font-family: 'Almarai-ExtraBold';
+  font-family: "Almarai-ExtraBold";
 }
 
 .about-us .about-left h3:last-of-type {
-  font-family: 'Almarai-Bold';
+  font-family: "Almarai-Bold";
 }
 
 .about-us .about-left p:first-of-type {
@@ -252,7 +252,7 @@ a.categoryhref {
 /******* End About Section *************/
 /******* Start categories Section *************/
 .categories-r {
-  background-color: #FFF9F9;
+  background-color: #fff9f9;
 }
 
 /******* End categories Section *************/
@@ -278,11 +278,11 @@ a.categoryhref {
   margin-bottom: 0;
 }
 
-.fleximgfav {
+.recents .fleximgfav {
   position: relative;
 }
 
-.fleximgfav .flex.flexadd {
+.recents .fleximgfav .flex.flexadd {
   left: 0;
   position: absolute;
   right: 0;
@@ -297,7 +297,13 @@ a.categoryhref {
   transition: all 0.3s ease-in-out;
 }
 
-.fleximgfav .flex.flexadd .likerr {
+.recents .fleximgfav:hover .flex.flexadd {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.likerr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,19 +324,13 @@ a.categoryhref {
   transition: all 0.3s ease-in-out;
 }
 
-.fleximgfav .flex.flexadd .i_liked {
+.i_liked {
   background-color: red;
 }
 
-.fleximgfav .flex.flexadd .addcard {
+.addcard {
   height: 40px;
   font-size: 16px;
-}
-
-.fleximgfav:hover .flex.flexadd {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
 }
 
 /******* End recent products Section *************/
@@ -356,6 +356,75 @@ input.form-control.inputsubscribe::placeholder {
 }
 
 /************* End Subscribe section ************/
+/************* Start offers and sale section ************/
+.my_offers {
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../dist/img/side-menu.png");
+}
+
+/*********CSS Columns Masonry Grid*******/
+.columns {
+  width: 100%;
+  max-width: 95%;
+  margin: 2rem auto;
+  -webkit-column-gap: 0;
+  column-gap: 0;
+  -webkit-column-width: 30%;
+  column-width: 30%;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+.columns .box-wrapper {
+  padding: 10px;
+}
+
+.columns .box-wrapper .box {
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  break-inside: avoid;
+  border-radius: 6px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.columns .box-wrapper .box h3 {
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+.columns .box-wrapper .box h3.darker {
+  color: rgba(81, 85, 91, 0.38);
+}
+
+.columns .box-wrapper .box.one {
+  height: 200px;
+  background-color: #70c1b3;
+}
+
+.columns .box-wrapper .box.two {
+  height: 300px;
+  background-color: #ed6a5a;
+}
+
+.columns .box-wrapper .box.three {
+  height: 400px;
+  background-color: #f4f1bb;
+}
+
+/************* End offers and sale section ************/
 /*********** Responsive ****************/
 @media (max-width: 991px) {
   .btn-flex {
@@ -409,7 +478,7 @@ input.form-control.inputsubscribe::placeholder {
 }
 
 @media (max-width: 767px) {
-  .categories-r, .recents {
+  .categories-r, .recents, .my_offers {
     padding: 20px 0;
   }
   /******** banner ***/
@@ -463,17 +532,26 @@ input.form-control.inputsubscribe::placeholder {
     font-size: 13px;
     padding: 0 4px;
   }
-  .fleximgfav .flex.flexadd .likerr, .fleximgfav .flex.flexadd .deleteaa {
+  .fleximgfav .flex.flexadd .likerr,
+  .fleximgfav .flex.flexadd .deleteaa {
     width: 30px;
     height: 30px;
     height: 30px;
   }
-  .recents .col-md-3.col-sm-4.col-xs-6, .row.list .col-md-3.col-sm-4.col-xs-6 {
+  .recents .col-md-3.col-sm-4.col-xs-6,
+  .row.list .col-md-3.col-sm-4.col-xs-6 {
     padding: 0 5px;
   }
   /******** Subscribe section *******/
   .Subscribe {
     background-size: cover;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .columns {
+    -webkit-column-count: 1;
+    column-count: 1;
   }
 }
 /*# sourceMappingURL=first.css.map */
