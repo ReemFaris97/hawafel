@@ -876,15 +876,13 @@ p.imgname {
 .overhidden.editcategory:nth-of-type(even) {
     margin-top: 0px
 }
-.overhidden.editcategory:nth-of-type(odd) .bigdivcont {
-
-
+/* .overhidden.editcategory:nth-of-type(odd) .bigdivcont {
 }
 
 .overhidden.editcategory:nth-of-type(even) .bigdivcont {
-	background-color: #fff;
-}
 
+}
+ */
 .overhidden.editcategory:nth-of-type(odd) .bigdivcont .smlldivcont {
 	bottom: 0
 }
@@ -1088,10 +1086,15 @@ p.nameprodfav {
 .filter-buttons .dropdown-menu li {
     display: block;
     padding: 10px;
-    text-align: right
+    text-align: right;
+    font-size: 16px
 }
-.filter-buttons .dropdown-menu{
+.filter-buttons .dropdown-menu {
     z-index: 9;
+    border-radius: 0 20px 20px;
+    box-shadow: 2px 3px 10px #949494;
+    border: 0;
+    width: max-content;
 }
 .flex.flexadd.flexrelat {
     position: relative;
@@ -1103,6 +1106,88 @@ p.nameprodfav {
 .listgrid .fleximgfav {
     flex-direction: row;
 }
+.filter-buttons .dropdown-menu li a {
+    color: #a29f9f;
+}
+/******************************************************/
+/********return-order*********************/
+/*******************************************************/
+.return-order input{
+    width: 45%;
+    display: inline-block;
+    /* margin-right: 15px */
+    }
+    .return-order label {
+        width: 130px;
+    }
+    .flextextarea{
+        display: flex;
+
+    }
+    .changeinput textarea {
+        padding: 4px 14px;
+        background-color: #fff !important;
+        border: 1px solid #ddd !important;
+        border-radius: 0;
+        width: 45%
+    }
+    .changeinput textarea:focus {
+        border-color: #ff9021 !important;
+    }
+    .custom_radio{
+        display: flex
+     }
+     .custom_radio input[type="radio"]{
+       display: none;
+     }
+
+    .custom_radio input[type="radio"] + label {
+        position: relative;
+        display: inline-block;
+        padding-right: 1.5em;
+        cursor: pointer;
+        line-height: 1em;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        font-size: 16px;
+        color: #a29f9f;
+        font-weight: 100;
+        width: auto
+    }
+     .custom_radio input[type="radio"] + label:before,
+     .custom_radio input[type="radio"] + label:after{
+       content: '';
+       position: absolute;
+       top: 0;
+       right: 0;
+       width: 1em;
+       height: 1em;
+       text-align: center;
+       color: white;
+       font-family: Times;
+       border-radius: 50%;
+       -webkit-transition: all .3s ease;
+       transition: all .3s ease;
+       border: 1px solid #ff9021
+     }
+     .custom_radio input[type="radio"] + label:before {
+       -webkit-transition: all .3s ease;
+       transition: all .3s ease;
+       box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em white;
+     }
+     .custom_radio input[type="radio"] + label:hover:before {
+       -webkit-transition: all .3s ease;
+       transition: all .3s ease;
+       box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 1em #f1bd8a;
+     }
+     .custom_radio input[type="radio"]:checked + label:before {
+       -webkit-transition: all .3s ease;
+       transition: all .3s ease;
+       box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em #ff9021;
+     }
+     .custom_radio {
+        margin: 0px !important;
+    }
 /*================== end favourites html =========================*/
 /*================== responsive =========================*/
 
@@ -1296,6 +1381,19 @@ a.categoryhref {
 .col-md-6.col-sm-4.col-xs-6.parentfav.listgrid{
     width: 100%
 }
+/*===================== favourites html =========================*/
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+.filter-buttons div {
+    margin-left: 8px;
+}
+.filter-buttons button#dropdownMenuButton{
+    font-size: 17px
+}
+/*==================end favourites html =========================*/
 }
 
 @media (max-width: 700px) {}

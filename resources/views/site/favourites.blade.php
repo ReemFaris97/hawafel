@@ -50,10 +50,32 @@
                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                <i class="fas fa-sort-amount-down"></i>
                </button>
-               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <ul>
-                      <li>الخصم العالم</li>
-                  </ul>
+               <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                  <div class="custom_radio">
+                    <ul class="inlineradio">
+                        <li>
+                            <input type="radio" id="featured-1" name="featured" checked=""><label for="featured-1">الخصم العام</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="featured-2" name="featured"><label for="featured-2"> عرض منتجين و منتج مجاني</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="featured-3" name="featured"><label for="featured-3"> عرض منتج ومنتج مجاني</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="featured-4" name="featured"><label for="featured-4">عرض الكمية</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="featured-5" name="featured"><label for="featured-5">خصم النسبة </label>
+                        </li>
+                        <li>
+                            <a href="#">عروض الاقسام</a>
+                        </li>
+                        <li>
+                            <a href="#">كبونات الخصم</a>
+                        </li>
+                    </ul>
+                  </div>
                </div>
             </div>
             <div class="list-view-button"><i class="fa fa-bars" aria-hidden="true"></i>  </div>
@@ -62,7 +84,7 @@
             </div>
          </div>
       </div>
-      <div class="row list list-view-filter">
+      <!-- <div class="row list list-view-filter">
          <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid">
             <div class="fleximgfav">
                <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
@@ -78,6 +100,23 @@
             </div>
          </div>
          <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid">
+            <div class="fleximgfav">
+               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+               <div class="descrpp">
+                  <p class="nameprodfav">زيت الارغان الاصلي</p>
+                  <b><span>100</span>  ريال سعودي </b>
+                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
+                  <div class="flex flexadd">
+                     <div class="deleteaa"><i class="far fa-trash-alt"></i></div>
+                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> -->
+
+      <div class="row list list-view-filter">
+         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
             <div class="fleximgfav">
                <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
                <div class="descrpp">
@@ -134,4 +173,6 @@
           }
 
 </script>
+
+
 @endsection
