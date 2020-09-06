@@ -1041,7 +1041,7 @@ p.nameprodfav {
     display: none
 }
 .fleximgfav img {
-    transition: all .2s ease-in-out
+    transition: all .4s ease-in-out
 }
 .grid-view-filter .listgrid .fleximgfav img {
     margin-left: 0;
@@ -1054,7 +1054,7 @@ p.nameprodfav {
 .fleximgfav {
     transition: all .4s ease-in-out;
     border-top: 4px solid #ffffff;
-    border-radius: 28px;
+    border-radius: 17px;
 }
 .fleximgfav:hover {
     transform: translateY(-10px);
@@ -1063,10 +1063,10 @@ p.nameprodfav {
     border-top: 4px solid #f9a493;
 }
 .fleximgfav:hover img {
-    border-radius: 0 28px 28px 0;
+    border-radius: 0 17px 17px 0;
 }
 .grid-view-filter .listgrid .fleximgfav:hover img {
-    border-radius: 28px 28px 0 0;
+    border-radius: 17px 17px 0 0;
 }
 
 
@@ -1076,6 +1076,22 @@ p.nameprodfav {
 }
 .descrpp{
     padding: 10px;
+}
+
+
+.filter-buttons button#dropdownMenuButton {
+    color: #000;
+    font-size: 23px;
+    padding: 0;
+    background-color: unset;
+}
+.filter-buttons .dropdown-menu li {
+    display: block;
+    padding: 10px;
+    text-align: right
+}
+.filter-buttons .dropdown-menu{
+    z-index: 9;
 }
 /*================== end favourites html =========================*/
 /*================== responsive =========================*/
@@ -1118,7 +1134,26 @@ p.nameprodfav {
 	.contntbb a {
 		font-size: 13px;
 	}
-	/*******end contact us*******/
+    /*******end contact us*******/
+    /*================== favourites html =========================*/
+    .fleximgfav img {
+        width: 165px;
+        margin-left: 5px;
+    }
+    .deleteaa {
+        width: 36px;
+        font-size: 15px;
+        margin-left: 6px;
+        height: 40px;
+    }
+    .addcard {
+        height: 40px;
+        font-size: 13px;
+    }
+    .col-md-6.col-sm-4.col-xs-6.parentfav.listgrid {
+        width: 50%;
+    }
+     /*================== end favourites html =========================*/
 }
 
 @media (max-width: 767px) {
@@ -1246,6 +1281,11 @@ a.categoryhref {
 .department {
     margin-top: 11px;
 }
+
+
+.col-md-6.col-sm-4.col-xs-6.parentfav.listgrid{
+    width: 100%
+}
 }
 
 @media (max-width: 700px) {}
@@ -1256,7 +1296,38 @@ a.categoryhref {
 	/*================= multimedia ===============*/
 	.subdiv {
 		width: 100%;
-	}
+    }
+    /*===================== favourites html =========================*/
+    p.nameprodfav {
+        font-size: 16px;
+    }
+    .deleteaa {
+        width: 35px;
+        height: 39px;
+        font-size: 17px;
+    }
+    .flexadd {
+        margin-top: 5px;
+    }
+    .addcard {
+        height:39px;
+
+        font-size: 13px;
+    }
+    .fleximgfav img {
+        width: 120px;
+        margin-left: 6px;
+        object-fit: cover;
+    }
+    .col-md-6.col-sm-6.col-xs-6.parentfav.listgrid {
+        width: 100%;
+    }
+    .grid-view-filter .listgrid .fleximgfav img {
+
+        height: 160px;
+    }
+    /*================== end favourites html =========================*/
+
 }
 
 
@@ -1264,4 +1335,10 @@ a.categoryhref {
 
 
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    .fleximgfav img {
+        width: 100px;
+        margin-left: 6px;
+        object-fit: cover;
+    }
+}
