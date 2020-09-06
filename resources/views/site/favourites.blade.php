@@ -120,7 +120,7 @@
             <div class="fleximgfav">
                <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
                <div class="descrpp">
-                  <p class="nameprodfav">زيت الارغان الاصلي</p>
+                  <a href="#"><p class="nameprodfav">زيت الارغان الاصلي</p></a>
                   <b><span>100</span>  ريال سعودي </b>
                   <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
                   <div class="flex flexadd">
