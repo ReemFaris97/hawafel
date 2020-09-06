@@ -1093,6 +1093,16 @@ p.nameprodfav {
 .filter-buttons .dropdown-menu{
     z-index: 9;
 }
+.flex.flexadd.flexrelat {
+    position: relative;
+    opacity: 1;
+    transform: translateY(0px);
+    right: 0;
+    justify-content: flex-start;
+}
+.listgrid .fleximgfav {
+    flex-direction: row;
+}
 /*================== end favourites html =========================*/
 /*================== responsive =========================*/
 
