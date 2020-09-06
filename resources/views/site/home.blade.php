@@ -270,26 +270,81 @@
         </div>
 
 
-        <div class="columns container">
-            <div class="wow animate__animated animate__backInRight box-wrapper">
-                <div class="three box">
-                    <h3>3</h3>
-                </div>
+        <div class="columns_r">
+            <div class="wow animate__animated animate__backInDown box-wrapper">
+                <a href="{{url('single-product')}}" class="three box">
+                    <span class="box_dis">-20%</span>
+                    <div class="box_img">
+                        <img src="{{asset('website/dist/img/product2.png')}}">
+                    </div>
+                    <div class="box_desc">
+                        <h3>مجموعة العناية بالبشرة</h3>
+                        <p>
+                            <span class="old_price">100 ريال سعودي</span>
+                            <span class="new_price">70 ريال سعودي</span>
+                        </p>
+                    </div>
+                </a>
             </div>
             <div class="wow animate__animated animate__backInUp box-wrapper">
-                <div class="two box">
-                    <h3>2</h3>
-                </div>
+                <a href="{{url('single-product')}}" class="two box">
+                    <span class="box_dis">-20%</span>
+                    <div class="box_img">
+                        <img src="{{asset('website/dist/img/product2.png')}}">
+                    </div>
+                    <div class="box_desc">
+                        <h3>مجموعة العناية بالبشرة</h3>
+                        <p>
+                            <span class="old_price">100 ريال سعودي</span>
+                            <span class="new_price">70 ريال سعودي</span>
+                        </p>
+                    </div>
+                </a>
             </div>
             <div class="wow animate__animated animate__backInDown box-wrapper">
-                <div class="two box">
-                    <h3 class="darker">2</h3>
-                </div>
+                <a href="{{url('single-product')}}" class="one box">
+                    <span class="box_dis">-20%</span>
+                    <div class="box_img">
+                        <img src="{{asset('website/dist/img/product2.png')}}">
+                    </div>
+                    <div class="box_desc">
+                        <h3>مجموعة العناية بالبشرة</h3>
+                        <p>
+                            <span class="old_price">100 ريال سعودي</span>
+                            <span class="new_price">70 ريال سعودي</span>
+                        </p>
+                    </div>
+                </a>
             </div>
             <div class="wow animate__animated animate__backInLeft box-wrapper">
-                <div class="three box">
-                    <h3>3</h3>
-                </div>
+                <a href="{{url('single-product')}}" class="two box">
+                    <span class="box_dis">-20%</span>
+                    <div class="box_img">
+                        <img src="{{asset('website/dist/img/product2.png')}}">
+                    </div>
+                    <div class="box_desc">
+                        <h3>مجموعة العناية بالبشرة</h3>
+                        <p>
+                            <span class="old_price">100 ريال سعودي</span>
+                            <span class="new_price">70 ريال سعودي</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="wow animate__animated animate__backInUp box-wrapper">
+                <a href="{{url('single-product')}}" class="one box">
+                    <span class="box_dis">-20%</span>
+                    <div class="box_img">
+                        <img src="{{asset('website/dist/img/product2.png')}}">
+                    </div>
+                    <div class="box_desc">
+                        <h3>مجموعة العناية بالبشرة</h3>
+                        <p>
+                            <span class="old_price">100 ريال سعودي</span>
+                            <span class="new_price">70 ريال سعودي</span>
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>

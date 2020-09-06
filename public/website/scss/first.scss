@@ -291,6 +291,10 @@ $grey-color: #7c7e7c;
 a.categoryhref {
     @extend %ellipsis;
 }
+.bigdivcont {
+    background-size: contain;
+    background-position: center;
+}
 /******* End categories Section *************/
 
 /******* Start recent products Section *************/
@@ -385,7 +389,19 @@ input.form-control.inputsubscribe::placeholder {
     background-image: url("../dist/img/side-menu.png");
 }
 /*********CSS Columns Masonry Grid*******/
-.columns {
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--hover); }
+  }
+  $colors: (
+    box: $grey-color;
+    );
+  @each $div, $color in $colors {
+    .#{$div} {
+      --color: #{$color};
+      --hover: #{adjust-hue($color, 45deg)};
+    }
+  }
+.columns_r {
     width: 100%;
     max-width: 95%;
     margin: 2rem auto;
@@ -406,33 +422,105 @@ input.form-control.inputsubscribe::placeholder {
             break-inside: avoid;
             border-radius: 6px;
             padding: 20px;
-            display: -webkit-box;
-            display: flex;
-            -webkit-box-align: center;
+            @include dis-flex;
+            justify-content: space-between;
             align-items: center;
-            -webkit-box-pack: center;
-            justify-content: center;
-            h3 {
-                color: #fff;
-                font-size: 3rem;
-                line-height: 1;
-                font-family: sans-serif;
+            flex-direction: row-reverse;
+            background-color: #F9F9F9;
+            position: relative;
+            transition: 0.25s;
+            border: 1px solid transparent;
+            .box_dis{
+                background-color: $third-color;
+                color: #ffffff;
+                padding: 6px;
+                font-size: 16px;
+                position: absolute;
+                left: 6px;
+                top: 6px;
+                direction: ltr;
             }
-            h3.darker {
-                color: rgba(81, 85, 91, 0.38);
+            .box_img{
+                max-width: 40%;
+                display: inline-flex;
+                max-height: 100% !important;
+                img{
+                    @include objectFit(contain);
+                    max-width: 100%;
+                    max-height: 100%;
+                }
             }
-        }
+            .box_desc{
+                h3{
+                    font-family: 'Almarai-Bold';
+                    font-size: 17px;
+                }
+                p{
+                    margin:0;
+                    span{
+
+                    }
+                    .old_price{
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            &:hover , &:focus{
+                color: $third-color;
+                animation: pulse 1s;
+                box-shadow: 0 0 0 2em rgba(#fff,0);
+                border-color: var(--hover);
+            }
+            
+            }
+            &:nth-child(-n + 2){  /*** first two childs ****/
+                .box_dis{
+                    background-color: #ffffff;
+                    color: $third-color;
+                }
+            }
+            &:nth-child(1){  /*** first child ****/
+                .box{
+                    flex-direction: column;
+                    align-items: baseline;
+                    .box_img{
+                    display: flex;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 80%;
+                    justify-content: center;
+                    min-width: 100%;
+                    &:hover{
+                        color: $primary-color !important;
+                        .box_desc{
+                            color: $primary-color !important;
+                        }
+                    }
+                }
+                .box_desc{
+                    color: #ffffff;
+                }
+                }
+            }
+            &:nth-child(2){  /*** second child ****/
+                .box{
+                    align-items: flex-end;
+                    .box_img{
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
         .box.one {
             height: 200px;
-            background-color: #70c1b3;
         }
         .box.two {
             height: 300px;
-            background-color: #ed6a5a;
         }
         .box.three {
             height: 400px;
-            background-color: #f4f1bb;
+            background-color: $third-color;
         }
     }
 }
@@ -569,9 +657,35 @@ input.form-control.inputsubscribe::placeholder {
     }
 }
 @media all and (max-width: 540px) {
-    .columns {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
+    .columns_r {
+        .box-wrapper {
+            .box{
+                padding: 7px;
+                .box_dis {
+                    padding: 4px;
+                    font-size: 12px;
+                }
+                .box_desc {
+                    h3 {
+                        font-family: 'Almarai-Bold';
+                        font-size:14px;
+                    }
+                    p{
+                        font-size:11px;
+                    }
+                }
+            }
+            .box.one {
+                height: 150px;
+            }
+            .box.two {
+                height: 220px;
+            }
+            .box.three {
+                height: 280px;
+            }
+        }
     }
+    
+
 }
