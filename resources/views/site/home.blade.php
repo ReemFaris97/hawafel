@@ -178,7 +178,113 @@
 </section>
 <!---//////////// End Categories Section //////////////////------------>
 
+<!---//////////// Start recent products Section //////////////////------------>
+<section class="recents">
+    <div class="container">
+        <div class="head-title no-bg">
+            <div class="head-in">
+                <h2>المنتجات الجديدة</h2>
+            </div>
+            <p>نحن متجرك المفضل لمنتجات العناية بالبشرة والشعر الطبيعية</p>
+        </div>
+
+        <div class="row">
+         <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="fleximgfav">
+               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+               <div class="descrpp">
+                  <p class="nameprodfav">زيت الارغان الاصلي</p>
+                  <b><span>100</span>  ريال سعودي </b>
+                  <div class="flex flexadd">
+                    <div class="likerr"><i class="far fa-heart"></i></div>
+                    <div class="addcard">اضافة للسلة  <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="fleximgfav">
+               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+               <div class="descrpp">
+                  <p class="nameprodfav">زيت الارغان الاصلي</p>
+                  <b><span>100</span>  ريال سعودي </b>
+                  <div class="flex flexadd">
+                    <div class="likerr"><i class="far fa-heart"></i></div>
+                    <div class="addcard">اضافة للسلة  <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="fleximgfav">
+               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+               <div class="descrpp">
+                  <p class="nameprodfav">زيت الارغان الاصلي</p>
+                  <b><span>100</span>  ريال سعودي </b>
+                  <div class="flex flexadd">
+                    <div class="likerr"><i class="far fa-heart"></i></div>
+                    <div class="addcard">اضافة للسلة  <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="fleximgfav">
+               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+               <div class="descrpp">
+                  <p class="nameprodfav">زيت الارغان الاصلي</p>
+                  <b><span>100</span>  ريال سعودي </b>
+                  <div class="flex flexadd">
+                    <div class="likerr"><i class="far fa-heart"></i></div>
+                    <div class="addcard">اضافة للسلة  <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="fleximgfav">
+               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+               <div class="descrpp">
+                  <p class="nameprodfav">زيت الارغان الاصلي</p>
+                  <b><span>100</span>  ريال سعودي </b>
+                  <div class="flex flexadd">
+                    <div class="likerr"><i class="far fa-heart"></i></div>
+                    <div class="addcard">اضافة للسلة  <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
+</section>
+<!---//////////// End recent products Section //////////////////------------>
+
+<!-- ////////////////////////Start subscribe////////////////////////////////// -->
+<section class="all-sections Subscribe">
+    <div class="container">
+    <div class="contentimgsub">
+        <a href="../"><img src="{{asset('website/dist/img/favicon_white.png')}}" alt=""></a>
+    </div>
+    <div class="aligne-center">
+        <h3 class="subscribeh3">اشترك معنا ليصلك عروضنا</h3>
+        <P>نحن متجرك المفضل لمنتجات العناية بالبشرة والشعر</P>
+        <form action="">
+            <div class="subdiv">
+                    <input class="form-control inputsubscribe" type="email" placeholder="البريد الالكتروني">
+                    <button><i class="fas fa-arrow-left"></i></button>
+            </div>
+        </form>
+    </div>
+    </div>
+</section>
+<!-- ///////||||||||||||||||||End subscribe|||||||||||||||||||||||||||//// -->
 
 @endsection
 @section('scripts')
+<!---- like new product --->
+<script>
+    $(".likerr").click(function() {
+            $(this).toggleClass("i_liked");
+        });
+</script>
 @endsection

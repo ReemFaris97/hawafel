@@ -2,22 +2,17 @@
   padding: 50px 0;
 }
 
-.head-title:before {
-  position: absolute;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-}
-
-.head-title:before {
+.head-title .head-in {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.head-title .head-in {
-  position: relative;
-  z-index: 9;
+a.categoryhref {
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /************************/
@@ -100,27 +95,41 @@
 /****** end header ***/
 /***********Start head titles*************/
 .head-title {
-  position: relative;
   text-align: center;
   margin: 0 auto 30px auto;
 }
 
-.head-title:before {
-  content: "";
+.head-title .head-in {
   background-image: url(../dist/img/favicon_pink2.png);
-  top: calc(50% - 50px);
-  width: 100px;
-  height: 100px;
+  background-size: contain;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  min-width: 200px;
+  min-height: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .head-title h2 {
-  font-family: "Almarai-ExtraBold";
-  font-size: 33px;
+  font-family: "Hf";
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 auto;
 }
 
 .head-title p {
-  margin: 0;
   font-size: 17px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 /***********End head titles*************/
@@ -327,6 +336,11 @@
   }
   .buttons_cont .btn-flex {
     min-width: 130px;
+  }
+  /****** categories section *****/
+  .bigdivcont {
+    width: 100%;
+    height: 110px;
   }
 }
 

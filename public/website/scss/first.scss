@@ -178,6 +178,9 @@ $grey-color: #7c7e7c;
         margin: 0 auto;
     }
 }
+.head-title.no-bg .head-in {
+    background-image: none !important;
+}
 /***********End head titles*************/
 /****Start About Section*******/
 .about-us {
@@ -290,6 +293,90 @@ a.categoryhref{
 /******* End categories Section *************/
 
 
+/******* Start recent products Section *************/
+.fleximgfav {
+    flex-direction: column;
+    img {
+        margin-left: 0;
+        max-width: 100%;
+        width: auto;
+        object-fit: contain;
+        height: 245px;
+    }
+    p.nameprodfav {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+}
+.recents{
+    @extend %all-section-padd;
+}
+.fleximgfav{
+    position: relative;
+    .flex.flexadd {
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 8px;
+        margin: 0 auto;
+        justify-content: space-around;
+        transform: translateY(-200%);
+        opacity: 0;
+        @include rTransition(all .3s ease-in-out);
+        .likerr {
+            display: flex;
+            align-items: center;
+            background-color: #f9a392;
+            color: #fff;
+            justify-content: center;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            margin: 0;
+            font-size: 20px;
+            @include rTransition(all .3s ease-in-out);
+        }
+        .i_liked{
+            background-color: red;
+        }
+        .addcard {
+            height: 40px;
+            font-size: 16px;
+        }
+    }
+    &:hover{
+        .flex.flexadd{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+/******* End recent products Section *************/
+
+/************* Start Subscribe section ************/
+input.form-control.inputsubscribe::-webkit-input-placeholder {
+    font-size: 13px !important;
+    min-height: 49px;
+}
+input.form-control.inputsubscribe::-moz-placeholder {
+    font-size: 13px !important;
+    min-height: 49px;
+}
+input.form-control.inputsubscribe:-ms-input-placeholder {
+    font-size: 13px !important;
+    min-height: 49px;
+}
+input.form-control.inputsubscribe::-ms-input-placeholder {
+    font-size: 13px !important;
+    min-height: 49px;
+}
+input.form-control.inputsubscribe::placeholder {
+    font-size: 13px !important;
+    min-height: 49px;
+}
+/************* End Subscribe section ************/
+
+
 /*********** Responsive ****************/
 @media (max-width: 991px) {
     .btn-flex {
@@ -384,5 +471,36 @@ a.categoryhref{
     .bigdivcont {
         width: 100%;
         height: 110px;
+    }
+    /******* Start recent products Section *************/
+    .fleximgfav {
+        img {
+            height: 150px;
+        }
+         p.nameprodfav {
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+        .flex.flexadd {
+            width: 96%;
+            .addcard {
+                height: 30px;
+                font-size: 13px;
+                padding: 0 4px;
+            }
+            .likerr, .deleteaa{
+                width: 30px;
+                height: 30px;
+                height: 30px;
+            }
+        }
+    }
+    .recents .col-md-3.col-sm-4.col-xs-6 , .row.list .col-md-3.col-sm-4.col-xs-6{
+        padding: 0 5px;
+    }
+    /******** Subscribe section *******/
+    .Subscribe {
+        background-size: cover;
     }
 }
