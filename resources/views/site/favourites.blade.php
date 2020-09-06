@@ -84,43 +84,26 @@
             </div>
          </div>
       </div>
-      <!-- <div class="row list list-view-filter">
-         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid">
-            <div class="fleximgfav">
-               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
-               <div class="descrpp">
-                  <p class="nameprodfav">زيت الارغان الاصلي</p>
-                  <b><span>100</span>  ريال سعودي </b>
-                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
-                  <div class="flex flexadd">
-                     <div class="deleteaa"><i class="far fa-trash-alt"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid">
-            <div class="fleximgfav">
-               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
-               <div class="descrpp">
-                  <p class="nameprodfav">زيت الارغان الاصلي</p>
-                  <b><span>100</span>  ريال سعودي </b>
-                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
-                  <div class="flex flexadd">
-                     <div class="deleteaa"><i class="far fa-trash-alt"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div> -->
-
       <div class="row list list-view-filter">
-         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
+         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid">
             <div class="fleximgfav">
                <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
                <div class="descrpp">
-                  <a href="#"><p class="nameprodfav">زيت الارغان الاصلي</p></a>
+                  <a href="{{url('single-product')}}"><p class="nameprodfav">زيت الارغان الاصلي</p></a>
+                  <b><span>100</span>  ريال سعودي </b>
+                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
+                  <div class="flex flexadd">
+                     <div class="deleteaa"><i class="far fa-trash-alt"></i></div>
+                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid">
+            <div class="fleximgfav">
+               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+               <div class="descrpp">
+                 <a href="{{url('single-product')}}"><p class="nameprodfav">زيت الارغان الاصلي</p></a>
                   <b><span>100</span>  ريال سعودي </b>
                   <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
                   <div class="flex flexadd">
@@ -131,6 +114,23 @@
             </div>
          </div>
       </div>
+
+      <!-- <div class="row list list-view-filter">
+         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
+            <div class="fleximgfav">
+               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+               <div class="descrpp">
+                  <a href="{{url('single-product')}}"><p class="nameprodfav">زيت الارغان الاصلي</p></a>
+                  <b><span>100</span>  ريال سعودي </b>
+                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
+                  <div class="flex flexadd">
+                     <div class="deleteaa"><i class="far fa-trash-alt"></i></div>
+                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> -->
    </div>
 </section>
 <!-- /////////////////////|||||||||||End sections |||||||||||||||||||| -->
