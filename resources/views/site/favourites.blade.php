@@ -46,17 +46,20 @@
          </ul>
         </div>
          <div class="filter-buttons">
-            <div class="list-view-button"><i class="fa fa-bars" aria-hidden="true"></i>  </div>
-            <div class="grid-view-button"><i class="fa fa-th-large" aria-hidden="true"></i>  </div>
-            <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
+    <div>
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-sort-amount-down"></i>
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="#">Action</a>
     <a class="dropdown-item" href="#">Another action</a>
     <a class="dropdown-item" href="#">Something else here</a>
   </div>
+    </div>
+            <div class="list-view-button"><i class="fa fa-bars" aria-hidden="true"></i>  </div>
+            <div class="grid-view-button"><i class="fa fa-th-large" aria-hidden="true"></i>  </div>
+            <div class="dropdown">
+
 </div>
          </div>
       </div>
