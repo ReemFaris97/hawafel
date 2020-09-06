@@ -387,7 +387,6 @@
                             <ul>
                                 <li><a href="{{url('contact-us')}}">اتصل بنا</a></li>
                                 <li><a href="{{url('return_policy')}}">سياسة الاسترجاع</a></li>
-                                <li><a href="{{url('site_map')}}">خريطة الموقع</a></li>
                             </ul>
                         </div>
                     </div>

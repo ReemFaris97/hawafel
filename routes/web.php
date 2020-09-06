@@ -35,9 +35,6 @@ Route::get('/return_policy', function () {
 Route::get('/privacy', function () {
     return view('site.privacy');
 });
-Route::get('/site_map', function () {
-    return view('site.site_map');
-});
 Route::get('/multimedia', function () {
     return view('site.multimedia');
 });
