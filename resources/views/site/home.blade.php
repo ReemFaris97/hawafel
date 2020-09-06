@@ -193,7 +193,7 @@
                 <div class="fleximgfav">
                     <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
                     <div class="descrpp">
-                        <p class="nameprodfav">زيت الارغان الاصلي</p>
+                        <a href="{{url('single-product')}}" class="nameprodfav">زيت الارغان الاصلي</a>
                         <b><span>100</span> ريال سعودي </b>
                         <div class="flex flexadd">
                             <div class="likerr"><i class="far fa-heart"></i></div>
@@ -206,7 +206,7 @@
                 <div class="fleximgfav">
                     <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
                     <div class="descrpp">
-                        <p class="nameprodfav">زيت الارغان الاصلي</p>
+                        <a href="{{url('single-product')}}" class="nameprodfav">زيت الارغان الاصلي</a>
                         <b><span>100</span> ريال سعودي </b>
                         <div class="flex flexadd">
                             <div class="likerr"><i class="far fa-heart"></i></div>
@@ -219,7 +219,7 @@
                 <div class="fleximgfav">
                     <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
                     <div class="descrpp">
-                        <p class="nameprodfav">زيت الارغان الاصلي</p>
+                        <a href="{{url('single-product')}}" class="nameprodfav">زيت الارغان الاصلي</a>
                         <b><span>100</span> ريال سعودي </b>
                         <div class="flex flexadd">
                             <div class="likerr"><i class="far fa-heart"></i></div>
@@ -232,7 +232,7 @@
                 <div class="fleximgfav">
                     <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
                     <div class="descrpp">
-                        <p class="nameprodfav">زيت الارغان الاصلي</p>
+                        <a href="{{url('single-product')}}" class="nameprodfav">زيت الارغان الاصلي</a>
                         <b><span>100</span> ريال سعودي </b>
                         <div class="flex flexadd">
                             <div class="likerr"><i class="far fa-heart"></i></div>
@@ -245,7 +245,7 @@
                 <div class="fleximgfav">
                     <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
                     <div class="descrpp">
-                        <p class="nameprodfav">زيت الارغان الاصلي</p>
+                        <a href="{{url('single-product')}}" class="nameprodfav">زيت الارغان الاصلي</a>
                         <b><span>100</span> ريال سعودي </b>
                         <div class="flex flexadd">
                             <div class="likerr"><i class="far fa-heart"></i></div>

@@ -723,6 +723,42 @@ span.bell {
 .side-menu.flexx{
     justify-content: center;
 }
+/************* Sign Up/In side menu *************/
+.welcomee{
+    font-family: 'Almarai-ExtraBold';
+    color: #1D463D;
+}
+.pink_a{
+    font-family: 'Almarai-Bold';
+    color: #F9A392;
+    font-size: 15px;
+}
+.pink_a:hover , .pink_a:focus{
+    color: #000000;
+}
+.log_anchors{
+    margin: 50px auto 0 auto;
+}
+.log_anchors a{
+    border-radius: 30px;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    min-width: 200px;
+}
+.log_anchors a:last-child{
+    margin: 14px auto 0 auto;
+    border-color: #1D463D;
+    color: #1D463D;
+}
+.log_anchors a:last-child::after{
+    background-color: #ffffff;
+}
+.log_anchors a:last-child:hover , .log_anchors a:last-child:focus{
+    background-color: #1D463D;
+    border-color: #1D463D;
+    color: #ffffff;
+}
 /************* cart side menu *************/
 .cart_item{
     position: relative;
