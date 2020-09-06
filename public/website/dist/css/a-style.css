@@ -982,6 +982,7 @@ a.categoryhref:hover{
 .fleximgfav b.favpp{
     height: 72px;
     overflow: hidden;
+    white-space: pre-wrap;
 }
 p.nameprodfav {
     font-size: 18px;
