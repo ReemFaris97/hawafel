@@ -156,7 +156,7 @@ $grey-color: #7c7e7c;
 .head-title {
     text-align: center;
     margin: 0 auto 30px auto;
-    .head-in{
+    .head-in {
         background-image: url(../dist/img/favicon_pink2.png);
         @extend %background-cover;
         background-size: contain;
@@ -170,7 +170,7 @@ $grey-color: #7c7e7c;
         font-family: "Hf";
         font-size: 36px;
         font-weight: bold;
-        margin:0 auto;
+        margin: 0 auto;
     }
     p {
         font-size: 17px;
@@ -220,19 +220,19 @@ $grey-color: #7c7e7c;
         h3 {
             img {
                 @include objectFit(contain);
-                margin:0 8px 0 0;
+                margin: 0 8px 0 0;
             }
             &:first-of-type {
-                font-family: 'Almarai-ExtraBold';
+                font-family: "Almarai-ExtraBold";
             }
             &:last-of-type {
-                font-family: 'Almarai-Bold';
+                font-family: "Almarai-Bold";
             }
         }
         p {
             &:first-of-type {
-                border-right:5px solid $third-color;
-                margin:20px 0;
+                border-right: 5px solid $third-color;
+                margin: 20px 0;
                 padding: 20px;
             }
             &:last-of-type {
@@ -245,34 +245,36 @@ $grey-color: #7c7e7c;
     justify-content: space-around;
     .btn-flex {
         min-width: 170px;
-        color:$primary-color;
+        color: $primary-color;
         border-color: #ffffff;
-        &::after{
+        &::after {
             background-color: #fff;
         }
-        .btn-icon{
+        .btn-icon {
             background-color: $third-color;
             color: #ffffff;
         }
-        &:hover , &:focus{
-            color:#ffffff;
+        &:hover,
+        &:focus {
+            color: #ffffff;
             border-color: $third-color;
-            .btn-icon{
+            .btn-icon {
                 background-color: #ffffff;
                 color: $third-color;
             }
         }
-        &:last-of-type{
-            .btn-icon{
+        &:last-of-type {
+            .btn-icon {
                 background-color: transparent;
                 color: $primary-color;
                 width: unset;
                 height: unset;
                 line-height: unset;
-                margin:0 0 0 6px;
+                margin: 0 0 0 6px;
             }
-            &:hover ,&:focus{
-                .btn-icon{
+            &:hover,
+            &:focus {
+                .btn-icon {
                     color: #ffffff;
                 }
             }
@@ -281,17 +283,15 @@ $grey-color: #7c7e7c;
 }
 /******* End About Section *************/
 
-
 /******* Start categories Section *************/
-.categories-r{
+.categories-r {
     @extend %all-section-padd;
-    background-color: #FFF9F9;
+    background-color: #fff9f9;
 }
-a.categoryhref{
+a.categoryhref {
     @extend %ellipsis;
 }
 /******* End categories Section *************/
-
 
 /******* Start recent products Section *************/
 .fleximgfav {
@@ -308,48 +308,48 @@ a.categoryhref{
         margin-bottom: 0;
     }
 }
-.recents{
+.recents {
     @extend %all-section-padd;
+    .fleximgfav {
+        position: relative;
+        .flex.flexadd {
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 8px;
+            margin: 0 auto;
+            justify-content: space-around;
+            transform: translateY(-200%);
+            opacity: 0;
+            @include rTransition(all 0.3s ease-in-out);
+        }
+        &:hover {
+            .flex.flexadd {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
 }
-.fleximgfav{
-    position: relative;
-    .flex.flexadd {
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 8px;
-        margin: 0 auto;
-        justify-content: space-around;
-        transform: translateY(-200%);
-        opacity: 0;
-        @include rTransition(all .3s ease-in-out);
-        .likerr {
-            display: flex;
-            align-items: center;
-            background-color: #f9a392;
-            color: #fff;
-            justify-content: center;
-            cursor: pointer;
-            width: 40px;
-            height: 40px;
-            margin: 0;
-            font-size: 20px;
-            @include rTransition(all .3s ease-in-out);
-        }
-        .i_liked{
-            background-color: red;
-        }
-        .addcard {
-            height: 40px;
-            font-size: 16px;
-        }
-    }
-    &:hover{
-        .flex.flexadd{
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
+.likerr {
+    display: flex;
+    align-items: center;
+    background-color: #f9a392;
+    color: #fff;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    font-size: 20px;
+    @include rTransition(all 0.3s ease-in-out);
+}
+.i_liked {
+    background-color: red;
+}
+.addcard {
+    height: 40px;
+    font-size: 16px;
 }
 /******* End recent products Section *************/
 
@@ -376,6 +376,68 @@ input.form-control.inputsubscribe::placeholder {
 }
 /************* End Subscribe section ************/
 
+/************* Start offers and sale section ************/
+.my_offers {
+    @extend %all-section-padd;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../dist/img/side-menu.png");
+}
+/*********CSS Columns Masonry Grid*******/
+.columns {
+    width: 100%;
+    max-width: 95%;
+    margin: 2rem auto;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    -webkit-column-width: 30%;
+    -moz-column-width: 30%;
+    column-width: 30%;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    .box-wrapper {
+        padding: 10px;
+        .box {
+            -webkit-column-break-inside: avoid;
+            -moz-column-break-inside: avoid;
+            break-inside: avoid;
+            border-radius: 6px;
+            padding: 20px;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            h3 {
+                color: #fff;
+                font-size: 3rem;
+                line-height: 1;
+                font-family: sans-serif;
+            }
+            h3.darker {
+                color: rgba(81, 85, 91, 0.38);
+            }
+        }
+        .box.one {
+            height: 200px;
+            background-color: #70c1b3;
+        }
+        .box.two {
+            height: 300px;
+            background-color: #ed6a5a;
+        }
+        .box.three {
+            height: 400px;
+            background-color: #f4f1bb;
+        }
+    }
+}
+
+/************* End offers and sale section ************/
 
 /*********** Responsive ****************/
 @media (max-width: 991px) {
@@ -477,7 +539,7 @@ input.form-control.inputsubscribe::placeholder {
         img {
             height: 150px;
         }
-         p.nameprodfav {
+        p.nameprodfav {
             margin-top: 5px;
             margin-bottom: 0;
             font-size: 14px;
@@ -489,18 +551,27 @@ input.form-control.inputsubscribe::placeholder {
                 font-size: 13px;
                 padding: 0 4px;
             }
-            .likerr, .deleteaa{
+            .likerr,
+            .deleteaa {
                 width: 30px;
                 height: 30px;
                 height: 30px;
             }
         }
     }
-    .recents .col-md-3.col-sm-4.col-xs-6 , .row.list .col-md-3.col-sm-4.col-xs-6{
+    .recents .col-md-3.col-sm-4.col-xs-6,
+    .row.list .col-md-3.col-sm-4.col-xs-6 {
         padding: 0 5px;
     }
     /******** Subscribe section *******/
     .Subscribe {
         background-size: cover;
+    }
+}
+@media all and (max-width: 540px) {
+    .columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
     }
 }
