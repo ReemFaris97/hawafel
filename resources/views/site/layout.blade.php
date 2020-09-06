@@ -74,7 +74,7 @@
                             <li><a href="{{url('categories')}}">الأقسام</a></li>
                             <li><a href="{{url('services')}}">الطلبات</a></li>
                             <li><a href="{{url('favourites')}}">المفضلة</a></li>
-                            <li><a href="{{url('contact-us')}}">مكتبة الصور والفيديوهات</a></li>
+                            <li><a href="{{url('multimedia')}}">مكتبة الصور والفيديوهات</a></li>
                         </ul>
                     </div>
                 </div>
@@ -168,8 +168,9 @@
                         </li>
                         <!-- /////////////////////||||||||||| End Nav Cart |||||||||||||||||||| -->
 
+<!----------------********************** show this if user logged in ***************------------------------------>
                         <!-- /////////////////////||||||||||| Start Nav Profile  |||||||||||||||||||| -->
-                        <li>
+                        <!-- <li>
                             <a href="javascript:void(0)" class="menu-toggle">
                                 <span class="nav-icon"><i class="far fa-user"></i></span>
                             </a>
@@ -208,8 +209,34 @@
                                     </ul>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                         <!-- /////////////////////||||||||||| End Nav Profile  |||||||||||||||||||| -->
+
+<!----------------********************** show this if user NOT logged in ***************------------------------------>
+                        <!-- /////////////////////||||||||||| Start Sign up/In Links  |||||||||||||||||||| -->
+                        <li>
+                            <a href="javascript:void(0)" class="menu-toggle">
+                                <span class="nav-icon"><i class="fas fa-user-plus"></i></span>
+                            </a>
+                            <div class="side-menu flexx pro-menu">
+                                <div>
+                                    <button type="button" class="nav-icon close-menu"><i class="fas fa-times"></i></button>
+                                    <img src="{{asset('website/dist/img/logo.png')}}">
+                                    <h3 class="welcomee">أهلا بك ...</h3>
+                                    <p>كل ما تحتاجه ستجده فى متجرنا</p>
+                                    <a href="{{url('categories')}}" class="pink_a">تسوق الان</a>
+                                        <div class="log_anchors">
+                                            <a href="{{url('sign-in')}}" class="btn-hvr">
+                                                <span class="z-span">تسجيل دخول </span>
+                                            </a>
+                                            <a href="{{url('sign-up')}}" class="btn-hvr">
+                                                <span class="z-span">تسجيل جديد </span>
+                                            </a>
+                                        </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- /////////////////////||||||||||| End Sign up/In Links  |||||||||||||||||||| -->
 
                         <!-- /////////////////////||||||||||| Start Nav Notifications  |||||||||||||||||||| -->
                         <li>

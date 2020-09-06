@@ -307,9 +307,19 @@ a.categoryhref {
         object-fit: contain;
         height: 245px;
     }
-    p.nameprodfav {
+    .nameprodfav {
         margin-top: 5px;
         margin-bottom: 0;
+        font-family: 'Almarai-Bold';
+        font-size:16px;
+        display: block;
+        @extend %ellipsis;
+        &:hover, &:focus{
+            color: $third-color;
+        }
+    }
+    b{
+        @extend %ellipsis;
     }
 }
 .recents {
@@ -393,7 +403,7 @@ input.form-control.inputsubscribe::placeholder {
     0% { box-shadow: 0 0 0 0 var(--hover); }
   }
   $colors: (
-    box: $grey-color;
+    box: #7c7e7c
     );
   @each $div, $color in $colors {
     .#{$div} {
@@ -627,7 +637,7 @@ input.form-control.inputsubscribe::placeholder {
         img {
             height: 150px;
         }
-        p.nameprodfav {
+        .nameprodfav {
             margin-top: 5px;
             margin-bottom: 0;
             font-size: 14px;

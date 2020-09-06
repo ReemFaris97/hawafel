@@ -8,7 +8,7 @@
   background-position: center;
 }
 
-a.categoryhref {
+a.categoryhref, .fleximgfav .nameprodfav, .fleximgfav b {
   white-space: nowrap;
   max-width: 100%;
   overflow: hidden;
@@ -278,9 +278,16 @@ a.categoryhref {
   height: 245px;
 }
 
-.fleximgfav p.nameprodfav {
+.fleximgfav .nameprodfav {
   margin-top: 5px;
   margin-bottom: 0;
+  font-family: 'Almarai-Bold';
+  font-size: 16px;
+  display: block;
+}
+
+.fleximgfav .nameprodfav:hover, .fleximgfav .nameprodfav:focus {
+  color: #f9a392;
 }
 
 .recents .fleximgfav {
@@ -650,7 +657,7 @@ input.form-control.inputsubscribe::placeholder {
   .fleximgfav img {
     height: 150px;
   }
-  .fleximgfav p.nameprodfav {
+  .fleximgfav .nameprodfav {
     margin-top: 5px;
     margin-bottom: 0;
     font-size: 14px;
