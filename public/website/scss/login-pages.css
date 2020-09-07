@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .categories-r, .recents, .my_offers {
   padding: 50px 0;
 }
@@ -8,7 +9,7 @@
   background-position: center;
 }
 
-a.categoryhref {
+a.categoryhref, .fleximgfav .nameprodfav, .fleximgfav b {
   white-space: nowrap;
   max-width: 100%;
   overflow: hidden;
@@ -255,6 +256,11 @@ a.categoryhref {
   background-color: #fff9f9;
 }
 
+.bigdivcont {
+  background-size: contain;
+  background-position: center;
+}
+
 /******* End categories Section *************/
 /******* Start recent products Section *************/
 .fleximgfav {
@@ -273,9 +279,16 @@ a.categoryhref {
   height: 245px;
 }
 
-.fleximgfav p.nameprodfav {
+.fleximgfav .nameprodfav {
   margin-top: 5px;
   margin-bottom: 0;
+  font-family: 'Almarai-Bold';
+  font-size: 16px;
+  display: block;
+}
+
+.fleximgfav .nameprodfav:hover, .fleximgfav .nameprodfav:focus {
+  color: #f9a392;
 }
 
 .recents .fleximgfav {
@@ -365,6 +378,24 @@ input.form-control.inputsubscribe::placeholder {
 }
 
 /*********CSS Columns Masonry Grid*******/
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+.box {
+  --color: #7c7e7c;
+  --hover: #7c7e7e;
+}
+
 .columns_r {
   width: 100%;
   max-width: 95%;
@@ -404,6 +435,7 @@ input.form-control.inputsubscribe::placeholder {
   position: relative;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  border: 1px solid transparent;
 }
 
 .columns_r .box-wrapper .box .box_dis {
@@ -452,25 +484,6 @@ input.form-control.inputsubscribe::placeholder {
   -webkit-box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
           box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
   border-color: var(--hover);
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 var(--hover);
-            box-shadow: 0 0 0 0 var(--hover);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 var(--hover);
-            box-shadow: 0 0 0 0 var(--hover);
-  }
-}
-
-.columns_r .box-wrapper .box .pulse {
-  --color: #1d463d;
-  --hover: #1d3046;
 }
 
 .columns_r .box-wrapper:nth-child(-n + 2) {
@@ -547,7 +560,7 @@ input.form-control.inputsubscribe::placeholder {
 
 .columns_r .box-wrapper .box.three {
   height: 400px;
-  background-color: #F9A392;
+  background-color: #f9a392;
 }
 
 /************* End offers and sale section ************/
@@ -611,7 +624,7 @@ input.form-control.inputsubscribe::placeholder {
   .my-header > img {
     min-height: 400px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .my-header .head-txt {
     width: -webkit-max-content;
@@ -645,7 +658,7 @@ input.form-control.inputsubscribe::placeholder {
   .fleximgfav img {
     height: 150px;
   }
-  .fleximgfav p.nameprodfav {
+  .fleximgfav .nameprodfav {
     margin-top: 5px;
     margin-bottom: 0;
     font-size: 14px;
@@ -675,350 +688,122 @@ input.form-control.inputsubscribe::placeholder {
 }
 
 @media all and (max-width: 540px) {
-  .columns {
-    -webkit-column-count: 1;
-    column-count: 1;
+  .columns_r .box-wrapper .box {
+    padding: 7px;
+  }
+  .columns_r .box-wrapper .box .box_dis {
+    padding: 4px;
+    font-size: 12px;
+  }
+  .columns_r .box-wrapper .box .box_desc h3 {
+    font-family: 'Almarai-Bold';
+    font-size: 14px;
+  }
+  .columns_r .box-wrapper .box .box_desc p {
+    font-size: 11px;
+  }
+  .columns_r .box-wrapper .box.one {
+    height: 150px;
+  }
+  .columns_r .box-wrapper .box.two {
+    height: 220px;
+  }
+  .columns_r .box-wrapper .box.three {
+    height: 280px;
   }
 }
 
-footer,
-.container-navbar,
-#scroll-top {
-  display: none !important;
+.modal-backdrop {
+  background-color: #8a8a8a;
 }
 
-.bird {
-  background-image: url("../dist/img/bird-cells-new.svg");
-  background-size: auto 100%;
-  width: 88px;
-  height: 125px;
-  will-change: background-position;
-  -webkit-animation-name: fly-cycle;
-          animation-name: fly-cycle;
-  -webkit-animation-timing-function: steps(10);
-          animation-timing-function: steps(10);
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+.log_modal {
+  padding: 0 !important;
 }
 
-.bird--one {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: -0.5s;
-          animation-delay: -0.5s;
+.log_modal .modal-dialog {
+  margin: 0;
+  right: 10%;
 }
 
-.bird--two {
-  -webkit-animation-duration: 0.9s;
-          animation-duration: 0.9s;
-  -webkit-animation-delay: -0.75s;
-          animation-delay: -0.75s;
-}
-
-.bird--three {
-  -webkit-animation-duration: 1.25s;
-          animation-duration: 1.25s;
-  -webkit-animation-delay: -0.25s;
-          animation-delay: -0.25s;
-}
-
-.bird--four {
-  -webkit-animation-duration: 1.1s;
-          animation-duration: 1.1s;
-  -webkit-animation-delay: -0.5s;
-          animation-delay: -0.5s;
-}
-
-.bird-container {
-  position: absolute;
-  top: 20%;
-  left: -10%;
-  -webkit-transform: scale(0) translateX(-10vw);
-          transform: scale(0) translateX(-10vw);
-  will-change: transform;
-  -webkit-animation-name: fly-right-one;
-          animation-name: fly-right-one;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.bird-container--one {
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
-}
-
-.bird-container--two {
-  -webkit-animation-duration: 16s;
-          animation-duration: 16s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.bird-container--three {
-  -webkit-animation-duration: 14.6s;
-          animation-duration: 14.6s;
-  -webkit-animation-delay: 9.5s;
-          animation-delay: 9.5s;
-}
-
-.bird-container--four {
-  -webkit-animation-duration: 16s;
-          animation-duration: 16s;
-  -webkit-animation-delay: 10.25s;
-          animation-delay: 10.25s;
-}
-
-@-webkit-keyframes fly-cycle {
-  100% {
-    background-position: -900px 0;
-  }
-}
-
-@keyframes fly-cycle {
-  100% {
-    background-position: -900px 0;
-  }
-}
-
-@-webkit-keyframes fly-right-one {
-  0% {
-    -webkit-transform: scale(0.3) translateX(-10vw);
-            transform: scale(0.3) translateX(-10vw);
-  }
-  10% {
-    -webkit-transform: translateY(2vh) translateX(10vw) scale(0.4);
-            transform: translateY(2vh) translateX(10vw) scale(0.4);
-  }
-  20% {
-    -webkit-transform: translateY(0vh) translateX(30vw) scale(0.5);
-            transform: translateY(0vh) translateX(30vw) scale(0.5);
-  }
-  30% {
-    -webkit-transform: translateY(4vh) translateX(50vw) scale(0.6);
-            transform: translateY(4vh) translateX(50vw) scale(0.6);
-  }
-  40% {
-    -webkit-transform: translateY(2vh) translateX(70vw) scale(0.6);
-            transform: translateY(2vh) translateX(70vw) scale(0.6);
-  }
-  50% {
-    -webkit-transform: translateY(0vh) translateX(90vw) scale(0.6);
-            transform: translateY(0vh) translateX(90vw) scale(0.6);
-  }
-  60% {
-    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
-            transform: translateY(0vh) translateX(110vw) scale(0.6);
-  }
-  100% {
-    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
-            transform: translateY(0vh) translateX(110vw) scale(0.6);
-  }
-}
-
-@keyframes fly-right-one {
-  0% {
-    -webkit-transform: scale(0.3) translateX(-10vw);
-            transform: scale(0.3) translateX(-10vw);
-  }
-  10% {
-    -webkit-transform: translateY(2vh) translateX(10vw) scale(0.4);
-            transform: translateY(2vh) translateX(10vw) scale(0.4);
-  }
-  20% {
-    -webkit-transform: translateY(0vh) translateX(30vw) scale(0.5);
-            transform: translateY(0vh) translateX(30vw) scale(0.5);
-  }
-  30% {
-    -webkit-transform: translateY(4vh) translateX(50vw) scale(0.6);
-            transform: translateY(4vh) translateX(50vw) scale(0.6);
-  }
-  40% {
-    -webkit-transform: translateY(2vh) translateX(70vw) scale(0.6);
-            transform: translateY(2vh) translateX(70vw) scale(0.6);
-  }
-  50% {
-    -webkit-transform: translateY(0vh) translateX(90vw) scale(0.6);
-            transform: translateY(0vh) translateX(90vw) scale(0.6);
-  }
-  60% {
-    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
-            transform: translateY(0vh) translateX(110vw) scale(0.6);
-  }
-  100% {
-    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
-            transform: translateY(0vh) translateX(110vw) scale(0.6);
-  }
-}
-
-@-webkit-keyframes fly-right-two {
-  0% {
-    -webkit-transform: translateY(-2vh) translateX(-10vw) scale(0.5);
-            transform: translateY(-2vh) translateX(-10vw) scale(0.5);
-  }
-  10% {
-    -webkit-transform: translateY(0vh) translateX(10vw) scale(0.4);
-            transform: translateY(0vh) translateX(10vw) scale(0.4);
-  }
-  20% {
-    -webkit-transform: translateY(-4vh) translateX(30vw) scale(0.6);
-            transform: translateY(-4vh) translateX(30vw) scale(0.6);
-  }
-  30% {
-    -webkit-transform: translateY(1vh) translateX(50vw) scale(0.45);
-            transform: translateY(1vh) translateX(50vw) scale(0.45);
-  }
-  40% {
-    -webkit-transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
-            transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
-  }
-  50% {
-    -webkit-transform: translateY(0vh) translateX(90vw) scale(0.45);
-            transform: translateY(0vh) translateX(90vw) scale(0.45);
-  }
-  51% {
-    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.45);
-            transform: translateY(0vh) translateX(110vw) scale(0.45);
-  }
-  100% {
-    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.45);
-            transform: translateY(0vh) translateX(110vw) scale(0.45);
-  }
-}
-
-@keyframes fly-right-two {
-  0% {
-    -webkit-transform: translateY(-2vh) translateX(-10vw) scale(0.5);
-            transform: translateY(-2vh) translateX(-10vw) scale(0.5);
-  }
-  10% {
-    -webkit-transform: translateY(0vh) translateX(10vw) scale(0.4);
-            transform: translateY(0vh) translateX(10vw) scale(0.4);
-  }
-  20% {
-    -webkit-transform: translateY(-4vh) translateX(30vw) scale(0.6);
-            transform: translateY(-4vh) translateX(30vw) scale(0.6);
-  }
-  30% {
-    -webkit-transform: translateY(1vh) translateX(50vw) scale(0.45);
-            transform: translateY(1vh) translateX(50vw) scale(0.45);
-  }
-  40% {
-    -webkit-transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
-            transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
-  }
-  50% {
-    -webkit-transform: translateY(0vh) translateX(90vw) scale(0.45);
-            transform: translateY(0vh) translateX(90vw) scale(0.45);
-  }
-  51% {
-    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.45);
-            transform: translateY(0vh) translateX(110vw) scale(0.45);
-  }
-  100% {
-    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.45);
-            transform: translateY(0vh) translateX(110vw) scale(0.45);
-  }
-}
-
-.login-page {
-  height: 100vh;
-  overflow: hidden;
-  background-image: url("../dist/img/login.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  position: fixed;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.login-page .form-box {
-  background-image: url("../dist/img/Asset(6).png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom left;
+.log_modal .modal-content {
   -webkit-box-shadow: 0px 0px 12px 1px white;
   -o-box-shadow: 0px 0px 12px 1px white;
   -ms-box-shadow: 0px 0px 12px 1px white;
   box-shadow: 0px 0px 12px 1px white;
-  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  border: 0;
+  top: 10px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+}
+
+.modal_inner {
+  height: calc(100vh - 20px);
+  overflow: hidden;
+  background-image: url("../dist/img/side-menu.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.modal_inner .form-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   min-width: 600px;
   border-radius: 10px;
   overflow: hidden;
-  padding: 30px 50px;
+  padding: 0 50px;
+  height: 100%;
+  max-height: 100%;
   overflow-y: auto;
-  max-height: 95vh;
 }
 
-.login-page .form-box .box-right > * {
+.modal_inner .form-box .box-right > * {
   margin: 0 0 8px 0;
 }
 
-.login-page .form-box .box-right .login-logo {
+.modal_inner .form-box .box-right .login-logo {
   display: block;
   max-width: 100px;
 }
 
-.login-page .form-box .box-right .login-logo img {
+.modal_inner .form-box .box-right .login-logo img {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.login-page .form-box .box-right p .red {
+.modal_inner .form-box .box-right p .red {
+  color: #f9a392;
+  font-family: 'Almarai-Bold';
+  font-size: 17px;
+  background-color: transparent;
+}
+
+.modal_inner .form-box .box-right p .red:hover, .modal_inner .form-box .box-right p .red:focus {
   color: #1d463d;
 }
 
-.login-page .form-box .box-right p .red:hover, .login-page .form-box .box-right p .red:focus {
-  color: #000000;
-}
-
-.login-page .form-box .box-right h4 {
+.modal_inner .form-box .box-right h4 {
   font-family: "Almarai-ExtraBold";
 }
 
-.login-page .form-box .box-center {
-  text-align: center;
-  margin: 16px auto 0 auto;
-}
-
-.login-page .form-box .box-center a {
-  font-family: "Almarai-Bold";
-  display: block;
-}
-
-.login-page .form-box .box-center .social-buttons {
-  padding: 0;
-  margin: 20px auto 0 auto;
-}
-
+/********* form login ****************/
 .logForm {
   position: relative;
   z-index: 9;
@@ -1030,7 +815,7 @@ footer,
   max-width: 300px;
 }
 
-.logForm label {
+.logForm .my_lbl {
   position: absolute;
   top: 0;
   right: 0;
@@ -1039,7 +824,7 @@ footer,
   z-index: -1;
 }
 
-.logForm label::before, .logForm label::after {
+.logForm .my_lbl::before, .logForm .my_lbl::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1047,28 +832,28 @@ footer,
   border: 0.2em solid #b9b9b9;
 }
 
-.logForm label::before {
+.logForm .my_lbl::before {
   left: 0;
   right: 50%;
   border-right: 0;
   border-radius: 20px 0 0 20px;
 }
 
-.logForm label::after {
+.logForm .my_lbl::after {
   left: 50%;
   right: 0;
   border-left: 0;
   border-radius: 0 20px 20px 0;
 }
 
-.logForm input {
+.logForm .my_inpt {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
 }
 
-.logForm span {
+.logForm .my_span {
   position: absolute;
   top: 0;
   right: 0;
@@ -1077,8 +862,8 @@ footer,
   color: #b9b9b9;
 }
 
-.logForm input,
-.logForm span {
+.logForm .my_inpt,
+.logForm .my_span {
   font-family: "Almarai-Bold";
   margin: 0;
   border: 0;
@@ -1088,66 +873,121 @@ footer,
   padding: 1em 0.5em;
 }
 
-.logForm span,
-.logForm label::before,
-.logForm label::after {
+.logForm .my_span,
+.logForm .my_lbl::before,
+.logForm .my_lbl::after {
   -webkit-transition: -webkit-transform 0.2s ease-out;
   transition: -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out;
   transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
-.logForm input:-webkit-autofill,
-.logForm input:-webkit-autofill:hover,
-.logForm input:-webkit-autofill:focus,
-.logForm input:-webkit-autofill:active {
+.logForm .my_inpt:-webkit-autofill,
+.logForm .my_inpt:-webkit-autofill:hover,
+.logForm .my_inpt:-webkit-autofill:focus,
+.logForm .my_inpt:-webkit-autofill:active {
   -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
   -webkit-transition-delay: 9999s;
 }
 
-.logForm input:focus + label span,
-.logForm input:valid + label span,
-.logForm input:invalid + label span {
+.logForm .my_inpt:focus + .my_lbl .my_span,
+.logForm .my_inpt:valid + .my_lbl .my_span,
+.logForm .my_inpt:invalid + .my_lbl .my_span {
   -webkit-transform: translateY(2em) scale(0.8);
           transform: translateY(2em) scale(0.8);
   color: #000000;
 }
 
-.logForm input:focus + label::before,
-.logForm input:valid + label::before,
-.logForm input:invalid + label::before {
+.logForm .my_inpt:focus + .my_lbl::before,
+.logForm .my_inpt:valid + .my_lbl::before,
+.logForm .my_inpt:invalid + .my_lbl::before {
   -webkit-transform: translateX(-1em);
           transform: translateX(-1em);
   border-color: #000000;
 }
 
-.logForm input:focus + label::after,
-.logForm input:valid + label::after,
-.logForm input:invalid + label::after {
+.logForm .my_inpt:focus + .my_lbl::after,
+.logForm .my_inpt:valid + .my_lbl::after,
+.logForm .my_inpt:invalid + .my_lbl::after {
   -webkit-transform: translateX(1em);
           transform: translateX(1em);
   border-color: #000000;
 }
 
-.logForm input:invalid + label span {
-  color: #1d463d !important;
+.logForm .my_inpt:invalid + .my_lbl .my_span {
+  color: #f9a392 !important;
 }
 
-.logForm .btn-hvr {
+/******* input type checkbox  ********/
+[type="checkbox"] {
+  height: 26px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
-  max-width: 300px;
+  z-index: 5;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
-.logForm .btn-hvr:hover {
-  color: #ffffff;
+[type="checkbox"] + label {
+  cursor: pointer;
+  padding: 0;
+  position: relative;
 }
 
-.logForm .btn-hvr:hover::after {
-  height: 230%;
-  opacity: 1;
-  background-color: #1d463d;
+[type="checkbox"] + label:before {
+  background-color: #fff;
+  border: 2px solid #1d463d;
+  content: '';
+  display: inline-block;
+  height: 24px;
+  margin-left: 12px;
+  pointer-events: none;
+  vertical-align: middle;
+  width: 24px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
+[type="checkbox"]:hover + label:before {
+  border-color: #f9a392;
+}
+
+[type="checkbox"]:focus + label:before {
+  border-color: #f9a392;
+  -webkit-box-shadow: 0 0 0 2px #f9a392;
+          box-shadow: 0 0 0 2px #f9a392;
+}
+
+[type="checkbox"]:checked + label:after {
+  color: #f9a392;
+  content: '✓';
+  display: block;
+  font-size: 20px;
+  height: 18px;
+  right: 5px;
+  pointer-events: none;
+  position: absolute;
+  top: -2px;
+  width: 18px;
+  z-index: 10;
+}
+
+/****/
+.forgot {
+  background-color: transparent;
+  color: #000000;
+  border: 0;
+}
+
+.forgot:hover, .forgot:focus {
+  color: #f9a392;
+}
+
+/******* Confirmation Code Modal  ********/
 .modal .modal-title {
   font-size: 19px;
   font-family: 'Almarai-Bold';
@@ -1165,28 +1005,23 @@ footer,
   border-radius: 50%;
   line-height: 35px;
   font-size: 18px;
+  z-index: 99;
 }
 
 .modal button.close:hover, .modal button.close:focus {
   opacity: 1;
 }
 
-.modal .logForm .btn-hvr {
-  margin-top: 40px;
+.modal .btn-hvr {
+  margin: 40px auto 0 auto;
   width: 100%;
   max-width: 300px;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 50px;
 }
 
-.modal .logForm .btn-hvr:hover {
-  color: #ffffff;
-}
-
-.modal .logForm .btn-hvr:hover::after {
-  height: 230%;
-  opacity: 1;
-  background-color: #1d463d;
-}
-
+/************ confirm code ****************/
 .spinInput {
   display: block;
   margin: 2em auto;
@@ -1201,17 +1036,28 @@ footer,
 
 .spinInput:focus {
   outline: none;
-  color: #1d463d;
+  color: #f9a392;
 }
 
 /************* Responsive ***********/
+@media (max-width: 991px) {
+  .log_modal .modal-dialog {
+    margin: 0 auto;
+    right: 0;
+  }
+}
+
 @media (max-width: 767px) {
-  .login-page .form-box {
+  .modal_inner .form-box {
     min-width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
     padding: 20px;
-    height: 100vh;
-    max-height: unset;
+  }
+  .modal_inner .form-box .box-right .login-logo {
+    display: block;
+    max-width: 70px;
+  }
+  .modal_inner .form-box .box-right h4 {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=login-pages.css.map */

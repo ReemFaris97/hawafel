@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="{{asset('website/dist/css/fontawesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('website/dist/css/button.css')}}">
     <link rel="stylesheet" href="{{asset('website/dist/css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('website/scss/login-pages.css')}}">
     <link rel="stylesheet" href="{{asset('website/scss/first.css')}}">
     @yield('styles')
     <!-- /////////////////////|||||||End Layout |||||||||||||||||||| -->
@@ -161,14 +162,16 @@
                                         <p>
                                             من فضلك قم بتسجيل الدخول لكى يتم عملية الشراء والدفع وأكثر
                                         </p>
-                                        <a href="{{url('sign-up')}}" class="btn-hvr"><span class="z-span">تسجيل جديد </span></a>
+
+                                        <button type="button" class="btn-hvr" data-toggle="modal" data-target="#signUpModal">
+                                            <span class="z-span">تسجيل جديد </span></button>
                                     </div>
                                 </ul>
                             </div>
                         </li>
                         <!-- /////////////////////||||||||||| End Nav Cart |||||||||||||||||||| -->
 
-<!----------------********************** show this if user logged in ***************------------------------------>
+                        <!----------------********************** show this if user logged in ***************------------------------------>
                         <!-- /////////////////////||||||||||| Start Nav Profile  |||||||||||||||||||| -->
                         <!-- <li>
                             <a href="javascript:void(0)" class="menu-toggle">
@@ -212,7 +215,7 @@
                         </li> -->
                         <!-- /////////////////////||||||||||| End Nav Profile  |||||||||||||||||||| -->
 
-<!----------------********************** show this if user NOT logged in ***************------------------------------>
+                        <!----------------********************** show this if user NOT logged in ***************------------------------------>
                         <!-- /////////////////////||||||||||| Start Sign up/In Links  |||||||||||||||||||| -->
                         <li>
                             <a href="javascript:void(0)" class="menu-toggle">
@@ -225,14 +228,14 @@
                                     <h3 class="welcomee">أهلا بك ...</h3>
                                     <p>كل ما تحتاجه ستجده فى متجرنا</p>
                                     <a href="{{url('categories')}}" class="pink_a">تسوق الان</a>
-                                        <div class="log_anchors">
-                                            <a href="{{url('sign-in')}}" class="btn-hvr">
-                                                <span class="z-span">تسجيل دخول </span>
-                                            </a>
-                                            <a href="{{url('sign-up')}}" class="btn-hvr">
-                                                <span class="z-span">تسجيل جديد </span>
-                                            </a>
-                                        </div>
+                                    <div class="log_anchors">
+                                        <button type="button" class="btn-hvr" data-toggle="modal" data-target="#signInModal">
+                                            <span class="z-span">تسجيل دخول </span>
+                                        </button>
+                                        <button type="button" class="btn-hvr" data-toggle="modal" data-target="#signUpModal">
+                                            <span class="z-span">تسجيل جديد </span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -377,6 +380,7 @@
     <!---////////////  //////////////////------------>
 
 
+
     <!---////////////  //////////////////------------>
     @yield('content')
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Footer |||||||||||||||||||||||||||| -->
@@ -450,15 +454,25 @@
     <!-- /////////////////////||||||||||||||||||||||||||||| End Footer |||||||||||||||||||||||||||| -->
 
 
+
+    <!-- /////////////////////||||||||||||||||||||||||||||| Start Modals |||||||||||||||||||||||||||| -->
+    @include('site.sign-in-modal')
+    @include('site.sign-up-modal')
+    @include('site.forgot-pass-modal')
+    @include('site.confirm-code-modal')
+    @include('site.set-pass-modal')
+    <!-- /////////////////////||||||||||||||||||||||||||||| End Modals |||||||||||||||||||||||||||| -->
+
+
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Script |||||||||||||||||||||||||||| -->
     <script src="{{asset('website/dist/js/jquery-2.1.4.min.js')}}"></script>
     <script src="{{asset('website/dist/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('website/dist/js/fontawesome.min.js')}}"></script>
     <script src="{{asset('website/dist/js/wow.min.js')}}"></script>
     <script>
-$(function(){
-  new WOW().init(); 
-});
+        $(function() {
+            new WOW().init();
+        });
     </script>
     <script src="{{asset('website/dist/js/main.js')}}"></script>
     <script>
@@ -511,6 +525,37 @@ $(function(){
         $(".remove_item").click(function() {
             $(this).parent(".cart_item").fadeOut(300);
         });
+    </script>
+    <!---- local storage remember me ---->
+    <script>
+        const rmCheck = document.getElementById("rememberMe"),
+            emailInput = document.getElementById("number_phone");
+
+        if (localStorage.checkbox && localStorage.checkbox !== "") {
+            rmCheck.setAttribute("checked", "checked");
+            emailInput.value = localStorage.username;
+        } else {
+            rmCheck.removeAttribute("checked");
+            emailInput.value = "";
+        }
+
+        function lsRememberMe() {
+            if (rmCheck.checked && emailInput.value !== "") {
+                localStorage.username = emailInput.value;
+                localStorage.checkbox = rmCheck.value;
+            } else {
+                localStorage.username = "";
+                localStorage.checkbox = "";
+            }
+        }
+    </script>
+    <!------- confirm code ----------->
+    <script>
+            $(document).ready(function() {
+                $('#confirmCodeModal').on('shown.bs.modal', function() {
+                    $('.spinInput').trigger('focus');
+                });
+            });
     </script>
     @yield('scripts')
     <!-- /////////////////////||||||||||||||||||||||||||||| End Script |||||||||||||||||||||||||||| -->

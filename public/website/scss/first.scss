@@ -601,7 +601,7 @@ input.form-control.inputsubscribe::placeholder {
     .my-header {
         & > img {
             min-height: 400px;
-            object-fit: cover;
+            @include objectFit(cover);
         }
         .head-txt {
             width: max-content;

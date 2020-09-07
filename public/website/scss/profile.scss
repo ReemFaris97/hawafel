@@ -2,115 +2,79 @@
     max-width: 100%;
     max-height: 100%;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
 }
 @import "first";
+@import "login-pages";
 /********** Start Profile.blade ********/
 .my_profile {
-    @extend %bg-grey;
     @extend %all-section-padd;
-    .nav-tabs {
-        border: 0;
-        display: table-cell;
-        padding: 0 30px;
-        & > li {
-            float: none;
-            margin-bottom: 0;
-            padding: 10px;
-            & > a {
-                font-family: "Almarai-ExtraBold";
-                margin-right: 0;
-                border: 0;
-                border-radius: 0;
-                font-size: 16px;
-                color: #1D463D;
-                display: block;
+    .my_info {
+        max-width: 80%;
+        margin: 0 auto;
+        .user_img {
+            width: 150px;
+            height: 150px;
+            @include boxShadowOne(0px 6px 12px 0px rgb(195, 195, 195));
+            overflow: hidden;
+            border-radius: 50%;
+            margin: 0 auto 30px auto;
+            display: block;
+            img {
+                width: 100%;
+                height: 100%;
+                @include objectFit(cover);
             }
-            &.active {
-                background-color: $primary-color;
-                border-radius: 10px 10px 0 0;
-                & > a,
-                > a:hover,
-                a > :focus {
-                    color: #fff;
-                    cursor: default;
-                    background-color: transparent;
-                    border: 0;
-                    border-radius: 0;
+        }
+        .user_info {
+            width: 100%;
+            max-width: 100%;
+            margin: 2rem auto;
+            -webkit-column-gap: 50px;
+            -moz-column-gap: 50px;
+            column-gap: 50px;
+            -webkit-column-width: 50%;
+            -moz-column-width: 50%;
+            column-width: 50%;
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+            font-family: "Almarai-Bold";
+            font-size: 16px;
+            li {
+                word-break: break-word;
+                display: block;
+                border-bottom: 1px solid $grey-color;
+                padding-bottom: 15px;
+                margin-bottom: 30px;
+                span {
+                    color: #ec6a60;
+                    margin: 0 0 14px 0;
+                    font-size: 20px;
+                    display: block;
+                }
+                p {
+                    color: $grey-color;
+                    margin: 0 0 14px 0;
+                }
+                h4 {
+                    font-family: "Almarai-ExtraBold";
+                    margin: 0;
+                    color: $secondary-color;
                 }
             }
         }
-    }
-    .tab-content {
-        padding: 30px;
-        background-color: #fff;
-        border-radius: 10px;
-        @include boxShadowOne(0px 10px 23px 0px rgba(205, 205, 205, 0.6));
-        position: relative;
-        .tab-pane {
-            /****** start first tab pane ****/
-            .flex-left {
-                position: absolute;
-                left: 10px;
-                top: -30px;
-                a {
-                    color: #7b7b7b;
-                    font-size: 16px;
-                    font-family: "Almarai-Bold";
-                }
-            }
-            .my_info {
-                @include dis-flex;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
-                .user_img {
-                    width: 130px;
-                    height: 130px;
-                    @include boxShadowOne(0px 6px 12px 0px rgb(195, 195, 195));
-                    overflow: hidden;
-                    border-radius: 50%;
-                    display: block;
-                    img {
-                        @extend %img_contain;
-                    }
-                }
-                .user_info {
-                    width: calc(100% - 130px);
-                    @include dis-flex;
-                    -webkit-box-pack: space-evenly;
-                        -ms-flex-pack: space-evenly;
-                            justify-content: space-evenly;
-                    font-family: "Almarai-Bold";
-                    font-size: 16px;
-                    li {
-                        max-width: 25%;
-                        word-break: break-word;
-                        span {
-                            color: #ec6a60;
-                            margin: 0 0 14px 0;
-                            font-size: 20px;
-                            display: block;
-                        }
-                        p {
-                            color: #7b7b7b;
-                            margin: 0 0 14px 0;
-                        }
-                        h4 {
-                            font-family: "Almarai-ExtraBold";
-                            margin: 0;
-                        }
-                        &:not(:last-child) {
-                            border-left: 1px solid rgba(170, 170, 170, 0.5);
-                            padding-left: 20px;
-                        }
-                    }
-                }
+        .log_anchors.flex-r {
+            justify-content: space-between;
+            .btn-hvr {
+                margin: 0 auto;
             }
         }
     }
 }
-// start second tap pane
+/******************End Profile.blade****************/
+
+/********** Start My Orders.blade ********/
 .dataTables_wrapper .dataTables_length,
 .dataTables_wrapper .dataTables_filter,
 .dataTables_wrapper .dataTables_info,
@@ -202,8 +166,9 @@ table.dataTable > tbody > tr.child ul.dtr-details {
         }
     }
 }
-// end second tap pane
-// start third tap pane
+/********** End My Orders.blade ********/
+
+/********** Start Wallet.blade ********/
 .wallet {
     & > * {
         text-align: center;
@@ -227,12 +192,10 @@ table.dataTable > tbody > tr.child ul.dtr-details {
         font-family: "Almarai-Bold";
     }
 }
-// end third tap pane
-/******************End Profile.blade****************/
+/********** End Wallet.blade ********/
 
 /******************Start Edit Profile.blade****************/
 .edit-profile {
-    @import "login-pages";
     ///////////////// start upload img
     .filepond--drop-label {
         color: #4c4e53;
@@ -246,7 +209,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
     }
     .filepond--label-action {
         -webkit-text-decoration-color: #babdc0;
-                text-decoration-color: #babdc0;
+        text-decoration-color: #babdc0;
     }
     .filepond--panel-root {
         background-color: #edf0f4;
@@ -318,11 +281,11 @@ table.dataTable > tbody > tr.child ul.dtr-details {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
     font-size: 2em;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     padding: 0 0.2em;
     text-align: center;
     width: -webkit-max-content;
@@ -367,7 +330,8 @@ table.dataTable > tbody > tr.child ul.dtr-details {
             width: 100%;
             height: 100%;
             color: #000000;
-            &:hover > p, &:focus > p{
+            &:hover > p,
+            &:focus > p {
                 color: $primary-color;
             }
         }
@@ -399,14 +363,15 @@ table.dataTable > tbody > tr.child ul.dtr-details {
                 color: #000000;
             }
         }
-        .close{
+        .close {
             color: #bcbcbe;
             opacity: 1;
             font-size: 18px;
-            &:hover,&:focus {
-            color: red !important;
-            opacity: 1;
-        }
+            &:hover,
+            &:focus {
+                color: red !important;
+                opacity: 1;
+            }
         }
     }
     .not-read {
@@ -425,95 +390,51 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 /************* Responsive ***********/
 @media (max-width: 991px) {
     .my_profile {
-        .tab-content {
-            padding: 30px 10px;
-            .tab-pane {
-                .my_info {
-                    .user_img {
-                        width: 100px;
-                        height: 100px;
-                    }
-                    .user_info {
-                        width: calc(100% - 100px);
-                        font-size: 14px;
-                        li:not(:last-child) {
-                            padding-left: 8px;
-                        }
-                    }
-                }
+        .my_info {
+            .user_img {
+                width: 100px;
+                height: 100px;
             }
         }
     }
 }
 @media (max-width: 767px) {
+    /********** Start Profile.blade ********/
     .my_profile {
-        .nav-tabs {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            padding: 0 10px;
-            text-align: center;
-            li {
-                -webkit-box-flex: 1;
-                    -ms-flex: 1;
-                        flex: 1;
-                a {
-                    font-size: 14px;
+        .my_info {
+            .user_img {
+                display: block;
+                margin: 20px auto;
+            }
+            .user_info {
+                width: 100%;
+                max-width: 100%;
+                -webkit-column-gap: 10px;
+                -moz-column-gap: 10px;
+                column-gap: 10px;
+                & > :not(:nth-last-child(-n + 2)) {
+                    /***all (li) except last two***/
+                    margin-bottom: 40px;
+                }
+                li {
+                    span {
+                        margin: 0 0 5px 0;
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 13px;
+                        margin: 0 0 5px 0;
+                    }
+                    h4 {
+                        font-size: 15px;
+                    }
                 }
             }
-        }
-        .tab-content {
-            padding: 20px 10px;
-            .tab-pane {
-                .flex-left {
-                    top: 10px;
-                }
-                .my_info {
-                    display: block;
-                    .user_img {
-                        display: block;
-                        margin: 20px auto;
-                    }
-                    .user_info {
-                        width: auto;
-                        -ms-flex-wrap: wrap;
-                            flex-wrap: wrap;
-                        position: relative;
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            right: 0;
-                            left: 25px;
-                            margin: 0 auto;
-                            top: 0;
-                            height: 100%;
-                            border-left: 1px solid rgba(170, 170, 170, 0.5);
-                            width: 1px;
-                        }
-                        & > :not(:nth-last-child(-n + 2)) {
-                            /***all (li) except last two***/
-                            margin-bottom: 30px;
-                        }
-                        li {
-                            width: 50%;
-                            max-width: 50%;
-                            &:not(:last-child) {
-                                padding: 0;
-                                border: 0;
-                            }
-                            span {
-                                margin: 0 0 5px 0;
-                                font-size: 18px;
-                            }
-                            p {
-                                font-size: 14px;
-                                margin: 0 0 5px 0;
-                            }
-                            h4 {
-                                font-size: 16px;
-                            }
-                        }
-                    }
+            .log_anchors.flex-r{
+                justify-content: space-between;
+                .btn-hvr {
+                    min-width: 120px;
+                    font-size: 13px;
                 }
             }
         }

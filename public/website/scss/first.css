@@ -623,7 +623,7 @@ input.form-control.inputsubscribe::placeholder {
   .my-header > img {
     min-height: 400px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .my-header .head-txt {
     width: -webkit-max-content;

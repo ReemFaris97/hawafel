@@ -53,6 +53,7 @@
 .z-span{
   z-index: 1;
   position: relative;
+  margin: 0;
 }
 /********************** end my button **************/
 /************************/
