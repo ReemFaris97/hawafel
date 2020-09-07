@@ -739,22 +739,22 @@ span.bell {
 .log_anchors{
     margin: 50px auto 0 auto;
 }
-.log_anchors a{
+.log_anchors .btn-hvr{
     border-radius: 30px;
     overflow: hidden;
     height: 50px;
     line-height: 50px;
     min-width: 200px;
 }
-.log_anchors a:last-child{
+.log_anchors .btn-hvr:last-child{
     margin: 14px auto 0 auto;
     border-color: #1D463D;
     color: #1D463D;
 }
-.log_anchors a:last-child::after{
+.log_anchors .btn-hvr:last-child::after{
     background-color: #ffffff;
 }
-.log_anchors a:last-child:hover , .log_anchors a:last-child:focus{
+.log_anchors .btn-hvr:last-child:hover , .log_anchors .btn-hvr:last-child:focus{
     background-color: #1D463D;
     border-color: #1D463D;
     color: #ffffff;

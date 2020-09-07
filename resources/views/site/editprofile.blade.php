@@ -3,10 +3,37 @@
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/filepond-plugin/filepond-plugin-image-preview.min.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/filepond-plugin/filepond.min.css')}}">
+<link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 <link rel="stylesheet" href="{{asset('website/scss/profile.css')}}">
 @endsection
 @section('content')
 
+<!-- /////////////////////||||||||||| bread crumbs |||||||||||||||||||| -->
+<section class="all-sections sec-about single-work">
+   <div class="single-workdiv">
+      <h3 class="titlebread">تعديل الحساب الشخصي</h3>
+      <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="">حسابى</a> </p>
+   </div>
+   <img class="absimgbread" alt="" src="{{asset('website/dist/img/grass.png')}}">
+   <div id="leaves">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+   </div>
+</section>
+<!-- /////// ||||||||||||||||||||end breadcrumbs|||||||||||||||||||| ///////// -->
 <!-- /////////////////////||||||||||| start sections |||||||||||||||||||| -->
 <section class="my_profile edit-profile">
    <div class="container">
@@ -17,49 +44,36 @@
             </div>
             <div class="col-sm-6 col-xs-12">
                <div class="form-group">
-                  <input id="inp1" type="text" readonly onfocus="this.removeAttribute('readonly');" required>
-                  <label for="inp1"><span>اسم المستخدم</span></label>
+                  <input class="my_inpt" id="inp1" type="text" readonly onfocus="this.removeAttribute('readonly');" required>
+                  <label class="my_lbl" for="inp1"><span class="my_span">اسم المستخدم</span></label>
                   <p class="new-icon"><i class="fas fa-user"></i></p>
                </div>
             </div>
             <div class="col-sm-6 col-xs-12">
                <div class="form-group">
-                  <input id="inp3" type="email" readonly onfocus="this.removeAttribute('readonly');" required>
-                  <label for="inp3"><span>البريد الإلكترونى</span></label>
+                  <input class="my_inpt" id="inp3" type="email" readonly onfocus="this.removeAttribute('readonly');" required>
+                  <label class="my_lbl" for="inp3"><span class="my_span">البريد الإلكترونى</span></label>
                   <p class="new-icon"><i class="fas fa-envelope"></i></p>
                </div>
             </div>
             <div class="col-sm-6 col-xs-12">
                <div class="form-group">
-                  <input id="inp2" type="number" readonly onfocus="this.removeAttribute('readonly');" required>
-                  <label for="inp2"><span>رقم الجوال</span></label>
+                  <input class="my_inpt" id="inp2" type="number" readonly onfocus="this.removeAttribute('readonly');" required>
+                  <label class="my_lbl" for="inp2"><span class="my_span">رقم الجوال</span></label>
                   <p class="new-icon"><i class="fas fa-phone"></i></p>
                </div>
             </div>
             <div class="col-sm-6 col-xs-12">
                <div class="form-group">
-                  <input id="inp4" type="text" readonly onfocus="this.removeAttribute('readonly');" required>
-                  <label for="inp4"><span>المدينة</span></label>
+                  <input class="my_inpt" id="inp4" type="text" readonly onfocus="this.removeAttribute('readonly');" required>
+                  <label class="my_lbl" for="inp4"><span class="my_span">المدينة</span></label>
                   <p class="new-icon"><i class="fas fa-map-marker-alt"></i></p>
                </div>
             </div>
-            <div class="col-sm-6 col-xs-12">
-               <div class="form-group">
-                  <input id="inp5" type="password" readonly onfocus="this.removeAttribute('readonly');" required>
-                  <label for="inp5"><span>كلمة المرور</span></label>
-                  <p class="new-icon"><i class="fas fa-lock"></i></p>
-               </div>
-            </div>
-            <div class="col-sm-6 col-xs-12">
-               <div class="form-group">
-                  <input id="inp6" type="password" readonly onfocus="this.removeAttribute('readonly');" required>
-                  <label for="inp6"><span>تأكيد كلمة المرور</span></label>
-                  <p class="new-icon"><i class="fas fa-lock"></i></p>
-               </div>
-            </div>
-
             <div class="col-xs-12">
-               <button type="submit" class="btn-hvr">حفظ</button>
+         <div class="log_anchors flex-r">
+               <button type="submit" class="btn-hvr"><span class="z-span">حفظ</span></button>
+         </div>
             </div>
          </div>
       </form>
