@@ -60,7 +60,9 @@ Route::get('/single-product', function () {
 Route::get('/favourites', function () {
     return view('site.favourites');
 });
-
+Route::get('/offer', function () {
+    return view('site.offer');
+});
 
 /******Profile******/
 Route::get('/my-profile', function () {

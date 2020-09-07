@@ -43,7 +43,7 @@
                     <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=fLHVCOLU_WI">
                         <!-- <img class="imgcontent" src="{{asset('website/dist/img/asset20.png')}}" alt=""> -->
                         <div class="imgcontent">
-                            <img  src="{{asset('website/dist/img/product2.png')}}" alt="">
+                            <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
                             <i class="fab fa-youtube"></i>
                         </div>
                     </a>
@@ -57,7 +57,7 @@
                     <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=fLHVCOLU_WI">
                         <!-- <img class="imgcontent" src="{{asset('website/dist/img/asset20.png')}}" alt=""> -->
                         <div class="imgcontent">
-                            <img  src="{{asset('website/dist/img/product2.png')}}" alt="">
+                            <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
                             <i class="fab fa-youtube"></i>
                         </div>
                     </a>
@@ -70,7 +70,7 @@
                     <div>
                     <a data-fancybox="gallery" href="{{asset('website/dist/img/product2.png')}}">
                         <div class="imgcontent">
-                            <img  src="{{asset('website/dist/img/product2.png')}}" alt="">
+                            <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
 
                         </div>
                     </a>
@@ -84,7 +84,7 @@
                     <div>
                     <a data-fancybox="gallery" href="{{asset('website/dist/img/product2.png')}}">
                         <div class="imgcontent">
-                            <img  src="{{asset('website/dist/img/product2.png')}}" alt="">
+                            <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
 
                         </div>
                     </a>

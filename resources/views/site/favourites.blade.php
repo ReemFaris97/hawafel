@@ -115,19 +115,114 @@
          </div>
       </div>
 
-      <!-- <div class="row list list-view-filter">
+
+      <!-- ------------------------ -->
+      <!-- الخصم العام -->
+      <!-- --------------------------- -->
+      <!-- <div class="row list list-view-filter recents">
          <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
             <div class="fleximgfav">
-               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
+               <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
                <div class="descrpp">
-                  <a href="{{url('single-product')}}"><p class="nameprodfav">زيت الارغان الاصلي</p></a>
-                  <b><span>100</span>  ريال سعودي </b>
+                  <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
+                  <div class="discprice">
+                    <b><span>100</span>  ريال سعودي </b><b><span>100</span>  ريال سعودي </b>
+                  </div>
                   <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
+                  <b class="datedes">
+                      <b>2-aug-2020</b> <b>22-aug-2020</b>
+                  </b>
                   <div class="flex flexadd">
-                     <div class="deleteaa"><i class="far fa-trash-alt"></i></div>
+                     <div class="likerr"><i class="far fa-heart"></i></div>
                      <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
+               <div class="discname">اسم الخصم</div>
+               <div class="discprecent">-20%</div>
+            </div>
+         </div>
+         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
+            <div class="fleximgfav">
+               <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+               <div class="descrpp">
+                  <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
+                  <div class="discprice">
+                    <b><span>100</span>  ريال سعودي </b><b><span>100</span>  ريال سعودي </b>
+                  </div>
+                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
+                  <b class="datedes">
+                      <b>2-aug-2020</b> <b>22-aug-2020</b>
+                  </b>
+                  <div class="flex flexadd">
+                     <div class="likerr"><i class="far fa-heart"></i></div>
+                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+               <div class="discname">اسم الخصم</div>
+               <div class="discprecent">-20%</div>
+            </div>
+         </div>
+         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
+            <div class="fleximgfav">
+               <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+               <div class="descrpp">
+                  <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
+                  <div class="discprice">
+                    <b><span>100</span>  ريال سعودي </b><b><span>100</span>  ريال سعودي </b>
+                  </div>
+                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
+                  <b class="datedes">
+                      <b>2-aug-2020</b> <b>22-aug-2020</b>
+                  </b>
+                  <div class="flex flexadd">
+                     <div class="likerr"><i class="far fa-heart"></i></div>
+                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+               <div class="discname">اسم الخصم</div>
+               <div class="discprecent">-20%</div>
+            </div>
+         </div>
+         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
+            <div class="fleximgfav">
+               <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+               <div class="descrpp">
+                  <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
+                  <div class="discprice">
+                    <b><span>100</span>  ريال سعودي </b><b><span>100</span>  ريال سعودي </b>
+                  </div>
+                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
+                  <b class="datedes">
+                      <b>2-aug-2020</b> <b>22-aug-2020</b>
+                  </b>
+                  <div class="flex flexadd">
+                     <div class="likerr"><i class="far fa-heart"></i></div>
+                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+               <div class="discname">اسم الخصم</div>
+               <div class="discprecent">-20%</div>
+            </div>
+         </div>
+         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
+            <div class="fleximgfav">
+               <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+               <div class="descrpp">
+                  <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
+                  <div class="discprice">
+                    <b><span>100</span>  ريال سعودي </b><b><span>100</span>  ريال سعودي </b>
+                  </div>
+                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
+                  <b class="datedes">
+                      <b>2-aug-2020</b> <b>22-aug-2020</b>
+                  </b>
+                  <div class="flex flexadd">
+                     <div class="likerr"><i class="far fa-heart"></i></div>
+                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+               <div class="discname">اسم الخصم</div>
+               <div class="discprecent">-20%</div>
             </div>
          </div>
       </div> -->
@@ -139,8 +234,10 @@
 <script src="{{asset('website/dist/js/jquery.fancybox.min.js')}}"></script>
 <script>
    $(".deleteaa").click(function() {
-           $(this).parents(".parentfav").fadeOut(300);
-           $(this).parents(".parentfav").remove(3);
+           $(this).parents(".parentfav").fadeOut(300 ,function() {
+               $(this).remove();
+               });
+
        });
 </script>
 <script>
@@ -173,6 +270,10 @@
           }
 
 </script>
-
+<script>
+    $(".likerr").click(function() {
+        $(this).toggleClass("i_liked");
+    });
+</script>
 
 @endsection
