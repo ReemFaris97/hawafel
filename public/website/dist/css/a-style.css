@@ -1401,6 +1401,10 @@ a.categoryhref {
 .filter-buttons button#dropdownMenuButton{
     font-size: 17px
 }
+.flexpagin .pagination>li a {
+    padding: 3px;
+    font-size: 16px
+}
 /*==================end favourites html =========================*/
 }
 
@@ -1421,6 +1425,11 @@ a.categoryhref {
         width: 35px;
         height: 39px;
         font-size: 17px;
+        margin-left: 2px
+    }
+    .fleximgfav .flex.flexadd .addcard {
+
+        padding: 0px 3px;
     }
     .flexadd {
         margin-top: 5px;
@@ -1456,5 +1465,11 @@ a.categoryhref {
         width: 100px;
         margin-left: 6px;
         object-fit: cover;
+    }
+    .fleximgfav .flex.flexadd {
+        width: 100% !important;
+    }
+    .fleximgfav .flex.flexadd .addcard {
+        padding: 0px 2px;
     }
 }
