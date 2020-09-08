@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.categories-r, .recents, .my_offers, .my_profile {
+.categories-r, .recents, .my_offers, .my_profile, .my_adress {
   padding: 50px 0;
 }
 
@@ -617,7 +617,7 @@ input.form-control.inputsubscribe::placeholder {
 }
 
 @media (max-width: 767px) {
-  .categories-r, .recents, .my_offers, .my_profile {
+  .categories-r, .recents, .my_offers, .my_profile, .my_adress {
     padding: 20px 0;
   }
   /******** banner ***/
@@ -713,7 +713,7 @@ input.form-control.inputsubscribe::placeholder {
   }
 }
 
-.categories-r, .recents, .my_offers, .my_profile {
+.categories-r, .recents, .my_offers, .my_profile, .my_adress {
   padding: 50px 0;
 }
 
@@ -1325,7 +1325,7 @@ input.form-control.inputsubscribe::placeholder {
 }
 
 @media (max-width: 767px) {
-  .categories-r, .recents, .my_offers, .my_profile {
+  .categories-r, .recents, .my_offers, .my_profile, .my_adress {
     padding: 20px 0;
   }
   /******** banner ***/
@@ -1948,33 +1948,6 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 /********** End My Orders.blade ********/
-/********** Start Wallet.blade ********/
-.wallet > * {
-  text-align: center;
-}
-
-.wallet h2 {
-  font-family: "Almarai-ExtraBold";
-  font-size: 26px;
-  margin: 0 auto 20px auto;
-  color: #000000;
-}
-
-.wallet h3 {
-  font-family: "Almarai-ExtraBold";
-  font-size: 23px;
-  margin: 0 auto 20px auto;
-  color: #000000;
-}
-
-.wallet p {
-  font-size: 20px;
-  margin: 0;
-  color: #949494;
-  font-family: "Almarai-Bold";
-}
-
-/********** End Wallet.blade ********/
 /******************Start Edit Profile.blade****************/
 .edit-profile .filepond--drop-label {
   color: #4c4e53;
@@ -2040,6 +2013,232 @@ table.dataTable > tbody > tr.child ul.dtr-details {
 }
 
 /******************End Edit Profile.blade****************/
+/******************Start my_adress.blade****************/
+.my_adress .btn-hvr {
+  min-width: 220px;
+  margin: 20px auto 0 auto;
+}
+
+/**one address item**/
+.adres_item {
+  -webkit-box-shadow: 0px 10px 12px 5px #f7f7f7;
+  -o-box-shadow: 0px 10px 12px 5px #f7f7f7;
+  -ms-box-shadow: 0px 10px 12px 5px #f7f7f7;
+  box-shadow: 0px 10px 12px 5px #f7f7f7;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 0 auto 16px auto;
+}
+
+.adres_item h3 {
+  font-family: "Almarai-Bold";
+  color: #1d463d;
+}
+
+.adres_item p {
+  font-size: 16px;
+}
+
+.adres_item .flex-r button {
+  background: none;
+}
+
+.adres_item .flex-r button:first-child {
+  color: #f9a392;
+  font-family: "Almarai-Bold" !important;
+}
+
+.adres_item .flex-r button.remove_adres {
+  color: #000000;
+  font-size: 18px;
+}
+
+/**** new adrs modal ***/
+.adrs_modal .modal_inner .form-box {
+  display: block;
+  padding-top: 40px;
+}
+
+.adrs_modal .modal_inner .form-box .box-right {
+  margin: 0 auto 30px;
+}
+
+.adrs_modal .modal_inner .form-box .box-right h4 {
+  color: #f9a392;
+}
+
+.select2-container,
+.select2-container--default {
+  width: 100% !important;
+  display: block !important;
+  direction: rtl;
+}
+
+.select2-container .select2-selection--single,
+.select2-container--default .select2-selection--single {
+  background-color: transparent;
+  height: 34px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered,
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #000000;
+  padding-right: 8px;
+  padding-left: 20px;
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow,
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  right: auto;
+  height: 100%;
+  left: 1px;
+}
+
+.select2-container .select2-results__option,
+.select2-container--default .select2-results__option {
+  display: block;
+}
+
+.select2-container .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #f9a392;
+}
+
+.select2-container--open .select2-dropdown--below {
+  direction: rtl !important;
+}
+
+.defaultForm .form-group .form-control,
+.defaultForm .form-group .select2-selection--single {
+  border-radius: 15px;
+  border: 1px solid #aaa;
+}
+
+.defaultForm .form-group .form-control:focus,
+.defaultForm .form-group .select2-selection--single:focus {
+  border-color: #f9a392;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+textarea.form-control.input-lg {
+  background-color: #fff;
+}
+
+/******** map ********/
+#adrs_map {
+  width: 100%;
+  height: 400px;
+}
+
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#adrs_map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: "Almarai-Bold";
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: "Almarai-Bold";
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: "Almarai-Bold";
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+#pac-input:focus {
+  border-color: #f9a392;
+}
+
+#title {
+  color: #fff;
+  background-color: #1d463d;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width: 345px;
+}
+
+.pac-container {
+  border: 0 !important;
+}
+
+/******************End my_adress.blade****************/
+/******************Start my_wallet.blade****************/
+.wallet > * {
+  text-align: center;
+}
+
+.wallet h2 {
+  font-family: "Almarai-ExtraBold";
+  font-size: 26px;
+  margin: 0 auto 20px auto;
+  color: #000000;
+}
+
+.wallet h3 {
+  font-family: "Almarai-ExtraBold";
+  font-size: 23px;
+  margin: 0 auto 20px auto;
+  color: #000000;
+}
+
+.wallet p {
+  font-size: 20px;
+  margin: 0;
+  color: #949494;
+  font-family: "Almarai-Bold";
+}
+
+/******************End my_wallet.blade****************/
 /******************Start Voting.blade****************/
 .voting {
   padding-top: 20px;
