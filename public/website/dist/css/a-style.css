@@ -1266,7 +1266,10 @@ p.nameprodfav {
 	text-overflow: ellipsis;
 }
 
+
 /*================== end favourites html =========================*/
+
+
 /*========================== offers html ==========================*/
 
 .discprice {
@@ -1293,10 +1296,10 @@ p.nameprodfav {
 	color: #fff;
 	padding: 9px;
 	position: absolute;
-	bottom:21px;
+	bottom: 21px;
 	right: 16px;
-    font-weight: bold;
-    text-align: center
+	font-weight: bold;
+	text-align: center
 }
 
 .discprecent {
@@ -1324,59 +1327,89 @@ p.nameprodfav {
 }
 
 b.datedes {
-    display: flex;
-    color: #f9a392;
-    font-size: 15px;
-    margin-top: 1px;
+	display: flex;
+	color: #f9a392;
+	font-size: 15px;
+	margin-top: 1px;
 }
-b.datedes b{
-    color: #f9a392;
-    font-size: 15px;
-    font-weight: bold
+
+b.datedes b {
+	color: #f9a392;
+	font-size: 15px;
+	font-weight: bold
 }
-b.datedes b:first-child{
-    margin-left: 8px
+
+b.datedes b:first-child {
+	margin-left: 8px
 }
+
 .discname.discfavv {
-    width: 127px;
-    background-color: #1d463d;
-    top: 21px;
-    left: 3px;
-    bottom: unset !important;
-    right: unset;
+	width: 127px;
+	background-color: #1d463d;
+	top: 21px;
+	left: 3px;
+	bottom: unset !important;
+	right: unset;
 }
 
 .divcontcolock {
-    background-color: #1d463d;
-    color: #fff;
-    padding: 7px 8px;
-    font-size: 14px;
-    font-weight: bold;
-    position: absolute;
-    bottom: 0;
+	background-color: #1d463d;
+	color: #fff;
+	padding: 7px 8px;
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
 }
-.grid-view-filter .listgrid .divcontcolock{
-    position: relative;
-    bottom: unset
+
+.grid-view-filter .listgrid .divcontcolock {
+	position: relative;
+	bottom: unset
 }
-.fleximgfav.offerp  .discname.discfavv{
-right: 5px;
+
+.fleximgfav.offerp .discname.discfavv {
+	right: 5px;
 }
-.rowoffer .fleximgfav.offerp{
+
+.rowoffer .fleximgfav.offerp {}
+
+.rowoffer .divcontcolock ul li span {
+	font-size: 20px;
+}
+
+.rowoffer .divcontcolock ul li {
+	margin: 0 4px;
+}
+
+.rowoffer .fleximgfav.offerp .favpp {
+	display: block !important;
+	height: auto;
+	color: #1d463d;
+	font-weight: bold;
+}
+
+.grid-view-filter .listgrid .divcontcolock ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+.minwidimg {
+    min-width: 30%;
 
 }
-.rowoffer .divcontcolock ul li span {
-    font-size: 20px;
+
+.list-view-filter .divcontcolock {
+    left: 0;
+    right: 0;
 }
-.rowoffer .divcontcolock ul li {
-    margin: 0 4px;
+.list-view-filter .divcontcolock ul{
+    display: flex
 }
-.rowoffer .fleximgfav.offerp .favpp {
-    display: block !important;
-    height: auto;
-    color: #1d463d;
-    font-weight: bold;
+.list-view-filter .descrpp{
+    padding-bottom: 50px;
+    position: relative;
 }
+
 /*================== end offer html =========================*/
 
 
@@ -1439,7 +1472,16 @@ right: 5px;
 	.col-md-6.col-sm-4.col-xs-6.parentfav.listgrid {
 		width: 50%;
 	}
-	/*================== end favourites html =========================*/
+    /*================== end favourites html =========================*/
+/*================== end favourites html =========================*/
+    .fleximgfav.offerp .discname.discfavv {
+        right: 1px;
+        width: 114px;
+        background-color: #1d463d;
+        top: 17px;
+
+    }
+/*================== end favourites html =========================*/
 }
 
 @media (max-width: 767px) {
@@ -1581,12 +1623,39 @@ right: 5px;
 		padding: 3px;
 		font-size: 16px
 	}
-    /*==================end favourites html =========================*/
-    /*======================= offer html =========================*/
-
-
-     /*==================end offer html =========================*/
-
+	/*==================end favourites html =========================*/
+	/*======================= offer html =========================*/
+	.divcontcolock {
+		padding: 1px 3px;
+		font-size: 12px;
+	}
+	.rowoffer .divcontcolock ul li {
+		margin: 0 2px;
+	}
+	.rowoffer .divcontcolock ul li span {
+		font-size: 15px;
+    }
+    .list-view-filter .descrpp{
+        padding-bottom: 30px;
+        position: relative
+    }
+    .list-view-filter .divcontcolock{
+        left: 2px;
+        right: 2px;
+        bottom: 2px
+    }
+    .list-view-filter .divcontcolock ul{
+        display: flex;
+        align-items: center;
+        justify-content:space-around ;
+    }
+    .list-view-filter .discname.discfavv {
+        width: 85px;
+        top: 2px;
+        left: 3px;
+        padding: 4px 4px
+    }
+	/*==================end offer html =========================*/
 }
 
 @media (max-width: 700px) {}
@@ -1628,30 +1697,50 @@ right: 5px;
 	}
 	.grid-view-filter .listgrid .fleximgfav img {
 		height: 160px;
+	}
+	.discprice {
+		font-size: 12px;
+	}
+	.fleximgfav b span {
+		font-size: 13px;
+	}
+	.discprecent {
+		width: 34px;
+		font-size: 12px;
+	}
+	.discname {
+		width: 84px;
+		padding: 9px 4px;
+		bottom: 21px;
+		right: 0px;
+		font-size: 12px;
+	}
+	.discprecent {
+		width: 34px;
+		font-size: 12px;
+		right: 0px;
+		top: 0;
+		bottom: unset;
     }
-    .discprice {
-        font-size: 12px;
+    .list-view-filter .descrpp{
+        padding-bottom: 30px;
+        position: relative
     }
-    .fleximgfav b span {
-        font-size: 13px;
+    .list-view-filter .divcontcolock{
+        left: 2px;
+        right: 2px;
+        bottom: 2px
     }
-    .discprecent {
-        width: 34px;
-        font-size: 12px;
+    .list-view-filter .divcontcolock ul{
+        display: flex;
+        align-items: center;
+        justify-content:space-around ;
     }
-    .discname {
-        width: 84px;
-        padding: 9px 4px;
-        bottom: 21px;
-        right: 0px;
-        font-size: 12px;
-    }
-    .discprecent {
-        width: 34px;
-        font-size: 12px;
-        right: 0px;
-        top: 0;
-        bottom: unset;
+    .list-view-filter .discname.discfavv {
+        width: 85px;
+        top: 2px;
+        left: 3px;
+        padding: 4px 4px
     }
 	/*================== end favourites html =========================*/
 }
