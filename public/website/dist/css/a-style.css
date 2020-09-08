@@ -1401,6 +1401,9 @@ b.datedes b:first-child {
 .list-view-filter .divcontcolock {
     left: 0;
     right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .list-view-filter .divcontcolock ul{
     display: flex
@@ -1655,6 +1658,11 @@ b.datedes b:first-child {
         left: 3px;
         padding: 4px 4px
     }
+
+.pagination {
+    margin: 5px 0;
+
+}
 	/*==================end offer html =========================*/
 }
 
@@ -1741,6 +1749,9 @@ b.datedes b:first-child {
         top: 2px;
         left: 3px;
         padding: 4px 4px
+    }
+    .minwidimg {
+        min-width: 38%;
     }
 	/*================== end favourites html =========================*/
 }
