@@ -38,6 +38,9 @@ Route::get('/privacy', function () {
 Route::get('/multimedia', function () {
     return view('site.multimedia');
 });
+Route::get('/singleMulti', function () {
+    return view('site.singleMulti');
+});
 /**** categories *****/
 Route::get('/categories', function () {
     return view('site.categories');
