@@ -87,8 +87,8 @@
       <!-- ------------------------ -->
       <!-- الخصم العام -->
       <!-- --------------------------- -->
-      <div class="row list list-view-filter rowoffer recents">
-         <div class="col-md-6  col-sm-6 col-xs-12 parentfav listgrid list4">
+      <div class="row list grid-view-filter rowoffer recents">
+         <div class="col-md-4  col-sm-6 col-xs-12 parentfav listgrid list4">
             <div class="fleximgfav offerp">
                <div class="minwidimg">
                   <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
@@ -121,74 +121,7 @@
             </div>
          </div>
 
-         <div class="col-md-6  col-sm-6 col-xs-12 parentfav listgrid list4">
-            <div class="fleximgfav offerp">
-               <div class="minwidimg">
-                  <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
-               </div>
-               <div class="descrpp">
-                  <div class="divcontcolock">
-                     <ul>
-                        <li><span class="seconds"></span>S</li>
-                        <li><span class="minutes"></span>M</li>
-                        <li><span class="hours"></span>H</li>
-                        <li><span class="days"></span>D</li>
-                     </ul>
-                  </div>
-                  <a href="{{url('single-product')}}">
-                     <p class="nameprodfav">مجموعة الصابون الطبيعي  </p>
-                  </a>
-                  <div class="discprice">
-                     <b><span>100</span>  ريال سعودي </b><b><span>100</span>  ريال سعودي </b>
-                  </div>
-                  <b class="favpp">اشتري منتج من زيت الارجان واحصل علي الثاني هدية</b>
-                  <b class="datedes">
-                  <b>2-aug-2020</b> <b>22-aug-2020</b>
-                  </b>
-                  <div class="flex flexadd">
-                  <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
-               <div class="discname discfavv">اسم الخصم</div>
-            </div>
-         </div>
-
-
-         <div class="col-md-6  col-sm-6 col-xs-12 parentfav listgrid list4">
-            <div class="fleximgfav offerp">
-               <div class="minwidimg">
-                  <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
-               </div>
-               <div class="descrpp">
-                  <div class="divcontcolock">
-                     <ul>
-                        <li><span class="seconds"></span>S</li>
-                        <li><span class="minutes"></span>M</li>
-                        <li><span class="hours"></span>H</li>
-                        <li><span class="days"></span>D</li>
-                     </ul>
-                  </div>
-                  <a href="{{url('single-product')}}">
-                     <p class="nameprodfav">مجموعة الصابون الطبيعي  </p>
-                  </a>
-                  <div class="discprice">
-                     <b><span>100</span>  ريال سعودي </b><b><span>100</span>  ريال سعودي </b>
-                  </div>
-                  <b class="favpp">اشتري منتج من زيت الارجان واحصل علي الثاني هدية</b>
-                  <b class="datedes">
-                  <b>2-aug-2020</b> <b>22-aug-2020</b>
-                  </b>
-                  <div class="flex flexadd">
-                  <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
-               <div class="discname discfavv">اسم الخصم</div>
-            </div>
-         </div>
-
-         <div class="col-md-6  col-sm-6 col-xs-12 parentfav listgrid list4">
+         <div class="col-md-4  col-sm-6 col-xs-12 parentfav listgrid list4">
             <div class="fleximgfav offerp">
                <div class="minwidimg">
                   <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
@@ -222,7 +155,71 @@
          </div>
 
 
+         <div class="col-md-4  col-sm-6 col-xs-12 parentfav listgrid list4">
+            <div class="fleximgfav offerp">
+               <div class="minwidimg">
+                  <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+               </div>
+               <div class="descrpp">
+                  <div class="divcontcolock">
+                     <ul>
+                        <li><span class="seconds"></span>S</li>
+                        <li><span class="minutes"></span>M</li>
+                        <li><span class="hours"></span>H</li>
+                        <li><span class="days"></span>D</li>
+                     </ul>
+                  </div>
+                  <a href="{{url('single-product')}}">
+                     <p class="nameprodfav">مجموعة الصابون الطبيعي  </p>
+                  </a>
+                  <div class="discprice">
+                     <b><span>100</span>  ريال سعودي </b><b><span>100</span>  ريال سعودي </b>
+                  </div>
+                  <b class="favpp">اشتري منتج من زيت الارجان واحصل علي الثاني هدية</b>
+                  <b class="datedes">
+                  <b>2-aug-2020</b> <b>22-aug-2020</b>
+                  </b>
+                  <div class="flex flexadd">
+                  <div class="likerr"><i class="far fa-heart"></i></div>
+                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+               <div class="discname discfavv">اسم الخصم</div>
+            </div>
+         </div>
 
+         <div class="col-md-4  col-sm-6 col-xs-12 parentfav listgrid list4">
+            <div class="fleximgfav offerp">
+               <div class="minwidimg">
+                  <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+               </div>
+               <div class="descrpp">
+                  <div class="divcontcolock">
+                     <ul>
+                        <li><span class="seconds"></span>S</li>
+                        <li><span class="minutes"></span>M</li>
+                        <li><span class="hours"></span>H</li>
+                        <li><span class="days"></span>D</li>
+                     </ul>
+                  </div>
+                  <a href="{{url('single-product')}}">
+                     <p class="nameprodfav">مجموعة الصابون الطبيعي  </p>
+                  </a>
+                  <div class="discprice">
+                     <b><span>100</span>  ريال سعودي </b><b><span>100</span>  ريال سعودي </b>
+                  </div>
+                  <b class="favpp">اشتري منتج من زيت الارجان واحصل علي الثاني هدية</b>
+                  <b class="datedes">
+                  <b>2-aug-2020</b> <b>22-aug-2020</b>
+                  </b>
+                  <div class="flex flexadd">
+                  <div class="likerr"><i class="far fa-heart"></i></div>
+                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                  </div>
+               </div>
+               <div class="discname discfavv">اسم الخصم</div>
+            </div>
+         </div>
 
       </div>
    </div>
@@ -240,7 +237,7 @@
 <script>
    const listViewButton = document.querySelector('.list-view-button');
           const gridViewButton = document.querySelector('.grid-view-button');
-          const list = document.querySelector('.list.list-view-filter');
+          const list = document.querySelector('.list.grid-view-filter');
 
           listViewButton.onclick = function () {
           list.classList.remove('grid-view-filter');

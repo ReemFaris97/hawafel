@@ -54,19 +54,19 @@
                   <div class="custom_radio">
                     <ul class="inlineradio">
                         <li>
-                            <input type="radio" id="featured-1" name="featured" checked=""><label for="featured-1">الخصم العام</label>
+                            <a href="{{url('offer')}}">الخصم العام </a>
                         </li>
                         <li>
-                            <input type="radio" id="featured-2" name="featured"><label for="featured-2"> عرض منتجين و منتج مجاني</label>
+                            <a href="{{url('offer')}}"> عرض منتجين ومنتج مجاني</a>
                         </li>
                         <li>
-                            <input type="radio" id="featured-3" name="featured"><label for="featured-3"> عرض منتج ومنتج مجاني</label>
+                            <a href="{{url('offer')}}"> عرض منتج ومنتج مجاني</a>
                         </li>
                         <li>
-                            <input type="radio" id="featured-4" name="featured"><label for="featured-4">عرض الكمية</label>
+                            <a href="{{url('offer')}}">عرض الكمية</a>
                         </li>
                         <li>
-                            <input type="radio" id="featured-5" name="featured"><label for="featured-5">خصم النسبة </label>
+                            <a href="{{url('offer')}}"> خصم النسبة</a>
                         </li>
                         <li>
                             <a href="#">عروض الاقسام</a>
