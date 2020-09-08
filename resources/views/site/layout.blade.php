@@ -173,7 +173,7 @@
 
                         <!----------------********************** show this if user logged in ***************------------------------------>
                         <!-- /////////////////////||||||||||| Start Nav Profile  |||||||||||||||||||| -->
-                        <!-- <li>
+                        <li>
                             <a href="javascript:void(0)" class="menu-toggle">
                                 <span class="nav-icon"><i class="far fa-user"></i></span>
                             </a>
@@ -212,12 +212,12 @@
                                     </ul>
                                 </div>
                             </div>
-                        </li> -->
+                        </li>
                         <!-- /////////////////////||||||||||| End Nav Profile  |||||||||||||||||||| -->
 
                         <!----------------********************** show this if user NOT logged in ***************------------------------------>
                         <!-- /////////////////////||||||||||| Start Sign up/In Links  |||||||||||||||||||| -->
-                        <li>
+                        <!-- <li>
                             <a href="javascript:void(0)" class="menu-toggle">
                                 <span class="nav-icon"><i class="fas fa-user-plus"></i></span>
                             </a>
@@ -238,7 +238,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                         <!-- /////////////////////||||||||||| End Sign up/In Links  |||||||||||||||||||| -->
 
                         <!-- /////////////////////||||||||||| Start Nav Notifications  |||||||||||||||||||| -->
@@ -456,11 +456,11 @@
 
 
     <!-- /////////////////////||||||||||||||||||||||||||||| Start Modals |||||||||||||||||||||||||||| -->
-    @include('site.sign-in-modal')
-    @include('site.sign-up-modal')
-    @include('site.forgot-pass-modal')
-    @include('site.confirm-code-modal')
-    @include('site.set-pass-modal')
+    @include('site.modals.sign-in-modal')
+    @include('site.modals.sign-up-modal')
+    @include('site.modals.forgot-pass-modal')
+    @include('site.modals.confirm-code-modal')
+    @include('site.modals.set-pass-modal')
     <!-- /////////////////////||||||||||||||||||||||||||||| End Modals |||||||||||||||||||||||||||| -->
 
 

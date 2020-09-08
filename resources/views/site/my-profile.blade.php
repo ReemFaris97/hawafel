@@ -11,7 +11,7 @@
 <section class="all-sections sec-about single-work">
    <div class="single-workdiv">
       <h3 class="titlebread"> الحساب الشخصي</h3>
-      <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="">حسابى</a> </p>
+      <p class="breadcrum"> <a href="../">الرئيسية</a> /حسابى </p>
    </div>
    <img class="absimgbread" alt="" src="{{asset('website/dist/img/grass.png')}}">
    <div id="leaves">
@@ -69,7 +69,7 @@
       </div>
    </div>
 </section>
-@include('site.reset-pass-modal')
+@include('site.modals.reset-pass-modal')
 <!-- /////////////////////|||||||||||End my_profile |||||||||||||||||||| -->
 @endsection
 

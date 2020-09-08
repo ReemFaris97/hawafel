@@ -73,7 +73,6 @@
     }
 }
 /******************End Profile.blade****************/
-
 /********** Start My Orders.blade ********/
 .dataTables_wrapper .dataTables_length,
 .dataTables_wrapper .dataTables_filter,
@@ -167,33 +166,6 @@ table.dataTable > tbody > tr.child ul.dtr-details {
     }
 }
 /********** End My Orders.blade ********/
-
-/********** Start Wallet.blade ********/
-.wallet {
-    & > * {
-        text-align: center;
-    }
-    h2 {
-        font-family: "Almarai-ExtraBold";
-        font-size: 26px;
-        margin: 0 auto 20px auto;
-        color: #000000;
-    }
-    h3 {
-        font-family: "Almarai-ExtraBold";
-        font-size: 23px;
-        margin: 0 auto 20px auto;
-        color: $primary-color;
-    }
-    p {
-        font-size: 20px;
-        margin: 0;
-        color: #949494;
-        font-family: "Almarai-Bold";
-    }
-}
-/********** End Wallet.blade ********/
-
 /******************Start Edit Profile.blade****************/
 .edit-profile {
     ///////////////// start upload img
@@ -255,6 +227,194 @@ table.dataTable > tbody > tr.child ul.dtr-details {
     }
 }
 /******************End Edit Profile.blade****************/
+/******************Start my_adress.blade****************/
+.my_adress {
+    @extend %all-section-padd;
+    .btn-hvr {
+        min-width: 220px;
+        margin: 20px auto 0 auto;
+    }
+}
+/**one address item**/
+.adres_item {
+    @include boxShadowOne(0px 10px 12px 5px rgba(247, 247, 247, 1));
+    border-radius: 6px;
+    padding: 20px;
+    margin: 0 auto 16px auto;
+    h3 {
+        font-family: "Almarai-Bold";
+        color: $secondary-color;
+    }
+    p {
+        font-size: 16px;
+    }
+    .flex-r {
+        button {
+            background: none;
+            &:first-child {
+                color: $third-color;
+                font-family: "Almarai-Bold" !important;
+            }
+            &.remove_adres {
+                color: $primary-color;
+                font-size: 18px;
+            }
+        }
+    }
+}
+/**** new adrs modal ***/
+.adrs_modal {
+    .modal_inner .form-box {
+        display: block;
+        padding-top: 40px;
+        .box-right {
+            margin: 0 auto 30px;
+            h4 {
+                color: $third-color;
+            }
+        }
+    }
+}
+.select2-container,
+.select2-container--default {
+    width: 100% !important;
+    display: block !important;
+    direction: rtl;
+    .select2-selection--single {
+        background-color: transparent;
+        height: 34px;
+        .select2-selection__rendered {
+            color: #000000;
+            padding-right: 8px;
+            padding-left: 20px;
+        }
+        .select2-selection__arrow {
+            right: auto;
+            height: 100%;
+            left: 1px;
+        }
+    }
+    .select2-results__option {
+        display: block;
+    }
+    .select2-results__option--highlighted[aria-selected] {
+        background-color: $third-color;
+    }
+}
+.select2-container--open .select2-dropdown--below {
+    direction: rtl !important;
+}
+.defaultForm {
+    .form-group {
+        .form-control,
+        .select2-selection--single {
+            border-radius: 15px;
+            border: 1px solid #aaa;
+            &:focus {
+                border-color: $third-color;
+                @include boxShadowOne(inset 0 1px 1px rgba(0, 0, 0, 0.075));
+            }
+        }
+    }
+}
+textarea.form-control.input-lg {
+    background-color: #fff;
+}
+/******** map ********/
+#adrs_map {
+    width: 100%;
+    height: 400px;
+}
+#description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+#infowindow-content .title {
+    font-weight: bold;
+}
+#infowindow-content {
+    display: none;
+}
+#adrs_map #infowindow-content {
+    display: inline;
+}
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: "Almarai-Bold";
+}
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+.pac-controls label {
+    font-family: "Almarai-Bold";
+    font-size: 13px;
+    font-weight: 300;
+}
+#pac-input {
+    background-color: #fff;
+    font-family: "Almarai-Bold";
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+    &:focus {
+        border-color: $third-color;
+    }
+}
+#title {
+    color: #fff;
+    background-color: $secondary-color;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+#target {
+    width: 345px;
+}
+.pac-container{
+    border:0 !important;
+}
+/******************End my_adress.blade****************/
+
+/******************Start my_wallet.blade****************/
+.wallet {
+    & > * {
+        text-align: center;
+    }
+    h2 {
+        font-family: "Almarai-ExtraBold";
+        font-size: 26px;
+        margin: 0 auto 20px auto;
+        color: #000000;
+    }
+    h3 {
+        font-family: "Almarai-ExtraBold";
+        font-size: 23px;
+        margin: 0 auto 20px auto;
+        color: $primary-color;
+    }
+    p {
+        font-size: 20px;
+        margin: 0;
+        color: #949494;
+        font-family: "Almarai-Bold";
+    }
+}
+/******************End my_wallet.blade****************/
 
 /******************Start Voting.blade****************/
 .voting {
@@ -384,9 +544,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
         }
     }
 }
-
 /******************End Notification.blade****************/
-
 /************* Responsive ***********/
 @media (max-width: 991px) {
     .my_profile {
@@ -430,7 +588,7 @@ table.dataTable > tbody > tr.child ul.dtr-details {
                     }
                 }
             }
-            .log_anchors.flex-r{
+            .log_anchors.flex-r {
                 justify-content: space-between;
                 .btn-hvr {
                     min-width: 120px;
