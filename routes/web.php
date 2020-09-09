@@ -57,6 +57,9 @@ Route::get('/new_products', function () {
 Route::get('/offers', function () {
     return view('site.offers');
 });
+Route::get('/public_offers', function () {
+    return view('site.public_offers');
+});
 Route::get('/single-product', function () {
     return view('site.single-product');
 });

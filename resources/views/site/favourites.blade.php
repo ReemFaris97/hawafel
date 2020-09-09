@@ -54,7 +54,7 @@
                   <div class="custom_radio">
                     <ul class="inlineradio">
                         <li>
-                            <a href="{{url('offer')}}">الخصم العام </a>
+                            <a href="{{url('public_offers')}}">الخصم العام </a>
                         </li>
                         <li>
                             <a href="{{url('offer')}}"> عرض منتجين ومنتج مجاني</a>
@@ -84,42 +84,13 @@
             </div>
          </div>
       </div>
-      <div class="row list list-view-filter">
-         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid">
-            <div class="fleximgfav">
-               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
-               <div class="descrpp">
-                  <a href="{{url('single-product')}}"><p class="nameprodfav">زيت الارغان الاصلي</p></a>
-                  <b><span>100</span>  ريال سعودي </b>
-                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
-                  <div class="flex flexadd">
-                     <div class="deleteaa"><i class="far fa-trash-alt"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid">
-            <div class="fleximgfav">
-               <img src="{{asset('website/dist/img/asset6.png')}}" alt="">
-               <div class="descrpp">
-                 <a href="{{url('single-product')}}"><p class="nameprodfav">زيت الارغان الاصلي</p></a>
-                  <b><span>100</span>  ريال سعودي </b>
-                  <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
-                  <div class="flex flexadd">
-                     <div class="deleteaa"><i class="far fa-trash-alt"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+
 
 
       <!-- ------------------------ -->
       <!-- الخصم العام -->
       <!-- --------------------------- -->
-      <!-- <div class="row list list-view-filter recents">
+      <div class="row list list-view-filter recents">
          <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
             <div class="fleximgfav">
                <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
@@ -225,7 +196,7 @@
                <div class="discprecent">-20%</div>
             </div>
          </div>
-      </div> -->
+      </div>
    </div>
 </section>
 <!-- /////////////////////|||||||||||End sections |||||||||||||||||||| -->

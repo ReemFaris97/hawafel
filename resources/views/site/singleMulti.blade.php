@@ -34,13 +34,77 @@
 <!-- /////// |||||||||||||||||||| breadcrumbs|||||||||||||||||||| ///////// -->
 <section class="all-sections">
    <div class="container">
-    <div class="imgcontent imgmultisingle">
-        <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
-    </div>
-    <div>
-        <p class="titlmulti">اسم الصورة</p>
-        <p class="multip">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</p>
-    </div>
+      <div class="imgcontent imgmultisingle">
+         <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
+      </div>
+      <div>
+         <p class="titlmulti">اسم الصورة</p>
+         <p class="multip">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة
+            هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة
+            هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة
+            هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة
+         </p>
+      </div>
+      <div class="row contentcommen">
+         <div class="col-sm-6 col-xs-12">
+            <p class="titlmulti">التقييمات</p>
+            <div class="comments">
+               <div class="comment-img">
+                  <img  src="{{asset('website/dist/img/man1.jpg')}}">
+                  <div class="comment-name">
+                     <p >محمد ابراهيم عبدالله </p>
+                     <div class="date">29/ 1/ 2019</div>
+                  </div>
+               </div>
+               <p class="comments-p">
+                  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحةهذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة
+               </p>
+            </div>
+
+         </div>
+         <div class="col-sm-6 col-xs-12 ">
+            <p class="titlmulti addcomrnt">اضافة تعليق</p>
+            <form class="formsinglemulti">
+               <div class="">
+                  <div class="form-group">
+                     <textarea rows="3" type="text" class="form-control inputspn" placeholder="الرسالة"></textarea>
+                  </div>
+               </div>
+               <div class="rating">
+  <input type="radio" name="star" id="star1" checked>
+  <label for="star1">
+    <img src="{{asset('website/dist/img/love.svg')}}" alt="Loved it" >
+    <span>Loved it</span>
+  </label>
+  <input type="radio" name="star" id="star2">
+  <label for="star2">
+    <img src="{{asset('website/dist/img/liked.svg')}}" alt="Liked it">
+    <span>Liked it</span>
+  </label>
+  <input type="radio" name="star" id="star3">
+  <label for="star3">
+    <img src="{{asset('website/dist/img/ok.svg')}}" alt="It's OK" >
+    <span>It's OK</span>
+  </label>
+  <input type="radio" name="star" id="star4">
+  <label for="star4">
+    <img src="{{asset('website/dist/img/dislike.svg')}}" alt="Disliked it">
+    <span>Disliked it</span>
+  </label>
+  <input type="radio" name="star" id="star5">
+  <label for="star5">
+    <img src="{{asset('website/dist/img/hated.svg')}}" alt="Hated it">
+    <span>Hated it</span>
+  </label>
+</div>
+               <div class="aligne-center divwidthbtn">
+                  <button class="btn-hvr btn-flex">
+                  <span class="z-span">ارسال</span>
+                  </button>
+               </div>
+            </form>
+         </div>
+      </div>
    </div>
 </section>
 <!-- /////// ||||||||||||||||||||end breadcrumbs|||||||||||||||||||| ///////// -->
