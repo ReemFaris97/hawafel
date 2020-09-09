@@ -31,7 +31,7 @@
    </div>
 </section>
 <!-- /////// ||||||||||||||||||||end breadcrumbs|||||||||||||||||||| ///////// -->
-<!-- /////// |||||||||||||||||||| breadcrumbs|||||||||||||||||||| ///////// -->
+<!-- /////// |||||||||||||||||||| section|||||||||||||||||||| ///////// -->
 <section class="all-sections">
    <div class="container">
       <ul class="nav nav-tabs navmulti">
@@ -46,7 +46,36 @@
                   <div class="animate__fadeInUp animate__animated wow">
                      <div>
                         <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=fLHVCOLU_WI">
-                           <!-- <img class="imgcontent" src="{{asset('website/dist/img/asset20.png')}}" alt=""> -->
+                           <div class="imgcontent">
+                              <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
+                              <i class="fab fa-youtube"></i>
+                           </div>
+                        </a>
+                     </div>
+                     <a href="{{url('singleMulti')}}" class="imgname">
+                        <p class="imgname">اسم الصورة</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-md-6 overhidden editmargingallery">
+                  <div class="animate__fadeInUp animate__animated wow">
+                     <div>
+                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=fLHVCOLU_WI">
+                           <div class="imgcontent">
+                              <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
+                              <i class="fab fa-youtube"></i>
+                           </div>
+                        </a>
+                     </div>
+                     <a href="{{url('singleMulti')}}" class="imgname">
+                        <p class="imgname">اسم الصورة</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-md-6 overhidden editmargingallery">
+                  <div class="animate__fadeInUp animate__animated wow">
+                     <div>
+                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=fLHVCOLU_WI">
                            <div class="imgcontent">
                               <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
                               <i class="fab fa-youtube"></i>
@@ -59,6 +88,11 @@
                   </div>
                </div>
 
+               <div class="col-xs-12">
+                  <button class="btn-hvr btn-flex btnminwidth">
+                    <span class="z-span"> عرض المزيد </span>
+                  </button>
+               </div>
             </div>
          </div>
          <div id="menu1" class="tab-pane fade">
@@ -67,7 +101,36 @@
                   <div class="animate__fadeInUp animate__animated wow">
                      <div>
                         <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=fLHVCOLU_WI">
-                           <!-- <img class="imgcontent" src="{{asset('website/dist/img/asset20.png')}}" alt=""> -->
+                           <div class="imgcontent imgcontentvideo">
+                              <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
+                              <i class="fab fa-youtube"></i>
+                           </div>
+                        </a>
+                     </div>
+                     <a href="{{url('singleMulti')}}" class="imgname">
+                        <p class="imgname">اسم الفيديو</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-md-6 overhidden editmargingallery">
+                  <div class="animate__fadeInUp animate__animated wow">
+                     <div>
+                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=fLHVCOLU_WI">
+                           <div class="imgcontent imgcontentvideo">
+                              <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
+                              <i class="fab fa-youtube"></i>
+                           </div>
+                        </a>
+                     </div>
+                     <a href="{{url('singleMulti')}}" class="imgname">
+                        <p class="imgname">اسم الفيديو</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-md-6 overhidden editmargingallery">
+                  <div class="animate__fadeInUp animate__animated wow">
+                     <div>
+                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=fLHVCOLU_WI">
                            <div class="imgcontent imgcontentvideo">
                               <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
                               <i class="fab fa-youtube"></i>
@@ -80,6 +143,27 @@
                   </div>
                </div>
 
+               <div class="col-xs-12 col-md-6 overhidden editmargingallery">
+                  <div class="animate__fadeInUp animate__animated wow">
+                     <div>
+                        <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=fLHVCOLU_WI">
+                           <div class="imgcontent imgcontentvideo">
+                              <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
+                              <i class="fab fa-youtube"></i>
+                           </div>
+                        </a>
+                     </div>
+                     <a href="{{url('singleMulti')}}" class="imgname">
+                        <p class="imgname">اسم الفيديو</p>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="col-xs-12">
+                  <button class="btn-hvr btn-flex btnminwidth">
+                    <span class="z-span"> عرض المزيد </span>
+                  </button>
+               </div>
             </div>
          </div>
          <div id="menu2" class="tab-pane fade">
@@ -87,16 +171,13 @@
                <div class="col-xs-12 col-md-6 overhidden editmargingallery">
                   <div class="animate__fadeInUp animate__animated wow">
                      <div>
-
-
-                           <div class="imgcontent">
-                              <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
-                              <div class="contentnameimg">
-                                  <img src="{{asset('website/dist/img/man1.jpg')}}" alt="">
-                                  <b>محمد عبدالله ابراهيم</b>
-                              </div>
+                        <div class="imgcontent">
+                           <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
+                           <div class="contentnameimg">
+                              <img src="{{asset('website/dist/img/man1.jpg')}}" alt="">
+                              <b>محمد عبدالله ابراهيم</b>
                            </div>
-
+                        </div>
                      </div>
                      <a href="{{url('singleMulti')}}" class="imgname">
                         <p class="imgname">اسم المقال</p>
@@ -104,6 +185,59 @@
                   </div>
                </div>
 
+               <div class="col-xs-12 col-md-6 overhidden editmargingallery">
+                  <div class="animate__fadeInUp animate__animated wow">
+                     <div>
+                        <div class="imgcontent">
+                           <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
+                           <div class="contentnameimg">
+                              <img src="{{asset('website/dist/img/man1.jpg')}}" alt="">
+                              <b>محمد عبدالله ابراهيم</b>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="{{url('singleMulti')}}" class="imgname">
+                        <p class="imgname">اسم المقال</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-md-6 overhidden editmargingallery">
+                  <div class="animate__fadeInUp animate__animated wow">
+                     <div>
+                        <div class="imgcontent">
+                           <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
+                           <div class="contentnameimg">
+                              <img src="{{asset('website/dist/img/man1.jpg')}}" alt="">
+                              <b>محمد عبدالله ابراهيم</b>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="{{url('singleMulti')}}" class="imgname">
+                        <p class="imgname">اسم المقال</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-md-6 overhidden editmargingallery">
+                  <div class="animate__fadeInUp animate__animated wow">
+                     <div>
+                        <div class="imgcontent">
+                           <img  src="{{asset('website/dist/img/asset20.png')}}" alt="">
+                           <div class="contentnameimg">
+                              <img src="{{asset('website/dist/img/man1.jpg')}}" alt="">
+                              <b>محمد عبدالله ابراهيم</b>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="{{url('singleMulti')}}" class="imgname">
+                        <p class="imgname">اسم المقال</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xs-12">
+                  <button class="btn-hvr btn-flex btnminwidth">
+                    <span class="z-span"> عرض المزيد </span>
+                  </button>
+               </div>
             </div>
          </div>
       </div>

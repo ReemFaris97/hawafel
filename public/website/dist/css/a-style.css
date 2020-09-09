@@ -94,7 +94,7 @@ section.secpadding {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	text-align: center;
-	z-index: 9999
+	z-index: 99
 }
 
 .absimgbread {
@@ -902,16 +902,183 @@ a.imgname:hover {
 .imgcontent.imgmultisingle {
     height: 300px;
     border-radius: 17px;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
+}
+.imgcontent.imgmultisingle img{
+    border-radius: 17px;
 }
 p.titlmulti {
     font-size: 18px;
     font-weight: bold;
 }
 p.multip {
-    font-size: 16px;
-    color: #8c8c8c;
+    font-size: 18px;
+    color: #6c6c6c;
 }
+.imgbutton{
+    width: 32px
+}
+.btnminwidth {
+    width: 190px;
+    margin: auto;
+    margin-top: 10px;
+}
+.contentcommen{
+    margin-top: 40px
+}
+
+.comment-img {
+    display:flex;
+    align-items: center;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-left: 20px;
+    transition: all .4s ease-in-out;
+}
+
+.comment-img img {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    -o-object-fit: contain;
+    border-radius: 50%;
+}
+.comment-name {
+    display: inline-block;
+}
+.comment-name {
+    color: #737373;
+}
+.comment-name p {
+    margin-bottom: 0;
+    color: #000;
+    font-weight: bold;
+}
+p.comments-p {
+    margin-top: 9px;
+    color: #636363;
+    font-size: 15px;
+}
+
+.edit-profile .logForm .form-group .new-icon {
+    color: #d4d4d4;
+    position: absolute;
+    left: 20px;
+    top: calc(50% - 20px);
+    font-family: "Almarai-Bold";
+    font-size: 25px;
+    height: 40px;
+}
+.edit-profile .logForm .form-group input:invalid ~ .new-icon {
+    color: #ed6a60 !important;
+}
+.edit-profile .logForm .form-group textarea:invalid ~ .new-icon {
+    color: #ed6a60 !important;
+}
+.formsinglemulti textarea{
+    border: 0.2em solid #b9b9b9
+}
+.formsinglemulti textarea:focus{
+    border: 0.2em solid #000
+}
+.comments {
+    margin-bottom: 30px;
+}
+.comments:last-child {
+    margin-bottom: 0px;
+}
+.row.contentcommen p.titlmulti {
+    margin-bottom: 20px;
+}
+
+
+
+/*****||||||||||||||||||||||  rating ||||||||||||||||||||***********/
+
+
+
+
+  .rating {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+            flex-direction: row-reverse;
+            padding-bottom: 15px
+  }
+  .rating input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  .rating label {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    width: 0;
+    text-align: center;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    cursor: pointer;
+    opacity: 0;
+  }
+  .rating img {
+    margin-bottom: 12px;
+  }
+  .rating span {
+    display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transform: translatey(12px) scale(0.4);
+            transform: translatey(12px) scale(0.4);
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .rating:hover label {
+    width: 160px;
+    opacity: 0.2;
+  }
+
+  .rating input:hover + label,
+  .rating input:checked + label {
+    width: 160px;
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+  .rating input:hover + label span,
+  .rating input:checked + label span {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+
+
+.rating img{
+    width: 60px;
+    height: 60px
+}
+
+
+
 /*============== end multimedia html  ======================*/
 
 
@@ -1502,7 +1669,17 @@ b.datedes b:first-child {
     padding-bottom: 50px;
     position: relative;
 }
-
+.imgsale{
+    width: 81px !important;
+    height: 81px !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+}
+/* .descrpp{
+    position: relative;
+} */
 /*================== end offer html =========================*/
 
 
@@ -1661,7 +1838,26 @@ b.datedes b:first-child {
 	h3.subscribeh3+p {
 		font-size: 14px;
 		margin: 17px 0;
-	}
+    }
+    /*single multi*/
+    .imgcontent.imgmultisingle {
+        height: 210px;
+    }
+    p.titlmulti {
+        font-size: 16px;
+    }
+    p.multip {
+        font-size: 14px;
+    }
+    p.comments-p {
+        font-size: 14px;
+    }
+    p.titlmulti.addcomrnt {
+        margin-top: 5px;
+        margin-bottom: 10px !important;
+    }
+
+
 	/*======= end multimedia =========*/
 	/*======= categooris  html  =======*/
 	.bigdivcont {
@@ -1753,6 +1949,21 @@ b.datedes b:first-child {
     margin: 5px 0;
 
 }
+
+.list-view-filter .imgsale{
+    display: none
+}
+.imgsale {
+    width: 55px !important;
+    height: 55px !important;
+}
+/*****||||||||||||||||  rating |||||||||||||||||***********/
+.rating img {
+    width: 45px;
+    height: 45px;
+}
+
+
 	/*==================end offer html =========================*/
 }
 
@@ -1860,5 +2071,13 @@ b.datedes b:first-child {
 	}
 	.fleximgfav .flex.flexadd .addcard {
 		padding: 0px 2px;
-	}
+    }
+/*****||||||||||||||||  rating |||||||||||||||||***********/
+    .rating img {
+        width: 35px;
+        height: 35px;
+    }
+    .rating span{
+        font-size: 13px
+    }
 }

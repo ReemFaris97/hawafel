@@ -143,7 +143,7 @@
                     ارسال
                 </button> -->
                 <div class="aligne-center divwidthbtn">
-                <button href="{{url('categories')}}" class="btn-hvr btn-flex">
+                <button  class="btn-hvr btn-flex">
                     <span class="z-span">ارسال</span>
                 </button>
                 </div>
