@@ -103,11 +103,13 @@
                             </a>
                             <div class="side-menu notifi-menu">
                                 <button type="button" class="nav-icon close-menu"><i class="fas fa-times"></i></button>
-                                <a href="{{url('cart')}}" class="fixed-li">عرض السلة</a>
+                               <div class="fixed-li">
+                                   <a href="{{url('cart')}}" class="btn-hvr"><span class="z-span">عرض السلة</span></a>
+                               </div>
                                 <ul>
                                     <li>
                                         <div class="flexx cart_item">
-                                            <button class="nav-icon remove_item"> <i class="fas fa-trash"></i> </button>
+                                            <button class="nav-icon remove_item"> <i class="far fa-trash-alt"></i> </button>
                                             <span class="bell">
                                                 <img src="{{asset('website/dist/img/asset8.png')}}">
                                             </span>
@@ -120,7 +122,7 @@
                                     </li>
                                     <li>
                                         <div class="flexx cart_item">
-                                            <button class="nav-icon remove_item"> <i class="fas fa-trash"></i> </button>
+                                            <button class="nav-icon remove_item"> <i class="far fa-trash-alt"></i> </button>
                                             <span class="bell">
                                                 <img src="{{asset('website/dist/img/asset6.png')}}">
                                             </span>
@@ -133,7 +135,7 @@
                                     </li>
                                     <li>
                                         <div class="flexx cart_item">
-                                            <button class="nav-icon remove_item"> <i class="fas fa-trash"></i> </button>
+                                            <button class="nav-icon remove_item"> <i class="far fa-trash-alt"></i> </button>
                                             <span class="bell">
                                                 <img src="{{asset('website/dist/img/asset8.png')}}">
                                             </span>
@@ -146,7 +148,7 @@
                                     </li>
                                     <li>
                                         <div class="flexx cart_item">
-                                            <button class="nav-icon remove_item"> <i class="fas fa-trash"></i> </button>
+                                            <button class="nav-icon remove_item"> <i class="far fa-trash-alt"></i> </button>
                                             <span class="bell">
                                                 <img src="{{asset('website/dist/img/asset6.png')}}">
                                             </span>
@@ -248,7 +250,9 @@
                             </a>
                             <div class="side-menu notifi-menu">
                                 <button type="button" class="nav-icon close-menu"><i class="fas fa-times"></i></button>
-                                <a href="{{url('notifications')}}" class="fixed-li">كل الإشعارات</a>
+                                <div class="fixed-li">
+                                   <a href="{{url('notifications')}}" class="btn-hvr"><span class="z-span">كل الإشعارات</span></a>
+                               </div>
                                 <ul>
                                     <li>
                                         <a href="{{url('my-profile')}}" class="flexx">
@@ -364,7 +368,6 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <li><a href="{{url('notifications')}}" class="fixed-li">عرض كل الاشعارات</a></li>
                                 </ul>
                             </div>
                         </li>

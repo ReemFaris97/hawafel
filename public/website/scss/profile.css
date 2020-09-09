@@ -1423,6 +1423,11 @@ input.form-control.inputsubscribe::placeholder {
 
 .modal-backdrop {
   background-color: #8a8a8a;
+  z-index: 991040;
+}
+
+.modal {
+  z-index: 105099999;
 }
 
 .log_modal {
@@ -1861,8 +1866,12 @@ table.dataTable.order-column tbody tr > .sorting_3,
 table.dataTable.display tbody tr > .sorting_1,
 table.dataTable.display tbody tr > .sorting_2,
 table.dataTable.display tbody tr > .sorting_3 {
-  background-color: #ea6b60 !important;
+  background-color: #1d463d !important;
   color: #fff;
+}
+
+table.dataTable thead .sorting {
+  background-image: url(../dist/img/sort_both.png);
 }
 
 table.dataTable.stripe tbody tr.odd,
@@ -1883,7 +1892,7 @@ table.dataTable.no-footer {
 
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before,
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
-  background-color: #000000;
+  background-color: #f9a392;
 }
 
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child,
@@ -1921,30 +1930,48 @@ table.dataTable > tbody > tr.child ul.dtr-details {
   font-size: 14px;
   padding: 4px 10px;
   font-weight: 100;
+  overflow: hidden;
 }
 
 .datatable td .flex-r .btn-hvr:hover::after {
   height: 130%;
 }
 
+.datatable td .flex-r .btn-hvr p.opert {
+  position: relative;
+  z-index: 9;
+  font-size: 18px;
+  margin: 0;
+}
+
 .datatable td .flex-r .andShow {
+  background-color: #f9a392;
+}
+
+.datatable td .flex-r .remove_order {
+  border-color: #7c7e7c;
   background-color: #000000;
 }
 
-.datatable td .flex-r .andShow::after {
-  background-color: #1d463d;
+.datatable td .flex-r .remove_order::after {
+  background-color: #7c7e7c;
 }
 
-.datatable td .flex-r .andShow:hover, .datatable td .flex-r .andShow:focus {
-  color: #000000;
-}
-
-.datatable td .flex-r .andVote {
-  background-color: #d9b20b;
+.datatable td .flex-r .remove_order:hover, .datatable td .flex-r .remove_order:focus {
+  border-color: #000000;
 }
 
 .datatable td .flex-r .andCancel {
-  background-color: #1d463d;
+  border-color: #a94442;
+}
+
+.datatable td .flex-r .andCancel::after {
+  background-color: #a94442;
+}
+
+.datatable td .flex-r .andCancel:hover, .datatable td .flex-r .andCancel:focus {
+  background-color: #000000;
+  border-color: #000000;
 }
 
 /********** End My Orders.blade ********/
@@ -2355,6 +2382,9 @@ textarea.form-control.input-lg {
   position: absolute;
   top: 12px;
   left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .notification .notifi1 .read-now {

@@ -87,8 +87,11 @@ table.dataTable.order-column tbody tr > .sorting_3,
 table.dataTable.display tbody tr > .sorting_1,
 table.dataTable.display tbody tr > .sorting_2,
 table.dataTable.display tbody tr > .sorting_3 {
-    background-color: #ea6b60 !important;
+    background-color: $secondary-color !important;
     color: #fff;
+}
+table.dataTable thead .sorting {
+    background-image: url(../dist/img/sort_both.png);
 }
 table.dataTable.stripe tbody tr.odd,
 table.dataTable.display tbody tr.odd {
@@ -111,7 +114,7 @@ table.dataTable.dtr-inline.collapsed
     > tbody
     > tr[role="row"]
     > th:first-child:before {
-    background-color: $primary-color;
+    background-color: $third-color;
 }
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child,
 table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child {
@@ -142,28 +145,42 @@ table.dataTable > tbody > tr.child ul.dtr-details {
                 font-size: 14px;
                 padding: 4px 10px;
                 font-weight: 100;
+                overflow: hidden;
                 &:hover::after {
                     height: 130%;
                 }
+                p.opert {
+                    position: relative;
+                    z-index: 9;
+                    font-size: 18px;
+                    margin: 0;
+                }
             }
             .andShow {
+                background-color: $third-color;
+            }
+            .remove_order {
+                border-color: $grey-color;
                 background-color: $primary-color;
                 &::after {
-                    background-color: $secondary-color;
+                    background-color: $grey-color;
                 }
-                &:hover,
-                &:focus {
-                    color: $primary-color;
+                &:hover ,&:focus{
+                    border-color: $primary-color;
                 }
-            }
-            .andVote {
-                background-color: #d9b20b;
             }
             .andCancel {
-                background-color: $secondary-color;
+                border-color: #a94442;
+                &::after{
+                    background-color: #a94442;
+                }
+                &:hover , &:focus{
+                    background-color: $primary-color;
+                    border-color: $primary-color;
+                }
             }
-        }
     }
+}
 }
 /********** End My Orders.blade ********/
 /******************Start Edit Profile.blade****************/
@@ -510,6 +527,7 @@ textarea.form-control.input-lg {
             position: absolute;
             top: 12px;
             left: 10px;
+            display: flex;
         }
         .read-now {
             float: right;

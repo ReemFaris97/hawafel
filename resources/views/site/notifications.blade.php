@@ -1,17 +1,42 @@
 @extends('site.layout')
 @section('title' , 'حوافل || الإشعارات')
 @section('styles')
+<link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 <link rel="stylesheet" href="{{asset('website/scss/profile.css')}}">
 @endsection
 @section('content')
 
+<!-- /////////////////////||||||||||| bread crumbs |||||||||||||||||||| -->
+<section class="all-sections sec-about single-work">
+   <div class="single-workdiv">
+      <h3 class="titlebread"> عناوينى </h3>
+      <p class="breadcrum"> <a href="../">الرئيسية</a> / الإشعارات</p>
+   </div>
+   <img class="absimgbread" alt="" src="{{asset('website/dist/img/grass.png')}}">
+   <div id="leaves">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+   </div>
+</section>
+<!-- /////// ||||||||||||||||||||end breadcrumbs|||||||||||||||||||| ///////// -->
+
+
 <!-- /////////////////////||||||||||| start sections |||||||||||||||||||| -->
 <section class="my_profile">
     <div class="container">
-        <div class="head-title">
-            <h2>الإشعارات</h2>
-            <p>هذا النص هو مثال لنص يمكن أن يستبدل</p>
-        </div>
         <div class="notification">
             <!-- add clas(.not-read) if isn't been read and put this title="تحديد كمقروء"-->
             <div class="notifi1 not-read">
