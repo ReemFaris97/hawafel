@@ -1682,7 +1682,204 @@ b.datedes b:first-child {
 } */
 /*================== end offer html =========================*/
 
+/*================== single product html =========================*/
+#sync1 .item {
+    overflow: hidden !important
+}
 
+#sync1 .item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important
+}
+
+
+#sync1 .owl-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+#sync1 .no-padding {
+    padding: 0;
+    text-align: center
+}
+
+#sync1 {
+    display: block;
+    width: 100%
+}
+
+#sync1 .owl-carousel {
+    display: block;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1
+}
+
+#sync1 .owl-next,
+#sync1 .owl-prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    width: 25px;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    background-color: #9e7544;
+    opacity: .7;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out
+}
+
+#sync1 .owl-prev {
+    left: 0
+}
+
+#sync1 .owl-next {
+    right: 0
+}
+
+#sync1 .owl-next:focus,
+#sync1 .owl-next:hover,
+#sync1 .owl-prev:focus,
+#sync1 .owl-prev:hover {
+    opacity: 1
+}
+
+.img-show {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+    height: 370px;
+    direction: ltr;
+}
+#sync1 .owl-item .item {
+    width: 100%;
+    height: 370px;
+    margin: 0 auto 20px auto;
+    overflow: hidden !important;
+    background-color: #ec6a60
+}
+
+.secondary {
+    width: 100px;
+    height: 100px;
+    border: 1px solid transparent;
+    background-color: #f2f2f2;
+    margin: 4px 5px;
+    overflow: hidden;
+    display: block;
+	position: relative
+
+}
+
+.secondary:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, .6)
+}
+
+.secondary img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.secondary.active,
+.secondary:focus,
+.secondary:hover {
+    border: 1px solid #fe2347
+}
+
+.secondary.active:after,
+.secondary:focus:after,
+.secondary:hover:after {
+    opacity: 0
+}
+
+p.commentName {
+    font-size: 16px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+p.width-resp {
+    color: #777777;
+    font-size: 16px;
+}
+.leftresp{
+	float: left !important
+}
+#sync1 .owl-nav{
+	display: none
+}
+.secondary:first-child {
+    margin-top: 0;
+}
+.addthis_toolbox {
+    margin: 15px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    direction: ltr;
+}
+.addthis_toolbox a {
+    height: 32px;
+    width: 32px;
+    overflow: hidden;
+}
+
+.product-layName {
+    font-size: 30px;
+    font-weight: bold;
+}
+p.p-detalies {
+    color: #6f6f6f;
+    font-size: 16px;
+    border-top: 1px solid #eceaea;
+    border-bottom: 1px solid #eceaea;
+    padding: 15px 0;
+    margin: 10px 0px;
+}
+p.disccolor span:first-child{
+    margin-left: 10px;
+    color: #ec6a60;
+    font-weight: bold
+}
+p.disccolor span:nth-child(2){
+    text-decoration: line-through
+}
+.img-show::-webkit-scrollbar {
+    width: 4px;
+    height: 3px
+}
+ul.inlineradio li {
+    margin-left: 22px;
+}
+
+ul.inlineradio li label {
+    font-size: 17px !important;
+}
 /*================== responsive =========================*/
 
 
@@ -1957,14 +2154,45 @@ b.datedes b:first-child {
     width: 55px !important;
     height: 55px !important;
 }
+/*==================end offer html =========================*/
 /*****||||||||||||||||  rating |||||||||||||||||***********/
 .rating img {
     width: 45px;
     height: 45px;
 }
+	/*================== single html =========================*/
+.product-layName {
+    font-size: 20px;
+}
 
 
-	/*==================end offer html =========================*/
+.secondary {
+    margin: 15px 2px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    height: 70px;
+}
+.img-show {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: auto;
+    direction: ltr;
+    margin-bottom: 15px;
+}
+.secondary img {
+
+    object-fit: contain;
+}
+
+#sync1 .owl-item .item {
+height: 165px;
+margin: 0 auto 10px auto;
+
+}
+
+/*==================end single html =========================*/
 }
 
 @media (max-width: 700px) {}
