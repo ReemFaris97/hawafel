@@ -54,4 +54,16 @@
 @endsection
 
 @section('scripts')
+<!---- select2 init --->
+<script src="{{asset('website/dist/js/select2.full.js')}}"></script>
+<script>
+    $(document).ready(function() {
+         $(".js-select2").select2();
+         $('select:not(.normal)').each(function () {
+                $(this).select2({
+                    dropdownParent: $(this).parent()
+                });
+            });
+    });
+</script>
 @endsection

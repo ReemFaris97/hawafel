@@ -1,0 +1,249 @@
+@import "first";
+@import "login-pages";
+/*********************************/
+
+/******************Cart***************/
+.my_cart {
+    @extend %all-section-padd;
+}
+.items_r {
+    .cart_item {
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 2px solid #EDEDED;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        &:last-of-type{
+            border: 0;;
+        }
+        & > div {
+            max-width: 50%;
+            min-width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .remove_item {
+            font-size: 20px;
+        }
+        .item_dtls {
+            .i_img {
+                box-shadow: 0px 6px 12px 0px rgba(234, 234, 234, 1);
+                border-radius: 10px;
+                width: 40%;
+                max-width: 180px;
+                background-color: #f7f8fa;
+                display: inline-block;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+            .right_dtls {
+                display: inline-block;
+            }
+            .item_nm {
+                font-family: "Almarai-ExtraBold";
+                display: block;
+                font-size: 18px;
+                @extend %ellipsis;
+                &:hover,
+                &:focus {
+                    color: $third-color;
+                }
+            }
+            .spanSec {
+                color: $secondary-color;
+            }
+        }
+        .i_prices {
+            & > p {
+            }
+            .old_price {
+                text-decoration: line-through;
+                color: #7c7e7c;
+            }
+            .new_price {
+                font-family: "Almarai-ExtraBold";
+                font-size: 18px;
+            }
+        }
+        .left_price {
+            font-family: "Almarai-Bold";
+            font-size: 18px;
+        }
+    }
+}
+/********* quantity *******/
+.number-input {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    .quantity {
+        background-color: transparent;
+        height: 30px;
+        width: 45px;
+        text-align: center;
+        font-size: 16px;
+        vertical-align: middle;
+        font-weight: bold;
+        border-bottom: 1px solid #b4b6b8;
+    }
+    .minus,
+    .plus {
+        width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+        background-color: $secondary-color;
+    }
+}
+
+/*************left-cart***************/
+.left-calc {
+    background-color: #F7F7F7;
+    padding: 20px 10px;
+    & > h3{
+        font-family: 'Almarai-Bold';
+        border-bottom: 2px solid #EDEDED;
+        margin: 0 0 20px 0;
+        padding: 0 0 10px 0;
+    }
+    
+    /********************* coupon-form ****************************************/
+    .copounbar{
+        border-bottom: 2px solid #EDEDED;
+        margin: 0 0 17px 0;
+        .paycolor {
+            color: #545252;
+        }
+        .coupon-form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input {
+                background-color: #E2E2E2;
+                padding: 0 10px;
+                border: 1px solid #E2E2E2;
+                border-radius: 6px;
+                height: 40px;
+                @include rTransition(all 0.3s ease-in-out);
+                max-width: calc(100% - 70px);
+                &:focus {
+                    border-color: $third-color;
+                }
+            }
+            .btn-hvr {
+                min-width: 60px;
+                border-radius: 6px;
+                font-size: 15px;
+            }
+        }
+        .coupon-result{
+            color: $third-color;
+            margin: 10px 0;
+            display: block;
+            font-size: 16px;
+        }
+    }
+    /*************left-card***************/
+    .left-card {
+        font-family: 'Almarai-Bold';
+        font-size: 16px;
+        margin: 0 0 17px 0;
+        &:last-of-type{
+            border-bottom: 2px solid #EDEDED;
+            border-top: 2px solid #EDEDED;
+            padding: 20px 0;
+        }
+        &.red {
+            color: #ca3232;
+        }
+    }
+
+    .sha7n_adrs{
+        .select2-container .select2-selection--single .select2-selection__rendered, .select2-container--default .select2-selection--single .select2-selection__rendered{
+            background-color: #E2E2E2;
+            border-radius: 7px;
+            height: 42px;
+            line-height: 42px;
+        }
+        .select2-container .select2-selection--single, .select2-container--default .select2-selection--single {
+            height: 100%;
+            border: 0;
+        }
+        .to_new_adrs{
+            font-family: 'Almarai-Bold';
+            color: $secondary-color;
+            display: block;
+            text-decoration: underline;
+            margin: 20px 0 0 0;
+            background-color: transparent;
+            &:hover, &:focus{
+                color: $third-color;
+            }
+        }
+    }
+    .btn-hvr {
+        border-radius: 6px;
+        &.submit_cart{
+            margin:20px auto 0 auto;
+        }
+    }
+}
+
+
+/************* Responsive ***********/
+@media (max-width: 767px){
+    .items_r {
+        margin: 30px 0 0 0;
+        .cart_item {
+            display: block;
+            &> div {
+                max-width: unset;
+                min-width: unset;
+                &:first-of-type {
+                    margin: 0 0 20px 0;
+                }
+            }
+            .item_dtls {
+                .i_img{
+                    width: 100px;
+                }
+                .right_dtls {
+                    width: calc(100% - 110px);
+                }
+                .item_nm {
+                    font-size: 15px;
+                }
+            }
+            .i_prices .new_price {
+                font-size: 15px;
+            }
+        }
+    }
+    .left-calc > h3 {
+        font-size: 17px;
+    }
+}

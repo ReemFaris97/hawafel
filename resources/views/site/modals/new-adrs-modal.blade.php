@@ -9,6 +9,7 @@
             <div class="form-box">
                 <div class="box-right">
                     <h4>إضافة عنوان</h4>
+                    
                 </div>
                 <form action="{{url('my_addresses')}}" class="defaultForm">
                     <div class="form-group">

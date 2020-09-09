@@ -441,7 +441,7 @@ input[type=number]::-webkit-outer-spin-button {
     object-fit: contain;
 }
 
-/********************* Start Searchbar **************************/
+/********************* Start cart_item **************************/
 .search-form .form-group input.form-control::-webkit-input-placeholder{
     display:none;
   }
@@ -789,10 +789,6 @@ span.bell {
     background-color: #F7F8FA;
 }
 
-.old-price{
-    text-decoration: line-through;
-    color: #7c7e7c;
-}
 .hint{
     color: #F9A392;
 }
@@ -1432,4 +1428,11 @@ width: 106px;
     }
 }
 @media (max-width: 320px) {
+}
+#leaves {
+    max-width: 100%;
+    overflow: hidden !important;
+}
+.single-work .single-workdiv{
+    z-index: 99 !important;
 }
