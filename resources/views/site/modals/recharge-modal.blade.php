@@ -39,7 +39,7 @@
                         <label>الرقم السرى</label>
                         <input type="password" class="form-control" required placeholder="ادخل الرقم السرى للكارت..">
                     </div>
-                    <button type="submit" class="btn-hvr" data-dismiss="modal"><p class="z-span">نأكيد</p></button>
+                    <button type="submit" class="btn-hvr" data-dismiss="modal"><p class="z-span">تأكيد</p></button>
                 </form>
             </div>
         </div>

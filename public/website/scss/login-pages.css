@@ -718,6 +718,10 @@ input.form-control.inputsubscribe::placeholder {
   z-index: 991040;
 }
 
+.modal {
+  z-index: 105099999;
+}
+
 .log_modal {
   padding: 0 !important;
 }

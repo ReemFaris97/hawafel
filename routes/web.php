@@ -98,6 +98,10 @@ Route::get('/my_wallet', function () {
 Route::get('/recharge_wallet', function () {
     return view('site.recharge_wallet');
 });
+/* notifications */
+Route::get('/notifications', function () {
+    return view('site.notifications');
+});
 /**** cart***/
 Route::get('/cart', function () {
     return view('site.cart');

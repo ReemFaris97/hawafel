@@ -625,17 +625,26 @@ input[type=number]::-webkit-outer-spin-button {
     right: 0;
     left: 0;
     margin: 0 auto;
-    height: 40px;
+    height: 60px;
     width: 100%;
-    background-color: #1D463D;
+    background-color: rgb(200 200 200 / .5);
     color: #fff !important;
     text-align: center;
     padding: 0 !important;
     font-size: 16px;
     font-family: 'Almarai-ExtraBold';
-    line-height: 40px !important;
+    line-height: 1px !important;
     border-radius: 0 0 20px 0;
     z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-menu .fixed-li .btn-hvr {
+    min-width: 180px;
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 300px;
 }
 .side-menu .fixed-li:hover . .side-menu .fixed-li:focus{
     color: #fff !important;
@@ -674,6 +683,13 @@ span.bell {
 }
 .notify {
     display: inline-grid;
+}
+.side-menu li .notify p{
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    width: 100%;
 }
 .flexx{
     display: -webkit-box;
@@ -791,6 +807,7 @@ span.bell {
     font-size: 16px;
     padding: 6px 8px;
     border-radius: 50%;
+    display: inline-block;
 }
 .lock {
     text-align: center;
