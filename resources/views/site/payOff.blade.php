@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'حوافل || سلة المشتريات')
+@section('title' , 'حوافل || تأكيد الدفع')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/select2.min.css')}}">
@@ -10,8 +10,8 @@
 <!-- /////////////////////||||||||||| bread crumbs |||||||||||||||||||| -->
 <section class="all-sections sec-about single-work">
     <div class="single-workdiv">
-        <h3 class="titlebread"> سلة المشتريات </h3>
-        <p class="breadcrum"> <a href="../">الرئيسية</a> / سلة المشتريات</p>
+        <h3 class="titlebread"> تأكيد الدفع </h3>
+        <p class="breadcrum"> <a href="../">الرئيسية</a> /<a href="{{url('cart')}}">السلة</a> / تأكيد الدفع</p>
     </div>
     <img class="absimgbread" alt="" src="{{asset('website/dist/img/grass.png')}}">
     <div id="leaves">
