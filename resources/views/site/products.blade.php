@@ -59,7 +59,7 @@
                             <a href="{{url('offer')}}"> خصم النسبة</a>
                         </li>
                         <li>
-                            <a href="#">عروض الاقسام</a>
+                            <a href="{{url('categories')}}">عروض الاقسام</a>
                         </li>
                         <li>
                             <a href="#">كبونات الخصم</a>
@@ -83,7 +83,11 @@
       <div class="row list list-view-filter recents">
          <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
             <div class="fleximgfav">
-               <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                <a href="{{url('single-product')}}">
+                    <div class="fleximgwidth">
+                        <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                    </div>
+                </a>
                <div class="descrpp">
                   <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
                   <div class="discprice">
@@ -104,7 +108,11 @@
          </div>
          <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
             <div class="fleximgfav">
-               <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                <a href="{{url('single-product')}}">
+                    <div class="fleximgwidth">
+                        <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                    </div>
+                </a>
                <div class="descrpp">
                   <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
                   <div class="discprice">

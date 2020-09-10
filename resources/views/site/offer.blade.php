@@ -69,7 +69,7 @@
                             <a href="{{url('offer')}}"> خصم النسبة</a>
                         </li>
                         <li>
-                            <a href="#">عروض الاقسام</a>
+                            <a href="{{url('categories')}}">عروض الاقسام</a>
                         </li>
                         <li>
                             <a href="#">كبونات الخصم</a>
@@ -91,7 +91,11 @@
       <div class="col-md-4  col-sm-6 col-xs-12 parentfav listgrid list4">
             <div class="fleximgfav offerp">
                <div class="minwidimg">
-                  <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                    <a href="{{url('single-product')}}">
+                        <div class="fleximgwidth">
+                            <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                        </div>
+                    </a>
                </div>
                <div class="descrpp">
                   <div class="divcontcolock">
@@ -126,7 +130,11 @@
          <div class="col-md-4  col-sm-6 col-xs-12 parentfav listgrid list4">
             <div class="fleximgfav offerp">
                <div class="minwidimg">
-                  <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                <a href="{{url('single-product')}}">
+                        <div class="fleximgwidth">
+                            <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                        </div>
+                    </a>
                </div>
                <div class="descrpp">
                   <div class="divcontcolock">
@@ -161,7 +169,11 @@
          <div class="col-md-4  col-sm-6 col-xs-12 parentfav listgrid list4">
             <div class="fleximgfav offerp">
                <div class="minwidimg">
-                  <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                <a href="{{url('single-product')}}">
+                        <div class="fleximgwidth">
+                            <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                        </div>
+                    </a>
                </div>
                <div class="descrpp">
                   <div class="divcontcolock">
@@ -196,7 +208,11 @@
          <div class="col-md-4  col-sm-6 col-xs-12 parentfav listgrid list4">
             <div class="fleximgfav offerp">
                <div class="minwidimg">
-                  <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                <a href="{{url('single-product')}}">
+                        <div class="fleximgwidth">
+                            <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                        </div>
+                    </a>
                </div>
                <div class="descrpp">
                   <div class="divcontcolock">
