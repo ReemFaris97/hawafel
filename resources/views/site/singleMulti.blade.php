@@ -31,7 +31,7 @@
    </div>
 </section>
 <!-- /////// ||||||||||||||||||||end breadcrumbs|||||||||||||||||||| ///////// -->
-<!-- /////// |||||||||||||||||||| breadcrumbs|||||||||||||||||||| ///////// -->
+<!-- /////// |||||||||||||||||||| section |||||||||||||||||||| ///////// -->
 <section class="all-sections">
    <div class="container">
       <div class="imgcontent imgmultisingle">
@@ -60,7 +60,6 @@
                   هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحةهذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة
                </p>
             </div>
-
          </div>
          <div class="col-sm-6 col-xs-12 ">
             <p class="titlmulti addcomrnt">اضافة تعليق</p>
@@ -71,32 +70,32 @@
                   </div>
                </div>
                <div class="rating">
-  <input type="radio" name="star" id="star1" checked>
-  <label for="star1">
-    <img src="{{asset('website/dist/img/love.svg')}}" alt="Loved it" >
-    <span>Loved it</span>
-  </label>
-  <input type="radio" name="star" id="star2">
-  <label for="star2">
-    <img src="{{asset('website/dist/img/liked.svg')}}" alt="Liked it">
-    <span>Liked it</span>
-  </label>
-  <input type="radio" name="star" id="star3">
-  <label for="star3">
-    <img src="{{asset('website/dist/img/ok.svg')}}" alt="It's OK" >
-    <span>It's OK</span>
-  </label>
-  <input type="radio" name="star" id="star4">
-  <label for="star4">
-    <img src="{{asset('website/dist/img/dislike.svg')}}" alt="Disliked it">
-    <span>Disliked it</span>
-  </label>
-  <input type="radio" name="star" id="star5">
-  <label for="star5">
-    <img src="{{asset('website/dist/img/hated.svg')}}" alt="Hated it">
-    <span>Hated it</span>
-  </label>
-</div>
+                  <input type="radio" name="star" id="star1" checked>
+                  <label for="star1">
+                  <img src="{{asset('website/dist/img/love.svg')}}" alt="Loved it" >
+                  <span>Loved it</span>
+                  </label>
+                  <input type="radio" name="star" id="star2">
+                  <label for="star2">
+                  <img src="{{asset('website/dist/img/liked.svg')}}" alt="Liked it">
+                  <span>Liked it</span>
+                  </label>
+                  <input type="radio" name="star" id="star3">
+                  <label for="star3">
+                  <img src="{{asset('website/dist/img/ok.svg')}}" alt="It's OK" >
+                  <span>It's OK</span>
+                  </label>
+                  <input type="radio" name="star" id="star4">
+                  <label for="star4">
+                  <img src="{{asset('website/dist/img/dislike.svg')}}" alt="Disliked it">
+                  <span>Disliked it</span>
+                  </label>
+                  <input type="radio" name="star" id="star5">
+                  <label for="star5">
+                  <img src="{{asset('website/dist/img/hated.svg')}}" alt="Hated it">
+                  <span>Hated it</span>
+                  </label>
+               </div>
                <div class="aligne-center divwidthbtn">
                   <button class="btn-hvr btn-flex">
                   <span class="z-span">ارسال</span>
@@ -107,7 +106,7 @@
       </div>
    </div>
 </section>
-<!-- /////// ||||||||||||||||||||end breadcrumbs|||||||||||||||||||| ///////// -->
+<!-- /////// |||||||||||||||||||| end section |||||||||||||||||||| ///////// -->
 <!-- ////////////////////////send subscribe////////////////////////////////// -->
 <section class="all-sections Subscribe">
    <div class="container">
