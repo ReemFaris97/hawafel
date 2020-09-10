@@ -177,8 +177,9 @@
             border-top: 2px solid #EDEDED;
             padding: 20px 0;
         }
-        &.red {
-            color: #ca3232;
+        .left-span.red {
+            color: $third-color;
+            float: left;
         }
     }
 

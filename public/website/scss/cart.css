@@ -1981,8 +1981,9 @@ input.form-control.inputsubscribe::placeholder {
   padding: 20px 0;
 }
 
-.left-calc .left-card.red {
-  color: #ca3232;
+.left-calc .left-card .left-span.red {
+  color: #f9a392;
+  float: left;
 }
 
 .left-calc .sha7n_adrs .select2-container .select2-selection--single .select2-selection__rendered, .left-calc .sha7n_adrs .select2-container--default .select2-selection--single .select2-selection__rendered {

@@ -73,7 +73,7 @@
                         <ul class="nav cf" id="ul1">
                             <li><a href="{{url('/')}}" class="active">الرئيسية</a></li>
                             <li><a href="{{url('categories')}}">الأقسام</a></li>
-                            <li><a href="{{url('services')}}">الطلبات</a></li>
+                            <li><a href="{{url('my_orders')}}">الطلبات</a></li>
                             <li><a href="{{url('favourites')}}">المفضلة</a></li>
                             <li><a href="{{url('multimedia')}}">مكتبة الصور والفيديوهات</a></li>
                         </ul>
