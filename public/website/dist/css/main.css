@@ -322,7 +322,8 @@ input[type=number]::-webkit-outer-spin-button {
 .loader svg {
     background-color: #ffffff;
     border-radius: 50%;
-    animation: spin 3s ease infinite alternate;
+    -webkit-animation: spin 3s ease infinite alternate;
+            animation: spin 3s ease infinite alternate;
   }
   
   /*Give each dot a radius of 20*/
@@ -335,35 +336,52 @@ input[type=number]::-webkit-outer-spin-button {
     cy: 50;
     cx: 50;
     fill: #BA453A;
-    animation: movein 3s ease infinite alternate;
+    -webkit-animation: movein 3s ease infinite alternate;
+            animation: movein 3s ease infinite alternate;
   }
   .shape:nth-child(2) {
     cy: 50;
     cx: 150;
     fill: #F9A392;
-    animation: movein 3s ease infinite alternate;
+    -webkit-animation: movein 3s ease infinite alternate;
+            animation: movein 3s ease infinite alternate;
   }
   .shape:nth-child(3) {
     cy: 150;
     cx: 50;
     fill: #000000;
-    animation: movein 3s ease infinite alternate;
+    -webkit-animation: movein 3s ease infinite alternate;
+            animation: movein 3s ease infinite alternate;
   }
   .shape:nth-child(4) {
     cy: 150;
     cx: 150;
     fill: #1D463D;
-    animation: movein 3s ease infinite alternate;
+    -webkit-animation: movein 3s ease infinite alternate;
+            animation: movein 3s ease infinite alternate;
   }
   
 /*Spin the svg so all the dots spin*/
+@-webkit-keyframes spin {
+    to {
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
+    }
+  }
 @keyframes spin {
     to {
-      transform: rotate(1turn);
+      -webkit-transform: rotate(1turn);
+              transform: rotate(1turn);
     }
   }
   
   /* Move all the dots toward the center */
+  @-webkit-keyframes movein {
+    to {
+      cy: 100;
+      cx: 100;
+    }
+  }
   @keyframes movein {
     to {
       cy: 100;
@@ -372,6 +390,11 @@ input[type=number]::-webkit-outer-spin-button {
   }
   
   /* Set a bouncy ball type movement for the dots */
+  @-webkit-keyframes moveup {
+    to {
+      cy: 20;
+    }
+  }
   @keyframes moveup {
     to {
       cy: 20;
@@ -456,8 +479,11 @@ input[type=number]::-webkit-outer-spin-button {
   /* width:0%;
     min-width:16px;
   overflow:hidden; */
+  -webkit-transition: width 1s;
+  -o-transition: width 1s;
   transition: width 1s;
-  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
   margin: 0 !important;
     float: left;
   }
@@ -555,7 +581,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .nav-icon{
     background-color: #ffffff;
-    box-shadow: 0px 6px 12px 0px rgba(234,234,234,1);
+    -webkit-box-shadow: 0px 6px 12px 0px rgba(234,234,234,1);
+            box-shadow: 0px 6px 12px 0px rgba(234,234,234,1);
     border-radius: 50%;
     width: 40px;
     display: block;
@@ -570,6 +597,8 @@ input[type=number]::-webkit-outer-spin-button {
 .nav-tools > li .nav-icon:focus{
     background-color: #ec6a60 !important;
     color: #ffffff !important;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 /********************* Start Side Menu **************************/
@@ -583,10 +612,15 @@ input[type=number]::-webkit-outer-spin-button {
     width: 350px;
     top: 20px;
     border-radius: 0 20px 20px 0;
-    box-shadow: 6px 0 12px 0px rgba(234,234,234,1);
+    -webkit-box-shadow: 6px 0 12px 0px rgba(234,234,234,1);
+            box-shadow: 6px 0 12px 0px rgba(234,234,234,1);
     z-index: 999;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
     opacity: 0;
     background-color: #fff;
     line-height: normal;
@@ -609,7 +643,9 @@ input[type=number]::-webkit-outer-spin-button {
     z-index: 9;
 }
 .side-menu.show-menu{
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
 }
 .side-menu li {
@@ -636,9 +672,15 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 1px !important;
     border-radius: 0 0 20px 0;
     z-index: 9;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .side-menu .fixed-li .btn-hvr {
     min-width: 180px;
@@ -682,6 +724,7 @@ span.bell {
     padding: 0 0 0 10px;
 }
 .notify {
+    display: -ms-inline-grid;
     display: inline-grid;
 }
 .side-menu li .notify p{
@@ -717,7 +760,8 @@ span.bell {
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    box-shadow: 0px 6px 12px 0px rgba(234,234,234,1);
+    -webkit-box-shadow: 0px 6px 12px 0px rgba(234,234,234,1);
+            box-shadow: 0px 6px 12px 0px rgba(234,234,234,1);
 }
 .pro-menu h4{
     font-family: 'Almarai-ExtraBold';
@@ -737,7 +781,9 @@ span.bell {
     color: #F9A392;
 }
 .side-menu.flexx{
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 /************* Sign Up/In side menu *************/
 .welcomee{
@@ -778,12 +824,15 @@ span.bell {
 /************* cart side menu *************/
 .cart_item{
     position: relative;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin: 0 0 10px 0;
     padding: 10px 0 0 0;
 }
 .cart_item .bell img{
-    box-shadow: 0px 6px 12px 0px rgba(234,234,234,1);
+    -webkit-box-shadow: 0px 6px 12px 0px rgba(234,234,234,1);
+            box-shadow: 0px 6px 12px 0px rgba(234,234,234,1);
     border-radius: 10px;
     width: 100px;
     background-color: #F7F8FA;
@@ -808,7 +857,9 @@ span.bell {
 .lock {
     text-align: center;
     padding: 10px;
-    transform: scale(.8);
+    -webkit-transform: scale(.8);
+        -ms-transform: scale(.8);
+            transform: scale(.8);
     border-top: 1px solid rgba(205, 205, 205, .4);
 }
 .lock p{
@@ -922,9 +973,13 @@ div#nav-icon1:before {
 
 /* nav ul */
 .navy .nav{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -985,7 +1040,8 @@ div#nav-icon1:before {
 /********************* Fixed Navbar **************************/
 .fixd-navbar {
     position: fixed;
-    box-shadow: 0px 3px 5px 0px rgba(199,199,199,1);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(199,199,199,1);
+            box-shadow: 0px 3px 5px 0px rgba(199,199,199,1);
     background-color: #fff !important;
 }
 /********************* End Navbar **************************/
@@ -1187,7 +1243,9 @@ display: flex;
         display: -ms-inline-flexbox;
         display: inline-flex;
     height: 40px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     }
     .nav-tools li .search-form .nav-icon, .nav-tools li a .nav-icon{
         width: 30px;

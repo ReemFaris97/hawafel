@@ -10,8 +10,8 @@
 <!-- /////////////////////||||||||||| bread crumbs |||||||||||||||||||| -->
 <section class="all-sections sec-about single-work">
     <div class="single-workdiv">
-        <h3 class="titlebread"> سلة المشتريات </h3>
-        <p class="breadcrum"> <a href="../">الرئيسية</a> / سلة المشتريات</p>
+    <img src="{{asset('website/dist/img/logo.png')}}" class="c_imgg">
+        <h3 class="titlebread">شكرا لطلبك من متجرنا</h3>
     </div>
     <img class="absimgbread" alt="" src="{{asset('website/dist/img/grass.png')}}">
     <div id="leaves">
@@ -36,80 +36,121 @@
 <!-- /////////////////////||||||||||| start cart |||||||||||||||||||| -->
 <section class="my_cart">
     <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-xs-12">
-                <div class="items_r">
-                <form action="{{url('booking-done')}}" class="custom-radio">
-                    <p>
-                        <input type="radio" id="test1" name="radio-group" checked>
-                        <label for="test1"><i class="fas fa-truck"></i> الدفع عند الاستلام</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="test2" name="radio-group">
-                        <label for="test2"><i class="fas fa-credit-card"></i> بطاقة ائتمان</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="test3" name="radio-group">
-                        <label for="test3"><i class="fas fa-dollar-sign"></i> تحويل بنكى</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="test4" name="radio-group">
-                        <label for="test4"><i class="fas fa-wallet"></i> محفظتى</label>
-                    </p>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <div class="left-calc">
-                    <h3>ملخص السلة</h3>
-                    <!---- start copoun --->
-                    <div class="copounbar">
-                        <p class="paycolor"><i class="fas fa-percentage"></i> هل لديك كوبون خصم؟ <b>ادخل الكود هنا</b></p>
-                        <form action="#" class="coupon-form">
-                            <input type="text" name="code" placeholder="الكود">
-                            <button type="submit" class="btn-hvr" type="submit">
-                                <span class="z-span">تحقق</span>
-                            </button>
-                        </form>
-                        <span class="coupon-result">هذا الكود غير صحيح</span>
-                    </div>
-                    <!---- End copoun --->
-                    <p class="left-card">
-                        <span class="rigt-span ">المجموع:</span>
-                        <span class="left-span"><span id="totalss">1300</span>ر.س</span>
-                    </p>
-                    <p class="left-card discount">
-                        <span class="rigt-span"> الخصم :<span class="coupon-perc">10</span>%</span>
-                        <span class="left-span red"><span class="discount-value">45 </span> ر.س</span>
-                    </p>
-                    <p class="left-card discount">
-                        <span class="rigt-span"> الضريبة :</span>
-                        <input type="hidden" name="taxes_fees" class="hidden_taxes">
-                        <span class="rigt-span"><span id="taxes" class="taxes">34 </span>ر.س</span>
-                    </p>
-                    <p class="left-card">
-                        <span class="rigt-span">المجموع الإجمالى: </span>
-                        <span class="left-span"> <span id="all-totalss">1600</span>
-                            ر.س</span>
-                    </p>
-                    <!--- start choose address --->
-                    <div class="sha7n_adrs">
-                        <select class="js-select2 form-control" title="عنوان الشحن">
-                            <option>الحى </option>
-                            <option>قصيم </option>
-                            <option>بريدة </option>
-                        </select>
-                        <button type="button" data-toggle="modal" data-target="#newAdrsModal" class="to_new_adrs">
-                            <i class="fas fa-plus"></i>إضافة عنوان اخر
-                        </button>
-                    </div>
-                    <!--- end choose address --->
-                    <a href="{{url('booking-done')}}" class="btn-hvr submit_cart" type="submit">
-                        <span class="z-span">تأكيد الدفع</span>
-                    </a>
-                </div>
-            </div>
+        <div class="booked">
+            <div class="flex-r">
+               <h4>رقم الشحنة :</h4>
+               <h4>23456333</h4>
+             </div>
+            <div class="flex-r">
+               <h4>تاريخ الشحنة :</h4>
+               <h4>10/9/2020</h4>
+             </div>
+            <div class="flex-r">
+               <h4>طريقة الدفع:</h4>
+               <h4>الدفع عند الاستلام</h4>
+             </div>
+            <div class="flex-r">
+               <h4>سعر الفاتورة:</h4>
+               <h4>300 ريال</h4>
+             </div>
+            <div class="flex-r">
+               <h4>تكلفة التوصيل:</h4>
+               <h4>50 ريال</h4>
+             </div>
+            <div class="flex-r">
+               <h4>الضريبة:</h4>
+               <h4>5 ريال</h4>
+             </div>
+            <div class="flex-r">
+               <h4>إجمالى الفاتورة:</h4>
+               <h4>3456 ريال</h4>
+             </div>
         </div>
+        <div class="order_status">
+           <div class="flex-r">
+              <!----------------- NOTE :: add (this_status) class to order status ----------------->
+           <div class="this_status">
+              <h4><i class="fas fa-check-circle"></i></h4>
+              <p>قيد التجهيز</p>
+           </div>
+           <div>
+              <h4><i class="fas fa-check-circle"></i></h4>
+              <p>تم الشحن</p>
+           </div>
+           <div>
+              <h4><i class="fas fa-check-circle"></i></h4>
+              <p>تم التسليم</p>
+           </div>
+           </div>
+        </div>
+        <p class="order_timing">
+           الوقت المتوقع لوصول الشحنة , الثلاثاء , 20 Aug 2020 - الخميس 22 Aug 2020
+        </p>
+        <div class="items_r">
+        <div class="flexx cart_item">
+                        <button class="nav-icon remove_item"> <i class="far fa-trash-alt"></i> </button>
+                        <div class="item_dtls">
+                            <a href="{{url('single-product')}}" class="i_img">
+                                <img src="{{asset('website/dist/img/asset8.png')}}">
+                            </a>
+                            <div class="right_dtls">
+                                <a href="{{url('single-product')}}" class="item_nm">مجموعة الصابون الطبيعى</a>
+                                <span class="spanSec">حوافل</span>
+                                <div class="i_prices">
+                                    <p class="old_price"><span>300</span><span> ر.س</span></p>
+                                    <p class="new_price"><span class="current_price">100</span><span> ر.س</span></p>
+                                    <p class="hint">الشحن مجانا لفترة محدودة!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                           <p> الكمية : <span class="quantity_in">3</span></p>
+                        </div>
+                    </div>
+        <div class="flexx cart_item">
+                        <button class="nav-icon remove_item"> <i class="far fa-trash-alt"></i> </button>
+                        <div class="item_dtls">
+                            <a href="{{url('single-product')}}" class="i_img">
+                                <img src="{{asset('website/dist/img/asset8.png')}}">
+                            </a>
+                            <div class="right_dtls">
+                                <a href="{{url('single-product')}}" class="item_nm">مجموعة الصابون الطبيعى</a>
+                                <span class="spanSec">حوافل</span>
+                                <div class="i_prices">
+                                    <p class="old_price"><span>300</span><span> ر.س</span></p>
+                                    <p class="new_price"><span class="current_price">100</span><span> ر.س</span></p>
+                                    <p class="hint">الشحن مجانا لفترة محدودة!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                           <p> الكمية : <span class="quantity_in">3</span></p>
+                        </div>
+                    </div>
+        <div class="flexx cart_item">
+                        <button class="nav-icon remove_item"> <i class="far fa-trash-alt"></i> </button>
+                        <div class="item_dtls">
+                            <a href="{{url('single-product')}}" class="i_img">
+                                <img src="{{asset('website/dist/img/asset8.png')}}">
+                            </a>
+                            <div class="right_dtls">
+                                <a href="{{url('single-product')}}" class="item_nm">مجموعة الصابون الطبيعى</a>
+                                <span class="spanSec">حوافل</span>
+                                <div class="i_prices">
+                                    <p class="old_price"><span>300</span><span> ر.س</span></p>
+                                    <p class="new_price"><span class="current_price">100</span><span> ر.س</span></p>
+                                    <p class="hint">الشحن مجانا لفترة محدودة!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                           <p> الكمية : <span class="quantity_in">3</span></p>
+                        </div>
+                    </div>
+        </div>
+        <a href="{{url('my_orders')}}" class="btn-hvr submit_cart">
+                        <span class="z-span">إلغاء الطلب</span>
+                    </a>
     </div>
 </section>
 <!-- /////////////////////|||||||||||End cart |||||||||||||||||||| -->

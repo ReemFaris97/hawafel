@@ -8,7 +8,9 @@
 }
 .items_r {
     .cart_item {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 10px;
         border-bottom: 2px solid #EDEDED;
         padding-bottom: 15px;
@@ -19,16 +21,23 @@
         & > div {
             max-width: 50%;
             min-width: 40%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
         }
         .remove_item {
             font-size: 20px;
         }
         .item_dtls {
             .i_img {
-                box-shadow: 0px 6px 12px 0px rgba(234, 234, 234, 1);
+                -webkit-box-shadow: 0px 6px 12px 0px rgba(234, 234, 234, 1);
+                        box-shadow: 0px 6px 12px 0px rgba(234, 234, 234, 1);
                 border-radius: 10px;
                 width: 40%;
                 max-width: 180px;
@@ -37,7 +46,8 @@
                 img {
                     max-width: 100%;
                     max-height: 100%;
-                    object-fit: cover;
+                    -o-object-fit: cover;
+                       object-fit: cover;
                     border-radius: 10px;
                 }
             }
@@ -73,6 +83,9 @@
         .left_price {
             font-family: "Almarai-Bold";
             font-size: 18px;
+        }
+        .quantity_in{
+            border-radius: 0;
         }
     }
 }
@@ -139,9 +152,15 @@
             color: #545252;
         }
         .coupon-form {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             input {
                 background-color: #E2E2E2;
                 padding: 0 10px;
@@ -206,20 +225,17 @@
             }
         }
     }
-    .btn-hvr {
-        border-radius: 6px;
-        &.submit_cart{
-            margin:20px auto 0 auto;
-        }
-    }
+}
+.btn-hvr.submit_cart {
+    border-radius: 6px;
+    margin:20px auto 0 auto;
+    max-width: 300px;
 }
 
 /***************** payOff .Blade **********/
 .custom-radio{
     [type="radio"]:checked,
     [type="radio"]:not(:checked) {
-        // position: absolute;
-        // left: -9999px;
         opacity: 0;
     }
     [type="radio"]:checked + label,
@@ -262,16 +278,76 @@
     [type="radio"]:not(:checked) + label:after {
         opacity: 0;
         -webkit-transform: scale(0);
-        transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
     }
     [type="radio"]:checked + label:after {
         opacity: 1;
         -webkit-transform: scale(1);
-        transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
     }
     [type="radio"]:checked + label{
         color: $secondary-color !important;
     }
+}
+
+/************* booking-done.blade ***********/
+.c_imgg{
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 10px auto;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+}
+.booked{
+    .flex-r{
+        color: #D0D0D0;
+        font-family: 'Almarai-Bold';
+        &:first-of-type{
+            color: $third-color;
+        }
+        &:last-of-type{
+            color: $primary-color;
+            font-family: 'Almarai-ExtraBold';
+        }
+    }
+}
+.order_status{
+    position: relative;
+    margin: 30px 0;
+    &::before{
+        content: "";
+        width: calc(100% - 65px);
+        border-bottom: 2px solid #EDEDED;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        top: 23px;
+    }
+    .flex-r{
+        color: #D0D0D0;
+        position: relative;
+        z-index: 9;
+        & > div {
+            font-size: 20px;
+            text-align: center;
+            h4{
+                font-size: 26px;
+            }
+        }
+        .this_status{
+            color: $third-color;
+        }
+    }
+}
+.order_timing{
+    font-family: 'Almarai-Bold';
+    font-size: 18px;
+    border-bottom: 2px solid #EDEDED;
+    padding-bottom: 16px;
 }
 /************* Responsive ***********/
 @media (max-width: 767px){
@@ -304,5 +380,16 @@
     }
     .left-calc > h3 {
         font-size: 17px;
+    }
+    /*********** booking done *********/
+    .c_imgg {
+        max-width: 80px;
+    }
+    .order_status .flex-r > div {
+        font-size: 14px;
+        text-align: center;
+    }
+    .booked .flex-r h4{
+        font-size: 15px;
     }
 }

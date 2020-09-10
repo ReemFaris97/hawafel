@@ -1778,8 +1778,8 @@ input.form-control.inputsubscribe::placeholder {
 /******************Cart***************/
 .items_r .cart_item {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 10px;
   border-bottom: 2px solid #EDEDED;
   padding-bottom: 15px;
@@ -1797,11 +1797,11 @@ input.form-control.inputsubscribe::placeholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .items_r .cart_item .remove_item {
@@ -1810,7 +1810,7 @@ input.form-control.inputsubscribe::placeholder {
 
 .items_r .cart_item .item_dtls .i_img {
   -webkit-box-shadow: 0px 6px 12px 0px #eaeaea;
-          box-shadow: 0px 6px 12px 0px #eaeaea;
+  box-shadow: 0px 6px 12px 0px #eaeaea;
   border-radius: 10px;
   width: 40%;
   max-width: 180px;
@@ -1822,7 +1822,7 @@ input.form-control.inputsubscribe::placeholder {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -1857,6 +1857,10 @@ input.form-control.inputsubscribe::placeholder {
 .items_r .cart_item .left_price {
   font-family: "Almarai-Bold";
   font-size: 18px;
+}
+
+.items_r .cart_item .quantity_in {
+  border-radius: 0;
 }
 
 /********* quantity *******/
@@ -1934,11 +1938,11 @@ input.form-control.inputsubscribe::placeholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .left-calc .copounbar .coupon-form input {
@@ -2011,12 +2015,10 @@ input.form-control.inputsubscribe::placeholder {
   color: #f9a392;
 }
 
-.left-calc .btn-hvr {
+.btn-hvr.submit_cart {
   border-radius: 6px;
-}
-
-.left-calc .btn-hvr.submit_cart {
   margin: 20px auto 0 auto;
+  max-width: 300px;
 }
 
 /***************** payOff .Blade **********/
@@ -2081,6 +2083,72 @@ input.form-control.inputsubscribe::placeholder {
   color: #1d463d !important;
 }
 
+/************* booking-done.blade ***********/
+.c_imgg {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto 10px auto;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.booked .flex-r {
+  color: #D0D0D0;
+  font-family: 'Almarai-Bold';
+}
+
+.booked .flex-r:first-of-type {
+  color: #f9a392;
+}
+
+.booked .flex-r:last-of-type {
+  color: #000000;
+  font-family: 'Almarai-ExtraBold';
+}
+
+.order_status {
+  position: relative;
+  margin: 30px 0;
+}
+
+.order_status::before {
+  content: "";
+  width: calc(100% - 65px);
+  border-bottom: 2px solid #EDEDED;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  top: 23px;
+}
+
+.order_status .flex-r {
+  color: #D0D0D0;
+  position: relative;
+  z-index: 9;
+}
+
+.order_status .flex-r > div {
+  font-size: 20px;
+  text-align: center;
+}
+
+.order_status .flex-r > div h4 {
+  font-size: 26px;
+}
+
+.order_status .flex-r .this_status {
+  color: #f9a392;
+}
+
+.order_timing {
+  font-family: 'Almarai-Bold';
+  font-size: 18px;
+  border-bottom: 2px solid #EDEDED;
+  padding-bottom: 16px;
+}
+
 /************* Responsive ***********/
 @media (max-width: 767px) {
   .items_r {
@@ -2110,6 +2178,17 @@ input.form-control.inputsubscribe::placeholder {
   }
   .left-calc > h3 {
     font-size: 17px;
+  }
+  /*********** booking done *********/
+  .c_imgg {
+    max-width: 80px;
+  }
+  .order_status .flex-r > div {
+    font-size: 14px;
+    text-align: center;
+  }
+  .booked .flex-r h4 {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=cart.css.map */

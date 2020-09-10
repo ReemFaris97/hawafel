@@ -21,8 +21,12 @@
   width: 100%;
   height: 100%;
   background-color: #F9A392;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
   z-index: -5;
 }
 .btn-hvr::after{
@@ -33,19 +37,29 @@
   width: 100%;
   height: 100%;
   background-color: #1D463D;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
 }
 .btn-hvr:hover::before,
 .btn-hvr:focus::before{
-  transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
 }
 .btn-hvr:hover::after,
 .btn-hvr:focus::after{
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
 }
 .btn-hvr:hover , .btn-hvr:focus{
     color: #ffffff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     border-color: #F9A392;
     background-color: #F9A392;
@@ -136,11 +150,7 @@ ul.social  li .icon-snap:before {
 }
 }
 */
-
-
-
     /* Social Button Icon Styling */
-
     .social-buttons {
       display: inline-block;
       padding: 20px;
@@ -148,8 +158,12 @@ ul.social  li .icon-snap:before {
       border-radius: 10px;
       text-align: center;
       margin: 20px 10px;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: center
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center
     }
     .social-buttons .social-margin {
       margin-right: 15px;
@@ -161,21 +175,31 @@ ul.social  li .icon-snap:before {
       text-decoration: none;
     }
     .social-buttons .social-icon {
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       border: 5px solid;
       text-align: center;
       width: 50px;
       height: 50px;
       display: inline-block;
       line-height: 1px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
       transition: all 0.5s;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: center
-  
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center
     }
     .social-buttons .social-icon:hover {
-      transform:scale(1.2);
+      -webkit-transform:scale(1.2);
+          -ms-transform:scale(1.2);
+              transform:scale(1.2);
       border-radius: 50%;
     }
     .social-buttons .social-icon.facebook {
@@ -205,11 +229,11 @@ ul.social  li .icon-snap:before {
       background-color: #ffffff;
       color: #55acee;
     }
-  
     .social-buttons .social-icon.instagram {
       font-size: 22px;
       padding-left: 2px;
       border-color: #eed3f1;
+      background: -o-radial-gradient(33% 100%, circle, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
       background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
       color: #ffffff;
     }

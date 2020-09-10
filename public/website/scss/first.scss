@@ -93,11 +93,16 @@ $grey-color: #7c7e7c;
 }
 /************************/
 .btn-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 56px;
     line-height: unset;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 18px;
 }
 .btn-icon {
@@ -129,7 +134,9 @@ $grey-color: #7c7e7c;
         position: absolute;
         right: 50%;
         top: 50%;
-        transform: translate(50%, -50%);
+        -webkit-transform: translate(50%, -50%);
+            -ms-transform: translate(50%, -50%);
+                transform: translate(50%, -50%);
         p {
             font-family: "Almarai-Bold";
             font-size: 16px;
@@ -160,6 +167,8 @@ $grey-color: #7c7e7c;
         background-image: url(../dist/img/favicon_pink2.png);
         @extend %background-cover;
         background-size: contain;
+        width: -webkit-max-content;
+        width: -moz-max-content;
         width: max-content;
         margin: 0 auto;
         min-width: 200px;
@@ -242,7 +251,8 @@ $grey-color: #7c7e7c;
 }
 .buttons_cont {
     @include flex-center;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     .btn-flex {
         min-width: 170px;
         color: $primary-color;
@@ -282,7 +292,6 @@ $grey-color: #7c7e7c;
     }
 }
 /******* End About Section *************/
-
 /******* Start categories Section *************/
 .categories-r {
     @extend %all-section-padd;
@@ -296,15 +305,18 @@ a.categoryhref {
     background-position: center;
 }
 /******* End categories Section *************/
-
 /******* Start recent products Section *************/
 .fleximgfav {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     img {
         margin-left: 0;
         max-width: 100%;
         width: auto;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
         height: 245px;
     }
     .nameprodfav {
@@ -332,25 +344,36 @@ a.categoryhref {
             right: 0;
             top: 8px;
             margin: 0 auto;
-            justify-content: space-around;
-            transform: translateY(-200%);
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            -webkit-transform: translateY(-200%);
+                -ms-transform: translateY(-200%);
+                    transform: translateY(-200%);
             opacity: 0;
             @include rTransition(all 0.3s ease-in-out);
         }
         &:hover {
             .flex.flexadd {
-                transform: translateY(0);
+                -webkit-transform: translateY(0);
+                    -ms-transform: translateY(0);
+                        transform: translateY(0);
                 opacity: 1;
             }
         }
     }
 }
 .likerr {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #f9a392;
     color: #fff;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -366,7 +389,6 @@ a.categoryhref {
     font-size: 16px;
 }
 /******* End recent products Section *************/
-
 /************* Start Subscribe section ************/
 input.form-control.inputsubscribe::-webkit-input-placeholder {
     font-size: 13px !important;
@@ -389,7 +411,6 @@ input.form-control.inputsubscribe::placeholder {
     min-height: 49px;
 }
 /************* End Subscribe section ************/
-
 /************* Start offers and sale section ************/
 .my_offers {
     @extend %all-section-padd;
@@ -411,7 +432,7 @@ input.form-control.inputsubscribe::placeholder {
       --hover: #{adjust-hue($color, 45deg)};
     }
   }
-.columns_r {
+  .columns_r {
     width: 100%;
     max-width: 95%;
     margin: 2rem auto;
@@ -433,11 +454,20 @@ input.form-control.inputsubscribe::placeholder {
             border-radius: 6px;
             padding: 20px;
             @include dis-flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row-reverse;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                    flex-direction: row-reverse;
             background-color: #F9F9F9;
             position: relative;
+            -webkit-transition: 0.25s;
+            -o-transition: 0.25s;
             transition: 0.25s;
             border: 1px solid transparent;
             .box_dis{
@@ -452,6 +482,8 @@ input.form-control.inputsubscribe::placeholder {
             }
             .box_img{
                 max-width: 40%;
+                display: -webkit-inline-box;
+                display: -ms-inline-flexbox;
                 display: inline-flex;
                 max-height: 100% !important;
                 img{
@@ -468,7 +500,6 @@ input.form-control.inputsubscribe::placeholder {
                 p{
                     margin:0;
                     span{
-
                     }
                     .old_price{
                         text-decoration: line-through;
@@ -477,11 +508,12 @@ input.form-control.inputsubscribe::placeholder {
             }
             &:hover , &:focus{
                 color: $third-color;
-                animation: pulse 1s;
-                box-shadow: 0 0 0 2em rgba(#fff,0);
+                -webkit-animation: pulse 1s;
+                        animation: pulse 1s;
+                -webkit-box-shadow: 0 0 0 2em rgba(#fff,0);
+                        box-shadow: 0 0 0 2em rgba(#fff,0);
                 border-color: var(--hover);
             }
-            
             }
             &:nth-child(-n + 2){  /*** first two childs ****/
                 .box_dis{
@@ -491,15 +523,24 @@ input.form-control.inputsubscribe::placeholder {
             }
             &:nth-child(1){  /*** first child ****/
                 .box{
-                    flex-direction: column;
-                    align-items: baseline;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-align: baseline;
+                        -ms-flex-align: baseline;
+                            align-items: baseline;
                     .box_img{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
                     text-align: center;
                     margin: 0 auto;
                     width: 100%;
                     height: 80%;
-                    justify-content: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                     min-width: 100%;
                     &:hover{
                         color: $primary-color !important;
@@ -515,7 +556,9 @@ input.form-control.inputsubscribe::placeholder {
             }
             &:nth-child(2){  /*** second child ****/
                 .box{
-                    align-items: flex-end;
+                    -webkit-box-align: end;
+                        -ms-flex-align: end;
+                            align-items: flex-end;
                     .box_img{
                         width: 100%;
                         max-width: 100%;
@@ -534,9 +577,7 @@ input.form-control.inputsubscribe::placeholder {
         }
     }
 }
-
 /************* End offers and sale section ************/
-
 /*********** Responsive ****************/
 @media (max-width: 991px) {
     .btn-flex {
@@ -604,6 +645,8 @@ input.form-control.inputsubscribe::placeholder {
             @include objectFit(cover);
         }
         .head-txt {
+            width: -webkit-max-content;
+            width: -moz-max-content;
             width: max-content;
             text-align: center;
         }
@@ -696,6 +739,4 @@ input.form-control.inputsubscribe::placeholder {
             }
         }
     }
-    
-
 }
