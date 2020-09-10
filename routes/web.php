@@ -109,6 +109,9 @@ Route::get('/notifications', function () {
 Route::get('/cart', function () {
     return view('site.cart');
 });
+Route::get('/payOff', function () {
+    return view('site.payOff');
+});
 Route::get('/booking-done', function () {
     return view('site.booking-done');
 });

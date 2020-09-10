@@ -151,8 +151,7 @@
                     <p class="left-card discount">
                         <span class="rigt-span"> الضريبة :</span>
                         <input type="hidden" name="taxes_fees" class="hidden_taxes">
-                        <span class="rigt-span"><span id="taxes" class="taxes"> </span></span>
-                        <!-- <span class="left-span red"><span class="tax-value"> </span> ر.س</span> -->
+                        <span class="rigt-span"><span id="taxes" class="taxes"> </span>ر.س</span>
                     </p>
                     <p class="left-card">
                         <span class="rigt-span">المجموع الإجمالى: </span>
@@ -171,7 +170,7 @@
                         </button>
                     </div>
                     <!--- end choose address --->
-                    <a href="{{url('/')}}" class="btn-hvr submit_cart" type="submit">
+                    <a href="{{url('payOff')}}" class="btn-hvr submit_cart" type="submit">
                         <span class="z-span">تأكيد الدفع</span>
                     </a>
                 </div>
@@ -235,38 +234,6 @@
                 $(".hidden_taxes").val(taxesTotal);
             });
         });
-    })
-    //////////////////////
-    // $(document).ready(function () {
-
-    //     $(".quantity").change(function(){
-    //         var $input = $(this).parent().find('.quantity');
-    //         var count = parseFloat($input.val()) + 1;
-    //         $input.val(count);
-    //         $input.change();
-    //         var price = parseInt($(this).parents(".cart_item").find('.current_price').text());
-    //         $(this).parents(".cart_item").find('.updatePrice').text(price * count);
-    //         var total1 = parseInt($(this).parents(".cart_item").find('.updatePrice').text());
-
-    //         let sum = total1 + parseFloat($('#totalss').text());
-    //         document.getElementById("totalss").innerHTML =  sum;
-
-    //         /// discount
-    //         let discount = parseFloat($('.coupon-perc').text());
-    //         let disocunt_val = sum * discount / 100;
-    //         $('.discount-value').text(disocunt_val);
-
-    //         ///tax
-    //         let tax = parseFloat($('.taxx').text());
-    //         let tax_val = sum * tax / 100;
-    //         $('.tax-value').text(tax_val);
-
-    //         document.getElementById("all-totalss").innerHTML =  sum - disocunt_val + tax_val;
-    //         return false;
-    //     });
-
-
-
-    // });
+    });
 </script>
 @endsection

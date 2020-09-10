@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'حوافل || تم الشحن')
+@section('title' , 'حوافل || سلة المشتريات')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/select2.min.css')}}">
@@ -113,6 +113,19 @@
     </div>
 </section>
 <!-- /////////////////////|||||||||||End cart |||||||||||||||||||| -->
+@include('site.modals.new-adrs-modal')
 @endsection
 @section('scripts')
+<!---- select2 init --->
+<script src="{{asset('website/dist/js/select2.full.js')}}"></script>
+<script>
+    $(document).ready(function() {
+        $(".js-select2").select2();
+        $('select:not(.normal)').each(function() {
+            $(this).select2({
+                dropdownParent: $(this).parent()
+            });
+        });
+    });
+</script>
 @endsection
