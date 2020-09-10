@@ -1768,7 +1768,7 @@ b.datedes b:first-child {
     height: 370px;
     margin: 0 auto 20px auto;
     overflow: hidden !important;
-    background-color: #ec6a60
+    background-color: #f9a392
 }
 
 .secondary {
@@ -1860,6 +1860,17 @@ p.p-detalies {
     border-bottom: 1px solid #eceaea;
     padding: 15px 0;
     margin: 10px 0px;
+    margin-bottom: 0
+}
+.bordetopbotm {
+    padding: 15px 0;
+    border-bottom: 1px solid #eceaea;
+}
+.contentupdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
 }
 p.disccolor span:first-child{
     margin-left: 10px;
@@ -1880,6 +1891,292 @@ ul.inlineradio li {
 ul.inlineradio li label {
     font-size: 17px !important;
 }
+.number-input .minus, .number-input .plus {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #1d463d;
+}
+.number-input .quantity {
+    background-color: transparent;
+    height: 30px;
+    width: 45px;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+    font-weight: bold;
+    border-bottom: 1px solid #b4b6b8;
+}
+.contentupdown .likerr {
+    margin-left: 6px;
+    height: 50px;
+}
+a.addcard:hover {
+    color: #fff;
+}
+.ptabscont{
+    color: #6f6f6f;
+    font-size: 16px;
+}
+.ptitle{
+    font-size: 20px
+}
+.absbottom{
+    position: relative;
+}
+.absbottom::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    margin: auto;
+    height: 1px;
+    background-color: #eceaea
+}
+.flexcommentstr{
+    display: flex
+}
+.contentstr {
+    width: 187px;
+}
+
+p.singleprodlink {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+p.singleprodlink a:hover{
+   color:#ec6a60
+}
+/*================== end single product html =========================*/
+/*================== sub section   html =========================*/
+.subsection{
+    background-image:url("../img/subsction.png")
+}
+
+.subsection h3.titlebread {
+    color: #000;
+}
+.subsection .absimgbread {
+    position: absolute;
+    bottom: -93px;
+    width: 273px;
+    right: 106px;
+    z-index: 9;
+}
+.subsection .breadcrum {
+    color: #000;
+}
+
+.subsection .breadcrum a{
+    color: #000;
+}
+  .wrapper{
+    width: 100%;
+    height: 100%;
+  }
+  .main-text{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    color: #fff;
+  }
+  .bubble{
+    position: absolute;
+    top: 53%;
+    border-radius: 50%;
+    border: 2px solid rgb(249, 163, 146)
+  }
+  .small{
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    animation: flow-s 2s linear infinite;
+  }
+  .small-l{
+    width: 10px;
+    height: 10px;
+    left: 43%;
+    animation: flow-s-l 0.9s linear infinite;
+  }
+  .s-medium{
+    width: 20px;
+    height: 20px;
+    left: 43%;
+    animation: flow-s 1.3s linear infinite;
+  }
+  .medium{
+    width: 25px;
+    height: 25px;
+    left: 45%;
+    animation: flow-m 0.8s linear infinite;
+  }
+  .large{
+    width:5px;
+    height: 5px;
+    left: 57%;
+    animation: flow-l 0.7s linear infinite;
+  }
+
+  @keyframes flow-l {
+    0% {
+      top: 53%;
+      left: 57%;
+      opacity:0;
+    }
+    25%{
+      top: 49%;
+      left: 57.5%;
+      opacity: 1;
+    }
+    50%{
+      left: 58%;
+      opacity: 1;
+    }
+    75%{
+      left: 57.5%;
+      opacity: 1;
+    }
+    100% {
+      top: 32%;
+      left: 57%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes flow-s {
+    0% {
+      top: 53%;
+      left: 50%;
+      opacity:0;
+    }
+    25%{
+      top: 49%;
+      left: 51%;
+      opacity: 1;
+    }
+    50%{
+      top: 45%;
+      left: 52%;
+      opacity: 1;
+    }
+    75%{
+      top: 41%;
+      left: 51%;
+      opacity: 1;
+    }
+    100% {
+      top: 37%;
+      left: 50%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes flow-s-m {
+    0% {
+      top: 53%;
+      left: 43%;;
+      opacity:0;
+    }
+    25%{
+      top: 49%;
+      left: 42.5%;
+      opacity: 1;
+    }
+    50%{
+      top: 45%;
+      left: 42%;
+      opacity: 1;
+    }
+    75%{
+      top: 41%;
+      left: 42.5%;
+      opacity: 1;
+    }
+    100% {
+      top: 37%;
+      left: 43%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes flow-m {
+    0% {
+      top: 53%;
+      left: 45%;;
+      opacity:0;
+    }
+    25%{
+      top: 48%;
+      left: 44.5%;
+      opacity: 1;
+    }
+    50%{
+      top: 43%;
+      left: 44%;
+      opacity: 1;
+    }
+    75%{
+      top: 38%;
+      left: 44.5%;
+      opacity: 1;
+    }
+    100% {
+      top: 33%;
+      left: 45%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes flow-s-l {
+    0% {
+      top: 53%;
+      left: 43%;;
+      opacity:0;
+    }
+    25%{
+      top: 48%;
+      left: 43.5%;
+      opacity: 1;
+    }
+    50%{
+      top: 43%;
+      left: 44%;
+      opacity: 1;
+    }
+    75%{
+      top: 38%;
+      left: 43.5%;
+      opacity: 1;
+    }
+    100% {
+      top: 33%;
+      left: 43%;
+      opacity: 0;
+    }
+  }
+
+
+
+/*================== end sub section html =========================*/
 /*================== responsive =========================*/
 
 
@@ -1893,7 +2190,11 @@ ul.inlineradio li label {
 
 @media (max-width: 1199px) {}
 
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    .contentupdown .likerr {
+        height: 40px !important;
+    }
+}
 
 @media (max-width: 991px) {
 	/*******copntact us************/
@@ -1949,6 +2250,18 @@ ul.inlineradio li label {
 
     }
 /*================== end favourites html =========================*/
+
+/*================== single html =========================*/
+.comments {
+    margin-bottom: 0px;
+}
+.flexcommentstr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+/*==================end single html =========================*/
+
 }
 
 @media (max-width: 767px) {
@@ -2084,8 +2397,8 @@ ul.inlineradio li label {
 	}
 	/*about*/
 	.about p {
-		font-size: 12px;
-		color: #464646;
+		font-size: 14px;
+
 	}
 	.department {
 		margin-top: 11px;
@@ -2192,12 +2505,55 @@ margin: 0 auto 10px auto;
 
 }
 
+.comments {
+    margin-bottom: 0px;
+}
+.flexcommentstr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+p.ptabscont {
+    font-size: 14px;
+}
+.about p {
+    font-size: 14px;
+
+}
 /*==================end single html =========================*/
+/*==================  sub section html =========================*/
+.subsection .absimgbread {
+    position: absolute;
+    bottom: -67px;
+    width: 201px;
+    right: 0;
+    z-index: 9;
+}
+/*================== end sub section html =========================*/
 }
 
 @media (max-width: 700px) {}
 
-@media (max-width: 599px) {}
+@media (max-width: 599px) {
+    /*================== single html =========================*/
+    ul.inlineradio li label {
+        font-size: 12px !important;
+    }
+    p.ptabscont {
+        font-size: 12px;
+    }
+    .about p {
+        font-size: 12px;
+
+    }
+    .product-layName {
+        font-size: 16px;
+    }
+    .nav-tabs>li>a {
+        font-size: 16px;
+    }
+    /*================== end single html =========================*/
+}
 
 @media (max-width: 480px) {
 	/*================= multimedia ===============*/
