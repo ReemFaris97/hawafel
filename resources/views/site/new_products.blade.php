@@ -1,5 +1,5 @@
 @extends('site.layout')
-@section('title' , 'حوافل ||  المفضلة')
+@section('title' , 'حوافل ||  المنتجات الجديدة')
 @section('styles')
 <link rel="stylesheet" href="{{asset('website/dist/css/jquery.fancybox.min.css')}}">
 <link rel="stylesheet" href="{{asset('website/dist/css/a-style.css')}}">
@@ -8,8 +8,8 @@
 <!-- /////////////////////||||||||||| bread crumbs |||||||||||||||||||| -->
 <section class="all-sections  single-work">
    <div class="single-workdiv">
-      <h3 class="titlebread" >  المفضلة </h3>
-      <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="{{url('favourites')}}">المفضلة</a> </p>
+      <h3 class="titlebread" >  المنتجات الجديدة </h3>
+      <p class="breadcrum"> <a href="../">الرئيسية</a> / <a href="{{url('new_products')}}">المنتجات الجديدة</a> </p>
    </div>
    <img class="absimgbread" alt="" src="{{asset('website/dist/img/grass.png')}}">
    <div id="leaves">
@@ -90,11 +90,7 @@
       <div class="row list list-view-filter recents">
          <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
             <div class="fleximgfav">
-                <a href="{{url('single-product')}}">
-                    <div class="fleximgwidth">
-                        <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
-                    </div>
-                </a>
+               <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
                <div class="descrpp">
                   <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
                   <div class="discprice">
@@ -115,11 +111,7 @@
          </div>
          <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
             <div class="fleximgfav">
-                <a href="{{url('single-product')}}">
-                    <div class="fleximgwidth">
-                        <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
-                    </div>
-                </a>
+               <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
                <div class="descrpp">
                   <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
                   <div class="discprice">
@@ -140,11 +132,7 @@
          </div>
          <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
             <div class="fleximgfav">
-                <a href="{{url('single-product')}}">
-                    <div class="fleximgwidth">
-                        <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
-                    </div>
-                </a>
+               <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
                <div class="descrpp">
                   <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
                   <div class="discprice">
@@ -165,11 +153,7 @@
          </div>
          <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
             <div class="fleximgfav">
-                <a href="{{url('single-product')}}">
-                    <div class="fleximgwidth">
-                        <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
-                    </div>
-                </a>
+               <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
                <div class="descrpp">
                   <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
                   <div class="discprice">
@@ -190,11 +174,7 @@
          </div>
          <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
             <div class="fleximgfav">
-                <a href="{{url('single-product')}}">
-                    <div class="fleximgwidth">
-                        <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
-                    </div>
-                </a>
+               <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
                <div class="descrpp">
                   <a href="{{url('single-product')}}"><p class="nameprodfav">مجموعة الصابون الطبيعي  </p></a>
                   <div class="discprice">

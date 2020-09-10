@@ -69,7 +69,7 @@
                             <a href="{{url('offer')}}"> خصم النسبة</a>
                         </li>
                         <li>
-                            <a href="#">عروض الاقسام</a>
+                            <a href="{{url('categories')}}">عروض الاقسام</a>
                         </li>
                         <li>
                             <a href="#">كبونات الخصم</a>
@@ -91,7 +91,11 @@
       <div class="col-md-4  col-sm-6 col-xs-12 parentfav listgrid list4">
             <div class="fleximgfav offerp">
                <div class="minwidimg">
-                  <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                    <a href="{{url('single-product')}}">
+                        <div class="fleximgwidth">
+                            <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                        </div>
+                    </a>
                </div>
                <div class="descrpp">
                   <div class="divcontcolock">
@@ -115,7 +119,7 @@
                   </b>
                   <div class="flex flexadd">
                   <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname discfavv">اسم الخصم</div>
@@ -126,7 +130,11 @@
          <div class="col-md-4  col-sm-6 col-xs-12 parentfav listgrid list4">
             <div class="fleximgfav offerp">
                <div class="minwidimg">
-                  <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                <a href="{{url('single-product')}}">
+                        <div class="fleximgwidth">
+                            <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                        </div>
+                    </a>
                </div>
                <div class="descrpp">
                   <div class="divcontcolock">
@@ -150,7 +158,7 @@
                   </b>
                   <div class="flex flexadd">
                   <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname discfavv">اسم الخصم</div>
@@ -161,7 +169,11 @@
          <div class="col-md-4  col-sm-6 col-xs-12 parentfav listgrid list4">
             <div class="fleximgfav offerp">
                <div class="minwidimg">
-                  <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                <a href="{{url('single-product')}}">
+                        <div class="fleximgwidth">
+                            <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                        </div>
+                    </a>
                </div>
                <div class="descrpp">
                   <div class="divcontcolock">
@@ -185,7 +197,7 @@
                   </b>
                   <div class="flex flexadd">
                   <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname discfavv">اسم الخصم</div>
@@ -196,7 +208,11 @@
          <div class="col-md-4  col-sm-6 col-xs-12 parentfav listgrid list4">
             <div class="fleximgfav offerp">
                <div class="minwidimg">
-                  <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                <a href="{{url('single-product')}}">
+                        <div class="fleximgwidth">
+                            <img src="{{asset('website/dist/img/asset5.png')}}" alt="">
+                        </div>
+                    </a>
                </div>
                <div class="descrpp">
                   <div class="divcontcolock">
@@ -220,17 +236,28 @@
                   </b>
                   <div class="flex flexadd">
                   <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname discfavv">اسم الخصم</div>
             </div>
          </div>
+
+
+         <div class="col-xs-12 mr-top-10">
+            <button class="btn-hvr btn-flex btnminwidth">
+            <span class="z-span"> عرض المزيد </span>
+            </button>
+        </div>
+
 
       </div>
    </div>
 </section>
 <!-- /////////////////////|||||||||||End sections |||||||||||||||||||| -->
+
+@include('site.modals.addcard')
+
 @endsection
 @section('scripts')
 <script src="{{asset('website/dist/js/jquery.fancybox.min.js')}}"></script>

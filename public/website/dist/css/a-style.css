@@ -1234,7 +1234,13 @@ a.categoryhref:hover {
 	width: 220px;
 	margin-left: 15px;
 }
-
+.fleximgfav img {
+	width: 220px;
+	margin-left: 15px;
+}
+.fleximgwidth{
+    width: 220px;
+}
 .filter-buttons {
 	display: flex;
 	align-items: center;
@@ -1346,7 +1352,16 @@ p.nameprodfav {
 	width: 100%;
 	height: 245px;
 }
-
+.grid-view-filter .listgrid .fleximgfav .fleximgwidth {
+    margin-left: 0;
+    width: 100%;
+    height: 245px;
+}
+.grid-view-filter .listgrid .fleximgfav .fleximgwidth img {
+	margin-left: 0;
+	width: 100%;
+	height: 245px;
+}
 .fleximgfav {
 	margin: 12px 0;
 }
@@ -1964,6 +1979,9 @@ p.singleprodlink {
 p.singleprodlink a:hover{
    color:#ec6a60
 }
+.mr-top-10{
+    margin-top: 10px
+}
 /*================== end single product html =========================*/
 /*================== sub section   html =========================*/
 .subsection{
@@ -2173,10 +2191,26 @@ p.singleprodlink a:hover{
       opacity: 0;
     }
   }
-
-
-
-/*================== end sub section html =========================*/
+/*==================  modal add card  html =========================*/
+.modal_inner.addcardinner {
+    height: auto;
+    background-image: url(../dist/img/side-menu.png);
+    padding: 23px;
+}
+.block{
+    display: block !important
+}
+.addcartmodal {
+    max-width: max-content !important;
+    box-shadow: 0px 0px 8px 0px #ddd !important;
+}
+#addCardModal .modal-dialog {
+    margin: auto;
+    right: 0;
+}
+.plus , .minus{
+    cursor: pointer;
+}
 /*================== responsive =========================*/
 
 
@@ -2584,13 +2618,30 @@ p.ptabscont {
 		width: 120px;
 		margin-left: 6px;
 		object-fit: cover;
-	}
+    }
+    .fleximgwidth {
+        width: 120px;
+    }
 	.col-md-6.col-sm-6.col-xs-6.parentfav.listgrid {
 		width: 100%;
 	}
 	.grid-view-filter .listgrid .fleximgfav img {
 		height: 160px;
-	}
+    }
+    .grid-view-filter .listgrid .fleximgfav .fleximgwidth {
+
+        height: 160px;
+    }
+    .grid-view-filter .listgrid .fleximgfav .fleximgwidth {
+
+        height: 160px;
+    }
+    .grid-view-filter .listgrid .fleximgfav .fleximgwidth img{
+
+        height: 100%;
+    }
+
+
 	.discprice {
 		font-size: 12px;
 	}
@@ -2649,7 +2700,10 @@ p.ptabscont {
 		width: 100px;
 		margin-left: 6px;
 		object-fit: cover;
-	}
+    }
+    .fleximgwidth {
+        width: 100px;
+    }
 	.fleximgfav .flex.flexadd {
 		width: 100% !important;
 	}
