@@ -1964,6 +1964,9 @@ p.singleprodlink {
 p.singleprodlink a:hover{
    color:#ec6a60
 }
+.mr-top-10{
+    margin-top: 10px
+}
 /*================== end single product html =========================*/
 /*================== sub section   html =========================*/
 .subsection{
@@ -2173,10 +2176,26 @@ p.singleprodlink a:hover{
       opacity: 0;
     }
   }
-
-
-
-/*================== end sub section html =========================*/
+/*==================  modal add card  html =========================*/
+.modal_inner.addcardinner {
+    height: auto;
+    background-image: url(../dist/img/side-menu.png);
+    padding: 23px;
+}
+.block{
+    display: block !important
+}
+.addcartmodal {
+    max-width: max-content !important;
+    box-shadow: 0px 0px 8px 0px #ddd !important;
+}
+#addCardModal .modal-dialog {
+    margin: auto;
+    right: 0;
+}
+.plus , .minus{
+    cursor: pointer;
+}
 /*================== responsive =========================*/
 
 

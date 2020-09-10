@@ -94,7 +94,7 @@
                   <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
                   <div class="flex flexadd">
                      <div class="deleteaa"><i class="far fa-trash-alt"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard" data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
             </div>
@@ -108,7 +108,7 @@
                   <b class="favpp">هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة  هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة</b>
                   <div class="flex flexadd">
                      <div class="deleteaa"><i class="far fa-trash-alt"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard" data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
             </div>
@@ -116,10 +116,18 @@
       </div>
 
 
-
+      <div class="col-xs-12 mr-top-10">
+        <button class="btn-hvr btn-flex btnminwidth">
+        <span class="z-span"> عرض المزيد </span>
+        </button>
+    </div>
    </div>
 </section>
 <!-- /////////////////////|||||||||||End sections |||||||||||||||||||| -->
+
+
+@include('site.modals.addcard')
+
 @endsection
 @section('scripts')
 <script src="{{asset('website/dist/js/jquery.fancybox.min.js')}}"></script>

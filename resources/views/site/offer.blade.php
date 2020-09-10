@@ -115,7 +115,7 @@
                   </b>
                   <div class="flex flexadd">
                   <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname discfavv">اسم الخصم</div>
@@ -150,7 +150,7 @@
                   </b>
                   <div class="flex flexadd">
                   <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname discfavv">اسم الخصم</div>
@@ -185,7 +185,7 @@
                   </b>
                   <div class="flex flexadd">
                   <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname discfavv">اسم الخصم</div>
@@ -220,17 +220,28 @@
                   </b>
                   <div class="flex flexadd">
                   <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname discfavv">اسم الخصم</div>
             </div>
          </div>
+
+
+         <div class="col-xs-12 mr-top-10">
+            <button class="btn-hvr btn-flex btnminwidth">
+            <span class="z-span"> عرض المزيد </span>
+            </button>
+        </div>
+
 
       </div>
    </div>
 </section>
 <!-- /////////////////////|||||||||||End sections |||||||||||||||||||| -->
+
+@include('site.modals.addcard')
+
 @endsection
 @section('scripts')
 <script src="{{asset('website/dist/js/jquery.fancybox.min.js')}}"></script>

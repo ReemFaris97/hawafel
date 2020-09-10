@@ -87,9 +87,6 @@
 
 
 
-      <!-- ------------------------ -->
-      <!-- الخصم العام -->
-      <!-- --------------------------- -->
       <div class="row list list-view-filter recents">
          <div class="col-md-6  col-sm-4 col-xs-6 parentfav listgrid list4">
             <div class="fleximgfav">
@@ -105,7 +102,7 @@
                   </b>
                   <div class="flex flexadd">
                      <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname">اسم الخصم</div>
@@ -126,7 +123,7 @@
                   </b>
                   <div class="flex flexadd">
                      <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname">اسم الخصم</div>
@@ -147,7 +144,7 @@
                   </b>
                   <div class="flex flexadd">
                      <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname">اسم الخصم</div>
@@ -168,7 +165,7 @@
                   </b>
                   <div class="flex flexadd">
                      <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname">اسم الخصم</div>
@@ -189,7 +186,7 @@
                   </b>
                   <div class="flex flexadd">
                      <div class="likerr"><i class="far fa-heart"></i></div>
-                     <div class="addcard">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
+                     <div class="addcard"  data-toggle="modal" data-target="#addCardModal">اضافة للسلة <i class="fas fa-cart-plus"></i></div>
                   </div>
                </div>
                <div class="discname">اسم الخصم</div>
@@ -200,6 +197,9 @@
    </div>
 </section>
 <!-- /////////////////////|||||||||||End sections |||||||||||||||||||| -->
+
+
+@include('site.modals.addcard')
 @endsection
 @section('scripts')
 <script src="{{asset('website/dist/js/jquery.fancybox.min.js')}}"></script>
