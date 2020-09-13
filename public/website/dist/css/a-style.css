@@ -1123,7 +1123,8 @@ a.categoryhref:hover {
 }
 .fleximgfav img {
 	width: 220px;
-	margin-left: 15px;
+    margin-left: 15px;
+    max-width: inherit;
 }
 .filter-buttons {
 	display: -webkit-box;
@@ -1296,6 +1297,17 @@ p.nameprodfav {
 	padding: 10px;
 	text-align: right;
 	font-size: 16px
+}
+ul.inlineradio li {
+    margin-left: 0 !important;
+}
+ul.inlineradio li:hover {
+    background-color: #f9a392;
+    color: #fff;
+    transition: all .4s ease-in-out
+}
+ul.inlineradio li:hover a{
+    color: #fff;
 }
 .filter-buttons .dropdown-menu {
 	z-index: 9;
@@ -2181,7 +2193,29 @@ p.singleprodlink a:hover{
       opacity: 0;
     }
   }
+
 /*================== end sub section html =========================*/
+/*==================  modal add card  html =========================*/
+.modal_inner.addcardinner {
+    height: auto;
+    background-image: url(../dist/img/side-menu.png);
+    padding: 23px;
+}
+.block{
+    display: block !important
+}
+.addcartmodal {
+    max-width: max-content !important;
+    box-shadow: 0px 0px 8px 0px #ddd !important;
+}
+#addCardModal .modal-dialog {
+    margin: auto;
+    right: 0;
+}
+.plus , .minus{
+    cursor: pointer;
+}
+
 /*================== responsive =========================*/
 /* Media Screen */
 @media (max-width: 1450px) {}
