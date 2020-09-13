@@ -1004,11 +1004,11 @@ p.comments-p {
 	padding-top: 85px;
 }
 .bigdivcont {
-	height: 150px;
+	height: 130px;
 	background-image: url(../img/favicon_pink.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	width: 56%;
+	width: 53%;
 	margin: auto;
 	position: relative;
 }
@@ -1077,7 +1077,8 @@ a.categoryhref:hover {
 	margin-top: 7px;
 	font-size: 16px;
 	height: 77px;
-	overflow: hidden;
+    overflow: hidden;
+    display: none
 }
 .bigdivcont::after {
 	position: absolute;
@@ -2215,7 +2216,36 @@ p.singleprodlink a:hover{
 .plus , .minus{
     cursor: pointer;
 }
+/*mod*/
+.categ-owl{
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 32px;
+    position: relative;
+}
+.categ-owl .overhidden.editcategory:nth-of-type(odd) {
+     margin-top: 0
+}
+.categ-owl .department {
 
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.categ-owl .owl-nav {
+    display: none;
+}
+
+.my-header .head-txt h2 {
+    font-size: 30px !important;
+    font-family: "Almarai-ExtraBold";
+}
+.my-header .head-txt h3 {
+    font-size: 18px !important;
+
+}
+.row .floatleft{
+    float: left !important;
+}
 /*================== responsive =========================*/
 /* Media Screen */
 @media (max-width: 1450px) {}
@@ -2295,7 +2325,49 @@ p.singleprodlink a:hover{
     margin-bottom: 15px;
 }
 /*==================end single html =========================*/
+
+/*home*/
+
+.my-header {
+
+    height: 100vh !important;
 }
+.my-header > img {
+
+
+    height: 100%;
+}
+
+.my-header .head-txt h2 {
+    font-size: 22px !important;
+    font-family: "Almarai-ExtraBold";
+}
+.floatleft .smlldivcont {
+    width: 65px;
+    height: 65px;
+}
+
+.categ-owl  .divcontp {
+    margin-top: 26px;
+}
+.categ-owl  .bigdivcont {
+    height: 76px;
+}
+.my-header .head-txt h3 {
+    font-size: 16px !important;
+}
+.categ-owl {
+
+    margin-bottom: 8px;
+}
+.my-header .head-txt .btn-hvr {
+    max-width: 300px;
+   margin: 12px auto !important
+}
+
+}
+
+
 @media (max-width: 767px) {
 	/******breadcrumbs******/
 	h3.titlebread {
