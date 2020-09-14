@@ -28,6 +28,7 @@
       -ms-transform: scaleY(1);
           transform: scaleY(1);
   z-index: -5;
+  border-radius: 11px
 }
 .btn-hvr::after{
   content: "";
@@ -43,6 +44,7 @@
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
           transform: scaleX(1);
+          border-radius: 11px
 }
 .btn-hvr:hover::before,
 .btn-hvr:focus::before{
@@ -63,6 +65,12 @@
     transition: all 0.5s ease-in-out;
     border-color: #F9A392;
     background-color: #F9A392;
+}
+.flex-r a.btn-hvr:after {
+    border-radius: 0;
+}
+.flex-r button.btn-hvr:after {
+    border-radius: 0;
 }
 .z-span{
   z-index: 1;

@@ -325,12 +325,12 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-animation: spin 3s ease infinite alternate;
             animation: spin 3s ease infinite alternate;
   }
-  
+
   /*Give each dot a radius of 20*/
   .shape {
     r: 20;
   }
-  
+
   /*Give each dot its positioning and set the default animation and color for each */
   .shape:nth-child(1) {
     cy: 50;
@@ -360,7 +360,7 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-animation: movein 3s ease infinite alternate;
             animation: movein 3s ease infinite alternate;
   }
-  
+
 /*Spin the svg so all the dots spin*/
 @-webkit-keyframes spin {
     to {
@@ -374,7 +374,7 @@ input[type=number]::-webkit-outer-spin-button {
               transform: rotate(1turn);
     }
   }
-  
+
   /* Move all the dots toward the center */
   @-webkit-keyframes movein {
     to {
@@ -388,7 +388,7 @@ input[type=number]::-webkit-outer-spin-button {
       cx: 100;
     }
   }
-  
+
   /* Set a bouncy ball type movement for the dots */
   @-webkit-keyframes moveup {
     to {
@@ -1039,7 +1039,7 @@ div#nav-icon1:before {
 }
 /********************* Fixed Navbar **************************/
 .fixd-navbar {
-    position: fixed;
+    position: fixed !important;
     -webkit-box-shadow: 0px 3px 5px 0px rgba(199,199,199,1);
             box-shadow: 0px 3px 5px 0px rgba(199,199,199,1);
     background-color: #fff !important;
@@ -1258,7 +1258,7 @@ display: flex;
     .search-form .form-control-submit , .search-form .form-group.sb-search-open{
         height: 40px;
         line-height: 40px;
-        
+
     }
     .search-form .form-group.sb-search-open, .search-form .no-js .sb-search-open{
         width: 400%;
@@ -1436,7 +1436,7 @@ width: 106px;
     .flex-r.foot1 p {
     margin: 0 0 10px 0;
 }
-    
+
     /*********** End Footer ********************/
     .all-sections,
     .site-about {

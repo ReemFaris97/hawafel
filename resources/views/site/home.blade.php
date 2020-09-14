@@ -6,73 +6,110 @@
 <link rel="stylesheet" href="{{asset('website/scss/first.css')}}">
 <style>
    .navbar {
-   position: fixed;
-   background-color: transparent;
+   position: relative;
+   background-color: #fde0db;
    }
 </style>
 @endsection
 @section('content')
 <!---//////////// Start Header //////////////////------------>
+<div class=" all-sections ">
+   <div class="owl-carousel owl-theme cat-slider categ-owl">
+      <div class=" overhidden editmargingallery editcategory">
+         <div class="department">
+            <div class="bigdivcont">
+               <div class="smlldivcont">
+                  <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
+               </div>
+            </div>
+            <div class="divcontp">
+               <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+               <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+            </div>
+         </div>
+      </div>
+      <div class=" overhidden editmargingallery editcategory">
+         <div class="department">
+            <div class="bigdivcont">
+               <div class="smlldivcont">
+                  <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
+               </div>
+            </div>
+            <div class="divcontp">
+               <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+               <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+            </div>
+         </div>
+      </div>
+      <div class=" overhidden editmargingallery editcategory">
+         <div class="department">
+            <div class="bigdivcont">
+               <div class="smlldivcont">
+                  <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
+               </div>
+            </div>
+            <div class="divcontp">
+               <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+               <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+            </div>
+         </div>
+      </div>
+      <div class=" overhidden editmargingallery editcategory">
+         <div class="department">
+            <div class="bigdivcont">
+               <div class="smlldivcont">
+                  <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
+               </div>
+            </div>
+            <div class="divcontp">
+               <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+               <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+            </div>
+         </div>
+      </div>
+      <div class=" overhidden editmargingallery editcategory">
+         <div class="department">
+            <div class="bigdivcont">
+               <div class="smlldivcont">
+                  <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
+               </div>
+            </div>
+            <div class="divcontp">
+               <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+               <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+            </div>
+         </div>
+      </div>
+      <div class=" overhidden editmargingallery editcategory">
+         <div class="department">
+            <div class="bigdivcont">
+               <div class="smlldivcont">
+                  <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
+               </div>
+            </div>
+            <div class="divcontp">
+               <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
+               <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
+            </div>
+         </div>
+      </div>
+      <div>
+      </div>
+   </div>
+</div>
+
 <header class="my-header">
    <img src="{{asset('website/dist/img/asset1.png')}}">
    <div class="container head-txt">
-   <div class="row">
-    <div class="col-md-7 col-xs-12 floatleft">
-        <div class="owl-carousel owl-theme cat-slider categ-owl">
-            <div class=" overhidden editmargingallery editcategory">
-                <div class="department">
-                <div class="bigdivcont">
-                    <div class="smlldivcont">
-                        <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
-                    </div>
-                </div>
-                <div class="divcontp">
-                    <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
-                    <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
-                </div>
-                </div>
-            </div>
-            <div class=" overhidden editmargingallery editcategory">
-                <div class="department">
-                <div class="bigdivcont">
-                    <div class="smlldivcont">
-                        <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
-                    </div>
-                </div>
-                <div class="divcontp">
-                    <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
-                    <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
-                </div>
-                </div>
-            </div>
-            <div class=" overhidden editmargingallery editcategory">
-                <div class="department">
-                <div class="bigdivcont">
-                    <div class="smlldivcont">
-                        <img src="{{asset('website/dist/img/asset10.png')}}" alt="">
-                    </div>
-                </div>
-                <div class="divcontp">
-                    <a class="categoryhref" href="{{url('sub-sections')}}">العناية بالبشرة</a>
-                    <p>هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة هذا النص هو مثال لنص يمكن ان يستبدل في هذة المساحة </p>
-                </div>
-                </div>
-            </div>
-            <div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-5 col-xs-12">
-        <p class="wow animate__animated animate__fadeInDownBig">حوافل للعناية بالبشرة</p>
-        <h2>منتجات</h2>
-        <h2> صنعت من</h2>
-        <h3 class="wow animate__animated animate__fadeInRightBig">مكونات طبيعية للعناية ببشرتك</h3>
-        <a href="{{url('categories')}}" class="btn-hvr btn-flex">
-        <img src="{{asset('website/dist/img/favicon_white.png')}}">
-        <span class="z-span"> تسوق الان </span>
-        <span class="btn-icon"><i class="fas fa-long-arrow-alt-left"></i></span>
-        </a>
-    </div>
+   <p class="wow animate__animated animate__fadeInDownBig">حوافل للعناية بالبشرة</p>
+   <h2>منتجات</h2>
+   <h2> صنعت من</h2>
+   <h3 class="wow animate__animated animate__fadeInRightBig">مكونات طبيعية للعناية ببشرتك</h3>
+   <a href="{{url('categories')}}" class="btn-hvr btn-flex">
+   <img src="{{asset('website/dist/img/favicon_white.png')}}">
+   <span class="z-span"> تسوق الان </span>
+   <span class="btn-icon"><i class="fas fa-long-arrow-alt-left"></i></span>
+   </a>
 </header>
 <!---//////////// End header //////////////////------------>
 <!---//////////// Start About Section //////////////////------------>
@@ -285,12 +322,11 @@
                </div>
             </div>
          </div>
-
          <div class="col-xs-12">
             <a href="{{url('new_products')}}" class="btn-hvr btn-flex btnminwidth">
-                <span class="z-span"> عرض المزيد </span>
+            <span class="z-span"> عرض المزيد </span>
             </a>
-        </div>
+         </div>
       </div>
    </div>
 </section>
@@ -416,7 +452,7 @@
    $(".categ-owl").owlCarousel({
              rtl: true,
              margin: 10,
-        loop: true,
+        /* loop: true, */
             /* autoplay: true, */
              dots: false,
              autoplayHoverPause: false,
@@ -428,19 +464,19 @@
              rewindNav: false,
              responsive: {
                  0: {
-                     items:3
+                     items:2
                  },
                  600: {
-                     items: 3
-                 },
-                 767: {
                      items: 2
                  },
+                 767: {
+                     items: 4
+                 },
                  991: {
-                     items: 3
+                     items: 5
                  },
                  1000: {
-                     items: 3
+                     items: 6
                  }
                  }
    })
